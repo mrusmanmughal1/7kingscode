@@ -13,7 +13,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className=" flex  items-end bottom-40 relative h-screen">
+      <div className=" flex  items-end bottom-52 relative h-screen">
         <div className="relative w-full">
           <div className="flex   gap-20">
             <div className="w-[10%] "></div>
