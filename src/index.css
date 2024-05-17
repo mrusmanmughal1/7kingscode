@@ -17,3 +17,24 @@
     line-height: 1.5;
   }
    
+  .best-icon::before{
+    position: absolute;
+    content: "";
+    right: -194%;
+    top: -175%;
+    width: 170px;
+    height: 160px;
+    border-radius: 50%;
+    opacity: 0.06;
+    z-index: -1;
+    transition: 0.3s;
+    background: blue;
+  }
+  .img-banner {
+    background-image: url("https://images.pexels.com/photos/1595385/pexels-photo-1595385.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 40vh;
+    width: 100%;
+  }

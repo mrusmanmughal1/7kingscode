@@ -7,7 +7,7 @@ const WeAreTecz = () => {
   return (
     <div>
       <div className=" w-3/4 mx-auto">
-        <div className="flex     py-40">
+        <div className="flex     py-32">
           {/* 1st section  */}
           <div className="relative w-full  space-y-6">
             <img className="px-20 " src={a1} />
