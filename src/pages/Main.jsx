@@ -7,6 +7,7 @@ const Main = () => {
   return (
     <div>
       <Header />
+      <Hero />
       <BestSolution />
       <Counter />
     </div>
