@@ -25,7 +25,7 @@ const Counter = () => {
               onExit={() => setCounterOn(false)}
             >
               <h2 className="text-4xl font-bold text-white">
-                {counterOn && <CountUp start={0} end={1875} duration={2.5} />}
+                {counterOn && <CountUp start={0} end={3480} duration={2.5} />}
               </h2>
             </ScrollTrigger>
             <p className="text-white w-40 font-semibold">Projects Completed</p>
@@ -42,7 +42,7 @@ const Counter = () => {
               onExit={() => setCounterOn(false)}
             >
               <h2 className="text-4xl font-bold text-white">
-                {counterOn && <CountUp start={0} end={2500} duration={2.5} />}
+                {counterOn && <CountUp start={0} end={428} duration={2.5} />}
               </h2>
             </ScrollTrigger>
             <p className="text-white w-30 font-semibold">IT Specialist</p>
@@ -59,7 +59,7 @@ const Counter = () => {
               onExit={() => setCounterOn(false)}
             >
               <h2 className="text-4xl font-bold text-white">
-                {counterOn && <CountUp start={0} end={1500} duration={2.5} />}
+                {counterOn && <CountUp start={0} end={6980} duration={2.5} />}
               </h2>
             </ScrollTrigger>
             <p className="text-white w-40 font-semibold">Happy Customers</p>
@@ -76,7 +76,7 @@ const Counter = () => {
               onExit={() => setCounterOn(false)}
             >
               <h2 className="text-4xl font-bold text-white">
-                {counterOn && <CountUp start={0} end={12500} duration={2.5} />}
+                {counterOn && <CountUp start={0} end={256} duration={2.5} />}
               </h2>
             </ScrollTrigger>
             <p className="text-white font-bold">Smart Solution</p>
