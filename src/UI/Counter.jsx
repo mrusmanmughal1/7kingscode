@@ -19,7 +19,7 @@ const Counter = () => {
         className="   flex   relative img-banner    py-10 gap-4 items-center 
       justify-center  mx-auto md:p-8"
       >
-        <div className="absolute inset-0 bg-blue-secondary opacity-80 "></div>
+        <div className="absolute inset-0 bg-blue-secondary opacity-95 "></div>
       <div className="flex w-3/4">
         {Arr.map((val, i) => {
           return (

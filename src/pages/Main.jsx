@@ -3,7 +3,8 @@ import BestSolution from "../UI/BestSolution";
 import Counter from "../UI/Counter";
 import Hero from "../UI/Hero";
 import WeAreTecz from "../UI/WeAreTecz";
-
+import OurPartners from '../UI/OurPartners'
+import TechnologyChallenges from "../UI/TechnologyChallenges";
 const Main = () => {
   return (
     <div>
@@ -12,6 +13,8 @@ const Main = () => {
       <BestSolution/>
       <WeAreTecz/>
       <Counter/>
+      <TechnologyChallenges/>
+      <OurPartners/>
     </div>
   );
 };
