@@ -7,7 +7,7 @@ import countericon4 from "../assets/Icons/counter-icon4.webp";
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
 
-const CounterSection = () => {
+const Counter = () => {
   const [counterOn, setCounterOn] = useState(false);
   return (
     <div className="bg-black mt-8  py-14 sm:py-0 md:mt-20 mb-16">
@@ -87,4 +87,4 @@ const CounterSection = () => {
   );
 };
 
-export default CounterSection;
+export default Counter;
