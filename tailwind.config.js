@@ -4,8 +4,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        "blurr-bg": "#9d73ad",
-        primary: "#4e007a",
+        "secondary": "#9d73ad",
+        "primary": "#0f0d1d",
+        "blue-secondary":'#3c72fc'
       },
     },
   },
