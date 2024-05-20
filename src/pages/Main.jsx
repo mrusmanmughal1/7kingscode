@@ -7,17 +7,20 @@ import OurPartners from "../UI/OurPartners";
 import TechnologyChallenges from "../UI/TechnologyChallenges";
 import Footer from "../Components/Footer";
 import WeAreTecz from "../UI/WeAreTecz";
+import WhatElse from "../UI/WhatElse";
 const Main = () => {
   return (
     <div>
       <Header />
-      <Hero/>
-      <BestSolution/>
-      <WeAreTecz/>
-      <Counter/>
-      <OurPartners/>
-      <TechnologyChallenges/>
-      <Footer/>
+      <Hero />
+      <BestSolution />
+      <WeAreTecz />
+      <Counter />
+      <WhatElse />
+      <OurPartners />
+      <TechnologyChallenges />
+      <Location />
+      <Footer />
     </div>
   );
 };
