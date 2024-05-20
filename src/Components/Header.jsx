@@ -1,13 +1,11 @@
-import HeaderMain from "../UI/HeaderMain"
+import HeaderMain from "../UI/HeaderMain";
 
 const Header = () => {
   return (
     <div>
-<HeaderMain/>
-
-        
+      <HeaderMain />
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

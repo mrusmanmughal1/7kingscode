@@ -16,3 +16,18 @@ body {
   font-weight: 400;
   line-height: 1.5;
 }
+
+.whatweSolve{
+  background-image: url('./assets/images/banner-4.jpg');
+}
+@keyframes fadeIn { 
+  from { opacity: 0; } 
+}
+
+.fade {
+ 
+  color: #2063fc;
+  text-align: center;
+  
+  animation: fadeIn 2s infinite alternate;
+}

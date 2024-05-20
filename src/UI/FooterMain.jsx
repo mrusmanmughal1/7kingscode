@@ -10,7 +10,7 @@ import { FaTwitter } from "react-icons/fa";
 const FooterMain = () => {
   return (
     <div className="bg-[#0f0c1d] ">
-      <div className="w-3/4 text-white flex md:flex-row  gap-8 flex-col mx-auto py-20">
+      <div className="w-11/12 lg:w-3/4 text-white flex md:flex-row  gap-8 flex-col mx-auto py-20">
         <div className="space-y-4 w-full ">
           <Logo />
           <p className="text-xs text-gray-400">
@@ -36,8 +36,8 @@ const FooterMain = () => {
             </p>
           </div>
         </div>
-        <div className="  w-full flex    justify-center     ">
-          <div className="flex flex-col     items-start">
+        <div className="  w-full flex    md:justify-center     ">
+          <div className="flex flex-col    items-start">
             <p className="font-semibold   pb-8 text-center">
               Our Navigation
             </p>
