@@ -4,17 +4,17 @@ import React from "react";
 const Location = () => {
   return (
     <>
-      <div className="absolute flex justify-center items-center p-12 -inset-x-8  ">
-        <div className=" w-[70%] bg-blue-600 mx-auto p-8 ">
-          <div className="flex justify-center items-center">
-            <div className="p-8">
-              <div className="text-3xl font-bold w-8/12 text-white">
+      <div className="  md:absoluteflex justify-center items-center md:p-12 -inset-x-8  ">
+        <div className="w-full md:w-[70%] bg-blue-600 mx-auto p-8 ">
+          <div className="flex  flex-col md:flex-row justify-center  gap-8 items-center">
+            <div className="md:p-8">
+              <div className=" text-lg  md:text-3xl   text-center font-semibold mdw-8/12 text-white">
                 7KingsCode Always Ready For Solve Your Problem
               </div>
             </div>
             <div className="">
               <button
-                className="bg-white text-black py-5 px-12 rounded hover:bg-black 
+                className="bg-white text-black py-5 px-12 font-semibold rounded hover:bg-black 
               hover:text-white hover:translate-y-1 transition duration-300"
               >
                 Discover More

@@ -1,4 +1,3 @@
-import React from 'react'
 import FooterBottom from '../UI/FooterBottom'
 import FooterMain from '../UI/FooterMain'
 

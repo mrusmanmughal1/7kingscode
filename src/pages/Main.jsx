@@ -10,13 +10,14 @@ import WeAreTecz from "../UI/WeAreTecz";
 const Main = () => {
   return (
     <div>
-      <Header />
-      <Hero/>
+      {/* <Header /> */}
+      {/* <Hero/> */}
       <BestSolution/>
       <WeAreTecz/>
       <Counter/>
       <OurPartners/>
       <TechnologyChallenges/>
+      <Location/>
       <Footer/>
     </div>
   );

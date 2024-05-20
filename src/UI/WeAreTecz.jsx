@@ -6,15 +6,15 @@ import { AiFillSetting } from "react-icons/ai";
 const WeAreTecz = () => {
   return (
     <div>
-      <div className=" w-3/4 mx-auto">
-        <div className="flex     py-32">
+      <div className=" w-11/12 md:w-3/4 mx-auto">
+        <div className="flex  lg:flex-row flex-col   justify-center items-center  py-32">
           {/* 1st section  */}
           <div className="relative w-full  space-y-6">
             <img className="px-20 " src={a1} />
-            <img className="  absolute  left-52 -top-2 " src={a2} />
+            <img className="  absolute   hidden lg:block  left-52 -top-2 " src={a2} />
                         <div className="flex items-end gap-10 ">
             <img className="  " src={a3} />
-            <div className="">
+            <div className=" hidden lg:block">
                 <p className="font-bold text-8xl ">10</p>
                 <div className=" uppercase font-semibold pb-8">
                 <p>Years of</p>

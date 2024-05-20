@@ -16,34 +16,34 @@ const Counter = () => {
   return (
     <div className="relative">
       <div
-        className="   flex   relative img-banner    py-10 gap-4 items-center 
+        className="   flex  relative img-banner     py-10 gap-4 items-center 
       justify-center  mx-auto md:p-8"
       >
         <div className="absolute inset-0 bg-blue-secondary opacity-95 "></div>
-      <div className="flex w-3/4">
-        {Arr.map((val, i) => {
-          return (
-            <div
-              key={i}
-              className="flex border-l-2 relative z-20 flex-col items-center gap-4 justify-center w-full px-28 md:w-1/2 lg:w-1/3 xl:w-1/4"
-            >
-              <div className=" text-5xl text-white  ">{val.icon}</div>
-              <div className="mt-4 text-center">
-                <ScrollTrigger
-                  onEnter={() => setCounterOn(true)}
-                  onExit={() => setCounterOn(false)}
-                >
-                  <h2 className="text-4xl font-bold text-white py-2">
-                    {counterOn && (
-                      <CountUp start={0} end={val.count} duration={2.5} />
-                    )}
-                  </h2>
-                </ScrollTrigger>
-                <p className="text-white w-40 ">{val.des}</p>
+        <div className="flex w-3/4 gap-8  items-center lg:flex-row flex-col">
+          {Arr.map((val, i) => {
+            return (
+              <div
+                key={i}
+                className="flex lg:border-l-2 relative text-center z-20 flex-col items-center gap-4 justify-center w-full px-28 md:w-1/2 lg:w-1/3 xl:w-1/4"
+              >
+                <div className=" text-5xl text-white  ">{val.icon}</div>
+                <div className="mt-4 text-center">
+                  <ScrollTrigger
+                    onEnter={() => setCounterOn(true)}
+                    onExit={() => setCounterOn(false)}
+                  >
+                    <h2 className="text-4xl font-bold text-white py-2">
+                      {counterOn && (
+                        <CountUp start={0} end={val.count} duration={2.5} />
+                      )}
+                    </h2>
+                  </ScrollTrigger>
+                </div>
+                <p className="text-white w-40  ">{val.des}</p>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
         </div>
       </div>
     </div>

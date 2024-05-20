@@ -46,7 +46,7 @@ const OurPartners = () => {
         {partners.map((image, index) => (
           <div
             key={index}
-            className="m-4 w-[15%] hover:border border border-white hover:border-black p-4 transition-all duration-300  "
+            className="m-4 lg:w-[15%] hover:border border border-white hover:border-black p-4 transition-all duration-300  "
           >
             <img src={image} alt="partner" className=" h-auto w-auto" />
           </div>
