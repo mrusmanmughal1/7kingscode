@@ -11,16 +11,23 @@ const WeAreTecz = () => {
           {/* 1st section  */}
           <div className="relative w-full  space-y-6">
             <img className="px-20 " src={a1} />
+<<<<<<< HEAD
             <img className="  absolute   hidden lg:block  left-52 -top-2 " src={a2} />
                         <div className="flex items-end gap-10 ">
             <img className="  " src={a3} />
             <div className=" hidden lg:block">
+=======
+            <img className="  absolute  left-52 -top-2 " src={a2} />
+            <div className="flex items-end gap-10 ">
+              <img className="  " src={a3} />
+              <div className="">
+>>>>>>> 8fc94725c1af4e60b4f2c3a1d478dbe9b01992f2
                 <p className="font-bold text-8xl ">10</p>
                 <div className=" uppercase font-semibold pb-8">
-                <p>Years of</p>
-                <p>Experience</p>
+                  <p>Years of</p>
+                  <p>Experience</p>
                 </div>
-            </div>
+              </div>
             </div>
           </div>
           {/* 2nd Section  */}
@@ -72,15 +79,17 @@ const WeAreTecz = () => {
               </div>
               <div className="flex gap-6">
                 <div className="">
-                    <button className="bg-blue-secondary px-8 py-4 text-white ">Discover More</button>
+                  <button className="bg-blue-secondary px-8 py-4 text-white ">
+                    Discover More
+                  </button>
                 </div>
                 <div className="flex  items-center gap-2">
                   <div className="">
                     <img src="https://data.themeim.com/wp/tecz/wp-content/uploads/2023/09/avatar-1.png" />
                   </div>{" "}
                   <div className="">
-                  <p className="font-semibold">Usman</p>
-                  <p>CEO FOUNDER</p>
+                    <p className="font-semibold">Usman</p>
+                    <p>CEO FOUNDER</p>
                   </div>
                 </div>
               </div>
