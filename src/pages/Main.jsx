@@ -8,6 +8,7 @@ import TechnologyChallenges from "../UI/TechnologyChallenges";
 import Footer from "../Components/Footer";
 import WeAreTecz from "../UI/WeAreTecz";
 import WhatElse from "../UI/WhatElse";
+import TechManagement from "../UI/TechManagement";
 const Main = () => {
   return (
     <div>
@@ -16,6 +17,7 @@ const Main = () => {
       <BestSolution />
       <WeAreTecz />
       <Counter />
+      <TechManagement />
       <OurPartners />
       <TechnologyChallenges />
       <WhatElse />
