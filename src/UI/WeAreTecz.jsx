@@ -11,17 +11,13 @@ const WeAreTecz = () => {
           {/* 1st section  */}
           <div className="relative w-full  space-y-6">
             <img className="px-20 " src={a1} />
-<<<<<<< HEAD
-            <img className="  absolute   hidden lg:block  left-52 -top-2 " src={a2} />
-                        <div className="flex items-end gap-10 ">
-            <img className="  " src={a3} />
-            <div className=" hidden lg:block">
-=======
-            <img className="  absolute  left-52 -top-2 " src={a2} />
+            <img
+              className="  absolute   hidden lg:block  left-52 -top-2 "
+              src={a2}
+            />
             <div className="flex items-end gap-10 ">
               <img className="  " src={a3} />
-              <div className="">
->>>>>>> 8fc94725c1af4e60b4f2c3a1d478dbe9b01992f2
+              <div className=" hidden lg:block">
                 <p className="font-bold text-8xl ">10</p>
                 <div className=" uppercase font-semibold pb-8">
                   <p>Years of</p>
