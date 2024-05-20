@@ -36,12 +36,12 @@ const FooterMain = () => {
             </p>
           </div>
         </div>
-        <div className="  w-full   items-center  ">
-          <div className="flex flex-col  items-start">
-            <p className="font-semibold text-lg pb-8 text-center">
+        <div className="  w-full flex    justify-center     ">
+          <div className="flex flex-col     items-start">
+            <p className="font-semibold   pb-8 text-center">
               Our Navigation
             </p>
-            <div className="text-slate-400  gap-4 text-sm flex flex-col  justify-center">
+            <div className="text-slate-400  gap-4 text-sm flex flex-col   ">
               <a href="">About 7kings Code</a>
 
               <a href="">Meet the Team</a>

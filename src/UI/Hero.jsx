@@ -4,13 +4,13 @@ import bannerimg from "../assets/images/bannertop.png";
 import { FaPlay } from "react-icons/fa";
 const Hero = () => {
   return (
-    <div className="bg-primary h-screen  ">
+    <div className="bg-primary h-screen  overflow-hidden ">
       <div className=" relative">
         <div
           className="z-10 absolute     right-0     bottom-0  "
-          style={{ clipPath: " circle(70% at 100% 81%)" }}
+          style={{ clipPath: " circle(60% at 100% 80%)" }}
         >
-          <img src={banner} alt="" className="h-[56rem]" />
+          <img src={banner} alt="" className="h-auto w-full object-cover" />
           <div className="absolute inset-0 bg-btn-primary   opacity-60 "></div>
         </div>
         <div className="      flex   justify-between w-[55%]  z-50 transition   duration-700 absolute left-[12%] top-[15%]">

@@ -11,28 +11,16 @@ import WhatElse from "../UI/WhatElse";
 const Main = () => {
   return (
     <div>
-<<<<<<< HEAD
-      {/* <Header /> */}
-      {/* <Hero/> */}
+      <Header />
+      <Hero/>
       <BestSolution/>
       <WeAreTecz/>
       <Counter/>
       <OurPartners/>
       <TechnologyChallenges/>
+      <WhatElse/>
       <Location/>
       <Footer/>
-=======
-      <Header />
-      <Hero />
-      <BestSolution />
-      <WeAreTecz />
-      <Counter />
-      <WhatElse />
-      <OurPartners />
-      <TechnologyChallenges />
-      <Location />
-      <Footer />
->>>>>>> 8fc94725c1af4e60b4f2c3a1d478dbe9b01992f2
     </div>
   );
 };

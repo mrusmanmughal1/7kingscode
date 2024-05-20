@@ -4,7 +4,7 @@ import { FaCheck } from "react-icons/fa6";
 const WhatElse = () => {
   return (
     <div className="flex bg-[#F3F4F8] ">
-      <div className=" w-full p-32  py-14 ">
+      <div className="  p-32  py-14 ">
         <div className="">
           <ol>
             <li className="text-blue-secondary font-bold">What Else Here</li>

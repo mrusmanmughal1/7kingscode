@@ -1,10 +1,9 @@
 /* eslint-disable no-unused-vars */
-import React from "react";
 
 const Location = () => {
   return (
     <>
-      <div className="  md:absoluteflex justify-center items-center md:p-12 -inset-x-8  ">
+      <div className="  md:absolute flex justify-center items-center md:p-12 -inset-x-8  ">
         <div className="w-full md:w-[70%] bg-blue-600 mx-auto p-8 ">
           <div className="flex  flex-col md:flex-row justify-center  gap-8 items-center">
             <div className="md:p-8">
