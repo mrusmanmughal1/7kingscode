@@ -42,10 +42,10 @@ const OurPartners = () => {
       <div className="uppercase text-3xl font-bold text-center pt-12">
         Our Partners
       </div>
-      <div className="flex flex-wrap justify-center pt-8">
+      <div className="flex flex-wrap   items-center justify-center pt-8">
         {partners.map((image, index) => (
-          <div key={index} className="m-4">
-            <img src={image} alt="partner" className="h-28 w-auto" />
+          <div key={index} className="m-4 w-1/5 hover:border border-black p-4 transition-all duration-300  ">
+            <img src={image} alt="partner" className="  w-auto" />
           </div>
         ))}
       </div>

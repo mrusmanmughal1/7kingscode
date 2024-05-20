@@ -1,12 +1,13 @@
 /* eslint-disable no-unused-vars */
-import React from "react";
+import React, { useState } from "react";
 import { CiBank } from "react-icons/ci";
 import { IoBusinessSharp } from "react-icons/io5";
 import { GiFlyingDagger } from "react-icons/gi";
 const BestSolution = () => {
+  const [hover , setHover]=useState()
   const aa = [
     {
-      title: "Best Business Solutions",
+      title: "A Best Business Solutions",
       desc: " We offers a full-cycle development services that meet business ",
       icon: <CiBank />,
     },
@@ -22,13 +23,19 @@ const BestSolution = () => {
     },
   ];
   return (
-    <div className="flex container gap-20 px-28 py-12">
+    <div className="flex container gap-20    pt-32 w-3/4 mx-auto">
       {aa.map((item, index) => (
-        <div key={index} className="border leading-9 px-8 py-8">
-          <div className=" flex justify-between text-[#0f0D1D] font-bold text-xl ">
-            {item.title} <p className="text-5xl ">{item.icon}</p>
+        <div
+          key={index} 
+          onMouseOver={()=>setHover(index)}
+          onMouseLeave={() => setHover(null)}
+          className="  overflow-hidden  hover:bg-black shadow-md space-y-2 text-black hover:text-white  hover:-translate-y-8 transition-all duration-500  leading-8 px-8 py-8"
+        >
+          <div className=" flex justify-between   items-center font-bold text-xl  ">
+            <p>{item.title} </p>
+            <p className={ `${hover === index && 'before:bg-blue-900 before:opacity-100 '} text-5xl  text-blue-secondary relative   -top-4 best-icon ` }>{item.icon}</p>
           </div>
-          <p className=" text-neutral-500">{item.desc}</p>
+          <p className={`${hover === index &&  "text-white"} text-gray-500`}>{item.desc}</p>
         </div>
       ))}
     </div>

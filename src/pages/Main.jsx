@@ -5,7 +5,6 @@ import Hero from "../UI/Hero";
 import Location from "../UI/Location";
 import OurPartners from "../UI/OurPartners";
 import TechnologyChallenges from "../UI/TechnologyChallenges";
-
 const Main = () => {
   return (
     <div>
