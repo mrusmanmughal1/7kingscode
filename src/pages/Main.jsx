@@ -5,6 +5,7 @@ import Hero from "../UI/Hero";
 import WeAreTecz from "../UI/WeAreTecz";
 import OurPartners from '../UI/OurPartners'
 import TechnologyChallenges from "../UI/TechnologyChallenges";
+import Footer from "../Components/Footer";
 const Main = () => {
   return (
     <div>
@@ -13,8 +14,9 @@ const Main = () => {
       <BestSolution/>
       <WeAreTecz/>
       <Counter/>
-      <TechnologyChallenges/>
       <OurPartners/>
+      <TechnologyChallenges/>
+      <Footer/>
     </div>
   );
 };
