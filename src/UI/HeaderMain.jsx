@@ -39,9 +39,10 @@ const HeaderMain = ({ mode }) => {
                 <li className="header-li">
                   <a href="#Projects">Contact Us </a>
                 </li>
-                <li className="header-li block md:hidden">
+                <li className="header-li  ">
                   <a href="#Projects">Careers </a>
                 </li>
+                
               </ul>
             </nav>
           </div>
