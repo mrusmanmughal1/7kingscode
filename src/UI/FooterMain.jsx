@@ -23,16 +23,17 @@ const FooterMain = () => {
           <div className=" space-y-4 text-gray-400">
             <p className="flex gap-4">
               {" "}
-              <FaSquarePhone className="text-blue-secondary" /> +(888)-505-2829{" "}
+              <FaSquarePhone className="text-blue-secondary" /> (+91)9581016898{" "}
             </p>
             <p className="flex gap-4">
               {" "}
               <SiImessage className="text-blue-secondary" />{" "}
-                jobs@7kingscode.com
+              info@7kingscode.com
             </p>
             <p className="flex gap-4">
               <FaMapMarkerAlt className="text-blue-secondary" /> 
-										#503-B 1401 N University, Coral Springs, FL 33071
+              9/3rt, Ground Floor, Sri Lakshmi Nilayam,
+SR Nagar, Hyd-500038.
             </p>
           </div>
         </div>
