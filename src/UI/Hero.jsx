@@ -8,14 +8,10 @@ const Hero = () => {
       <div className=" relative">
         <div
           className="z-10 absolute    right-0     bottom-0  "
-          style={{ clipPath: " circle(68% at 100% 88%)" }}
+          style={{ clipPath: " circle(65% at 100% 85%)" }}
         >
           <div className="relative">
-            <img
-              src={banner}
-              alt=""
-              className="h-1/4  w-full  object-contain object-right "
-            />
+            <img src={banner} alt="" className="relative left-64 top-52 2xl:top-0 w-full  object-contain object-bottom " />
 
             <div className="absolute inset-0 bg-[#4043ff] mix-blend-[#3f4fff] z-20 h-full  w-full   opacity-60 "></div>
           </div>
@@ -44,13 +40,17 @@ const Hero = () => {
                   SOLUTIONS FOR YOUR BUSINESSES
                 </span>
                 <div className="   uppercase relative   pt- z-40 w-full text-2xl 2xl:text-8xl font-bold text-white">
-                  <span className="text-blue-secondary fade">7 kings code</span>
+                  <span className="text-blue-secondary fade">
+                     
+                    7 kings code
+                  </span> 
                   <br></br>
                   <p className=" text-2xl lg:text-5xl"> elevating your </p>
                   <p> IT Presence</p>
                 </div>
                 <div className="">
                   <button className="bg-blue-secondary px-12 py-5  text-white font-semibold">
+                     
                     <NavLink> Disover More</NavLink>
                   </button>
                 </div>

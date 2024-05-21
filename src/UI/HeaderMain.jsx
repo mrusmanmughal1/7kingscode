@@ -19,18 +19,21 @@ const HeaderMain = ({ mode }) => {
             <nav className="">
               <ul
                 onClick={() => settoggle(!toggle)}
-                className={`flex md:flex-row flex-col font-semibold  text-blue-700  w-full md:text-center md:max-h-fit  gap-12 md:gap-10 cursor-pointer    ${
+                className={`flex md:flex-row flex-col font-medium  text-blue-700  w-full md:text-center md:max-h-fit  gap-12 md:gap-10 cursor-pointer    ${
                   mode ? "text-white" : "text-black"
                 }`}
               >
                 <li className="header-li">
-                  <a href="#main">What We Are</a>
+                  <a href="#main">What We do </a>
+                  {/* Services */}
                 </li>
                 <li className="header-li">
-                  <a href="#about-me">What We Do </a>
+                  <a href="#about-me">who we are </a>
+                  {/* about us 
+                  leader ship */}
                 </li>
                 <li className="header-li">
-                  <a href="#skills">How We Do </a>
+                  <a href="#skills">Newsroom </a>
                 </li>
 
                 <li className="header-li">
@@ -46,7 +49,7 @@ const HeaderMain = ({ mode }) => {
             <NavLink
               target="_blank"
               rel="noreferrer"
-              className="px-4 py-3        capitalize  md:px-8 md:py-3  text-white      bg-blue-700 transition-all duration-700 rounded-md bg-bluecolor cursor-pointer font-semibold"
+              className="px-4 py-3        capitalize  md:px-8 md:py-3  text-white    hover:bg-black   bg-blue-secondary transition-all duration-700 rounded-md bg-bluecolor cursor-pointer font-semibold"
             >
               Careers{" "}
             </NavLink>
