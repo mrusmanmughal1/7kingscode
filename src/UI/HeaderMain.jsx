@@ -1,20 +1,20 @@
 import { useState } from "react";
-import { GiHamburgerMenu } from "react-icons/gi";
-import { RxCross1 } from "react-icons/rx";
 import Logo from "../Components/Logo";
 import { NavLink } from "react-router-dom";
 
 const HeaderMain = ({ mode }) => {
   const [toggle, settoggle] = useState(false);
+
+  const [isSticky, setIsSticky] = useState();
   return (
-    <header className={` relative     mx-auto md:px-5  md:bg-white `}>
-      <div className="relative   md:w-9/12 mx-auto flex items-center justify-around">
+    <header className={` relative  main    mx-auto md:px-5  md:bg-white `}>
+      <div className="relative  lg:w-11/12 md:w-9/12 mx-auto flex items-center justify-around">
         <div className="flex   relative   items-center justify-between  w-full  py-2 ">
           <Logo />
           <div
             className={` ${
               toggle && "hidden"
-            } flex capitalize  bg-white w-full top-16  p-4 md:top-0 absolute md:relative  z-50   md:flex-row justify-between md:justify-center  md:items-center py-5     `}
+            } flex capitalize  bg-white w-full top-16  p-4 md:top-0   md:relative  z-50   md:flex-row justify-between md:justify-center  md:items-center py-5     `}
           >
             <nav className="">
               <ul
@@ -42,24 +42,14 @@ const HeaderMain = ({ mode }) => {
               </ul>
             </nav>
           </div>
-          <div className="flex px-4  md:px-0items-center gap-4">
+          <div className="flex px-4   md:px-0items-center gap-4">
             <NavLink
               target="_blank"
               rel="noreferrer"
-              className="px-4 py-3 hidden md:block    capitalize  md:px-8 md:py-3  text-white      bg-blue-700 transition-all duration-700 rounded-md bg-bluecolor cursor-pointer font-semibold"
+              className="px-4 py-3        capitalize  md:px-8 md:py-3  text-white      bg-blue-700 transition-all duration-700 rounded-md bg-bluecolor cursor-pointer font-semibold"
             >
               Careers{" "}
             </NavLink>
-            {toggle ? (
-              <p onClick={() => settoggle(!toggle)}>
-                <RxCross1 className="text-bluecolor  md:hidden block text-2xl" />
-              </p>
-            ) : (
-              <GiHamburgerMenu
-                onClick={() => settoggle(!toggle)}
-                className="md:hidden text-3xl text-bluecolor"
-              />
-            )}
           </div>
         </div>
       </div>

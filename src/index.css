@@ -70,3 +70,12 @@ body {
     -o-transition: 0.3s;
     transition: 0.3s;
 }
+
+.count-banner {
+  background-image: url("./assets/images/counter.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+
+}

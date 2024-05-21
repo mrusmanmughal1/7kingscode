@@ -9,6 +9,7 @@ import Footer from "../Components/Footer";
 import WeAreTecz from "../UI/WeAreTecz";
 import WhatElse from "../UI/WhatElse";
 import TechManagement from "../UI/TechManagement";
+import MobileNav from "../UI/MobileNav";
 const Main = () => {
   return (
     <div>
@@ -17,6 +18,7 @@ const Main = () => {
       <BestSolution/>
       <WeAreTecz/>
       <Counter/>
+      <TechManagement/>
       <OurPartners/>
       <TechnologyChallenges/>
       <WhatElse/>

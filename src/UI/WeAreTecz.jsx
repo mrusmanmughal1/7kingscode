@@ -3,19 +3,20 @@ import a2 from "../assets/images/ai2.jpg";
 import a3 from "../assets/images/ai.jpg";
 import { RiPrinterCloudFill } from "react-icons/ri";
 import { AiFillSetting } from "react-icons/ai";
+import DMOre from "./DMOre";
 const WeAreTecz = () => {
   return (
     <div>
       <div className=" w-11/12 md:w-3/4 mx-auto">
-        <div className="flex  lg:flex-row flex-col   justify-center items-center  py-32">
+        <div className="flex  lg:flex-row flex-col  gap-x-32  justify-center items-center py-20 lg:py-32">
           {/* 1st section  */}
-          <div className="relative w-full  space-y-6">
-            <img className="px-20 " src={a1} />
+          <div className="relative w-full   space-y-6">
+            <img className="px-20 hidden lg:block " src={a1} />
             <img
-              className="  absolute   hidden md:block  left-52 -top-2 "
+              className="  absolute   hidden md:block left-64  lg:left-52  -top-8 lg:-top-2 "
               src={a2}
             />
-            <div className="flex items-end gap-10 ">
+            <div className="flex items-end justify-center md:justify-start gap-10 ">
               <img className="  " src={a3} />
               <div className=" hidden md:block">
                 <p className="font-bold text-8xl ">10</p>
@@ -74,11 +75,7 @@ const WeAreTecz = () => {
                 </div>
               </div>
               <div className="flex gap-6">
-                <div className="">
-                  <button className="bg-blue-secondary px-8 py-4 text-white ">
-                    Discover More
-                  </button>
-                </div>
+                <DMOre/>
                 <div className="flex  items-center gap-2">
                   <div className="">
                     <img src="https://data.themeim.com/wp/tecz/wp-content/uploads/2023/09/avatar-1.png" />
