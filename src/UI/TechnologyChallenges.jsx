@@ -48,7 +48,7 @@ const TechnologyChallenges = () => {
               What we Solve
             </p>
           </div>
-          <p className="text-2xl leading-8 md:text-4xl  font-bold pt-4 pb-10 md:w-1/3   text-center">
+          <p className="text-2xl leading-8 md:text-4xl  font-bold pt-4 pb-10 md:w-1/3 w-full    text-center">
             Help You Overcome Your <br></br> Technology Challenges
           </p>
         </div>
