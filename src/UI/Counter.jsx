@@ -16,8 +16,8 @@ const Counter = () => {
   return (
     <div className="relative">
       <div
-        className="   flex  relative img-banner     py-10 gap-4 items-center 
-      justify-center  mx-auto md:p-8"
+        className="   flex  relative img-banner       gap-4 items-center 
+      justify-center  mx-auto  "
       >
         <div className="absolute inset-0 bg-blue-secondary opacity-95 "></div>
         <div className="flex w-3/4 gap-8  items-center lg:flex-row flex-col">
@@ -25,7 +25,7 @@ const Counter = () => {
             return (
               <div
                 key={i}
-                className="flex lg:border-l-2 relative text-center z-20 flex-col items-center gap-4 justify-center w-full px-28 md:w-1/2 lg:w-1/3 xl:w-1/4"
+                className="flex lg:border-r-[1px] border-gray-300 relative text-center z-20 flex-col items-center gap-4 justify-center w-full px-28 md:w-1/2 lg:w-1/3 xl:w-1/4"
               >
                 <div className=" text-5xl text-white  ">{val.icon}</div>
                 <div className="mt-4 text-center">

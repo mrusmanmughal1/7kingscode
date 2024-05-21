@@ -33,7 +33,7 @@ const BestSolution = () => {
         >
           <div className=" flex justify-between   items-center font-bold text-xl  ">
             <p>{item.title} </p>
-            <p className={ `${hover === index && 'before:bg-blue-900 before:opacity-100 '} text-5xl  text-blue-secondary relative   -top-4 best-icon ` }>{item.icon}</p>
+            <p className={ `${hover === index && 'before:bg-blue-900 before:opacity-100 '} text-5xl  text-blue-secondary relative   widget -top-4 best-icon ` }>{item.icon}</p>
           </div>
           <p className={`${hover === index &&  "text-white"} text-gray-500`}>{item.desc}</p>
         </div>
