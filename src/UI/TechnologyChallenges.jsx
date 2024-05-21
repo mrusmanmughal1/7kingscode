@@ -52,7 +52,7 @@ const TechnologyChallenges = () => {
             Help You Overcome Your <br></br> Technology Challenges
           </p>
         </div>
-        <div className="flex flex-wrap md:flex-row gap-6 justify-center mt-4  w-3/4 mx-auto">
+        <div className="flex flex-wrap md:flex-row gap-6 justify-center mt-4  w-full 2xl:w-3/4 mx-auto">
           {container.map((item, index) => (
             <div
               key={index}

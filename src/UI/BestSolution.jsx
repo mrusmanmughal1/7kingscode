@@ -24,7 +24,7 @@ const BestSolution = () => {
     },
   ];
   return (
-    <div className="flex lg:flex-row flex-col container gap-20  w-11/12  sm:w-3/4  pt-20 md:pt-32 lg:w-3/4 mx-auto">
+    <div className="flex lg:flex-row flex-col container gap-10 2xl:gap-20  w-11/12  2xl:w-3/4  pt-20 md:pt-32   mx-auto">
       {aa.map((item, index) => (
         <div
           key={index} 
