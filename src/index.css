@@ -47,26 +47,63 @@ body {
   animation: fadeIn 1s infinite alternate;
 }
 
-
-
 .widget::before {
-    position: absolute;
-    content: "";
-    right: -160%;
-    top: -160%;
-    width: 155px;
-    height: 155px;
-    border-radius: 50%;
-    background-image: -webkit-linear-gradient(0deg, rgb(60, 114, 252) 0%, rgb(38, 64, 141) 57%, rgb(15, 13, 29) 100%);
-    background-image: -moz-linear-gradient(0deg, rgb(60, 114, 252) 0%, rgb(38, 64, 141) 57%, rgb(15, 13, 29) 100%);
-    background-image: -ms-linear-gradient(0deg, rgb(60, 114, 252) 0%, rgb(38, 64, 141) 57%, rgb(15, 13, 29) 100%);
-    background-image: -o-linear-gradient(0deg, rgb(60, 114, 252) 0%, rgb(38, 64, 141) 57%, rgb(15, 13, 29) 100%);
-    background-image: linear-gradient(0deg, rgb(60, 114, 252) 0%, rgb(38, 64, 141) 57%, rgb(15, 13, 29) 100%);
-    opacity: 0.06;
-    z-index: -1;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
+  position: absolute;
+  content: "";
+  right: -160%;
+  top: -160%;
+  width: 155px;
+  height: 155px;
+  border-radius: 50%;
+  background-image: -webkit-linear-gradient(
+    0deg,
+    rgb(60, 114, 252) 0%,
+    rgb(38, 64, 141) 57%,
+    rgb(15, 13, 29) 100%
+  );
+  background-image: -moz-linear-gradient(
+    0deg,
+    rgb(60, 114, 252) 0%,
+    rgb(38, 64, 141) 57%,
+    rgb(15, 13, 29) 100%
+  );
+  background-image: -ms-linear-gradient(
+    0deg,
+    rgb(60, 114, 252) 0%,
+    rgb(38, 64, 141) 57%,
+    rgb(15, 13, 29) 100%
+  );
+  background-image: -o-linear-gradient(
+    0deg,
+    rgb(60, 114, 252) 0%,
+    rgb(38, 64, 141) 57%,
+    rgb(15, 13, 29) 100%
+  );
+  background-image: linear-gradient(
+    0deg,
+    rgb(60, 114, 252) 0%,
+    rgb(38, 64, 141) 57%,
+    rgb(15, 13, 29) 100%
+  );
+  opacity: 0.06;
+  z-index: -1;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* // main top   */
+.main-top-banner {
+  background-image: url("https://images.unsplash.com/photo-1623479322729-28b25c16b011?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D/assets/images/bg-page-title.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+  width: 100%;
+}
+
+.businessGrowth {
+  background-image: url("./assets/images/feature-about-bg.jpg");
 }
