@@ -13,18 +13,15 @@ import MobileNav from "../UI/MobileNav";
 const Main = () => {
   return (
     <div>
-      <Header />
-      <Hero/>
-      <BestSolution/>
-      <WeAreTecz/>
-      <Counter/>
-      <TechManagement/>
-      <OurPartners/>
-      <TechnologyChallenges/>
-      <WhatElse/>
-      <Location/>
-      <Footer/>
-       
+      <Hero />
+      <BestSolution />
+      <WeAreTecz />
+      <Counter />
+      <TechManagement />
+      <OurPartners />
+      <TechnologyChallenges />
+      <WhatElse />
+      <Location />
     </div>
   );
 };

@@ -108,19 +108,12 @@ background-image: url("./assets/images/tech-bg-1.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+  height: 50vh;
+  width: 100%;
 }
 
-.main_pic {
-  position: absolute;
-  top: 100px;
-  right: 0;
-  height: 100%;
-  width: 50%;
-  background-repeat: no-repeat;
-  mix-blend-mode: luminosity;
-  z-index: -1;
-  border-radius: 670px 0 0 0;
-  opacity: 0.45;
+.businessGrowth {
+  background-image: url("./assets/images/feature-about-bg.jpg");
 }
 
 .whatweoffer{
