@@ -2,45 +2,53 @@
 import React, { useState } from "react";
 
 import CountUp from "react-countup";
-import { IoSettings } from "react-icons/io5";
 import ScrollTrigger from "react-scroll-trigger";
+import { MdOutlineTouchApp } from "react-icons/md";
+import { AiOutlineTeam } from "react-icons/ai";
+import { AiOutlineSchedule } from "react-icons/ai";
+import { AiOutlineAim } from "react-icons/ai";
 
 const Counter = () => {
   const Arr = [
-    { count: "347", des: "Projects Completed", icon: <IoSettings /> },
-    { count: "456", des: "IT Specialist", icon: <IoSettings /> },
-    { count: "32", des: "Happy Clients", icon: <IoSettings /> },
-    { count: "423", des: "Smart Solution ", icon: <IoSettings /> },
+    { count: "347", des: "Projects Completed", icon: <AiOutlineAim /> },
+    { count: "456", des: "IT Specialist", icon: <AiOutlineTeam /> },
+    { count: "32", des: "Happy Clients", icon: <AiOutlineSchedule /> },
+    { count: "423", des: "Smart Solution ", icon: <MdOutlineTouchApp /> },
   ];
   const [counterOn, setCounterOn] = useState(false);
   return (
     <div className="relative">
       <div
-        className="   flex  relative img-banner       gap-4 items-center 
+        className="   flex  relative count-banner       gap-4 items-center 
       justify-center  mx-auto  "
       >
-        <div className="absolute inset-0 bg-blue-secondary opacity-95 "></div>
-        <div className="flex w-3/4 gap-8  items-center lg:flex-row flex-col">
+        <div className="absolute inset-0 bg-blue-secondary opacity-85 "></div>
+        <div className="flex w-3/4   mx-auto  items-center lg:flex-row flex-col">
           {Arr.map((val, i) => {
             return (
               <div
                 key={i}
-                className="flex lg:border-r-[1px] border-gray-300 relative text-center z-20 flex-col items-center gap-4 justify-center w-full px-28 md:w-1/2 lg:w-1/3 xl:w-1/4"
+                className="flex   relative text-center z-20 flex-col items-center   justify-center w-full    "
               >
-                <div className=" text-5xl text-white  ">{val.icon}</div>
-                <div className="mt-4 text-center">
-                  <ScrollTrigger
-                    onEnter={() => setCounterOn(true)}
-                    onExit={() => setCounterOn(false)}
-                  >
-                    <h2 className="text-4xl font-bold text-white py-2">
-                      {counterOn && (
-                        <CountUp start={0} end={val.count} duration={2.5} />
-                      )}
-                    </h2>
-                  </ScrollTrigger>
+                <div className=" px-10   w-full lg:border-r border-gray-100/40  py-10 md:py-20  flex flex-col items-center justify-center">
+                  <div className=" text-6xl text-white flex  justify-center ">
+                    {val.icon}
+                  </div>
+                  <div className="mt-4 text-center">
+                    <ScrollTrigger
+                      onEnter={() => setCounterOn(true)}
+                      onExit={() => setCounterOn(false)}
+                    >
+                      <h2 className="text-4xl font-bold text-white py-2">
+                        {counterOn && (
+                          <CountUp start={0} end={val.count} duration={2} />
+                        )}
+                      </h2>
+                    </ScrollTrigger>
+                  </div>
+                  <p className="text-white w-40   ">{val.des}</p>
                 </div>
-                <p className="text-white w-40  ">{val.des}</p>
+                <div className="hidden md:block  lg:pb-40"></div>
               </div>
             );
           })}

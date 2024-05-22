@@ -23,22 +23,23 @@ const FooterMain = () => {
           <div className=" space-y-4 text-gray-400">
             <p className="flex gap-4">
               {" "}
-              <FaSquarePhone className="text-blue-secondary" /> +920000000000{" "}
+              <FaSquarePhone className="text-blue-secondary" /> (+91)9581016898{" "}
             </p>
             <p className="flex gap-4">
               {" "}
               <SiImessage className="text-blue-secondary" />{" "}
-              teczofficaila@gmail.com{" "}
+              info@7kingscode.com
             </p>
             <p className="flex gap-4">
-              <FaMapMarkerAlt className="text-blue-secondary" /> 27 Division St,
-              Sans fransisco , USA{" "}
+              <FaMapMarkerAlt className="text-blue-secondary" /> 
+              9/3rt, Ground Floor, Sri Lakshmi Nilayam,
+SR Nagar, Hyd-500038.
             </p>
           </div>
         </div>
         <div className="  w-full flex    md:justify-center     ">
           <div className="flex flex-col    items-start">
-            <p className="font-semibold   pb-8 text-center">
+            <p className="font-medium  pb-8 text-center">
               Our Navigation
             </p>
             <div className="text-slate-400  gap-4 text-sm flex flex-col   ">

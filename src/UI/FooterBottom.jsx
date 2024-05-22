@@ -3,9 +3,8 @@ const FooterBottom = () => {
     <div className="bg-[#151327] w-full ">
       <div className="w-11/12 md:w-3/4  text-sm mx-auto py-6 text-slate-300 font-thin flex justify-between">
         <div className="  lg:w-auto text-center w-full">
-          <p>Copyright© 2024 by 7kings Code Rights Reserved</p>
+          <p>7KingsCode Software Solutions Pvt Ltd</p>
         </div>
-
         <div className=" lg:block  hidden text-center">
           <div className="flex gap-8">
             <p>Terms of Use </p>

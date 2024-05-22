@@ -1,4 +1,3 @@
-import Header from "../Components/Header";
 import MainBanner from "../UI/MainBanner";
 import ContactForm from "../UI/ContactForm";
 

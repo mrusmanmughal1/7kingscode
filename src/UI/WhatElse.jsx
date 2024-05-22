@@ -1,10 +1,11 @@
 import whatelsebanner from "../assets/images/whatelse.jpg";
 import { FaCheck } from "react-icons/fa6";
+import DMOre from "./DMOre";
 const WhatElse = () => {
   return (
     <div className="bg-[#F3F4F8]   flex w-full   justify-center">
-      <div className="flex w-11/12 md:w-3/4 lg:flex-row flex-col md:gap-32 gap-10  items-center ">
-        <div className=" mx-auto    py-14 ">
+      <div className="flex w-11/12 md:w-3/4 lg:flex-row flex-col lg:gap-32 gap-10  items-center ">
+        <div className=" mx-auto sm:order-1  md:order-none  py-14 ">
           <div className="w-full">
             <ol>
               <li className="text-blue-secondary font-bold">What Else Here</li>
@@ -54,15 +55,11 @@ const WhatElse = () => {
               </div>
             </div>
             <div className="flex gap-6">
-              <div className="">
-                <button className="bg-blue-secondary px-8 p-4 text-white ">
-                  Discover More
-                </button>
-              </div>
+              <DMOre/>
             </div>
           </div>
         </div>
-        <div className="w-full">
+        <div className="w-full ">
           <img src={whatelsebanner} className="" alt="whatelse" />
         </div>
       </div>
