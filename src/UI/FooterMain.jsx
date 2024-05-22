@@ -27,21 +27,23 @@ const FooterMain = () => {
             </p>
             <p className="flex gap-4">
               {" "}
-              <SiImessage className="text-blue-secondary" />{" "}
-              info@7kingscode.com
+              <SiImessage className="text-blue-secondary" /> info@7kingscode.com
             </p>
             <p className="flex gap-4">
-              <FaMapMarkerAlt className="text-blue-secondary" /> 
-              9/3rt, Ground Floor, Sri Lakshmi Nilayam,
-SR Nagar, Hyd-500038.
+              <FaMapMarkerAlt className="text-blue-secondary" />
+              9/3rt, Ground Floor, Sri Lakshmi Nilayam, SR Nagar, Hyd-500038.
             </p>
+            <div className="flex gap-4 text-white">
+              <FaSquareFacebook />
+              <FaInstagram />
+              <SiIndeed />
+              <FaTwitter />
+            </div>
           </div>
         </div>
         <div className="  w-full flex    md:justify-center     ">
           <div className="flex flex-col    items-start">
-            <p className="font-medium  pb-8 text-center">
-              Our Navigation
-            </p>
+            <p className="font-medium  pb-8 text-center">Our Navigation</p>
             <div className="text-slate-400  gap-4 text-sm flex flex-col   ">
               <a href="">About 7kings Code</a>
 
@@ -55,24 +57,31 @@ SR Nagar, Hyd-500038.
         </div>
 
         <div className=" w-full">
-          <p>Subscribe</p>
-          <div className="border-b  flex justify-between items-center bg-transparent  py-4">
-            <input
-              type="text"
-              className="bg-transparent border-none"
-              placeholder="Get News & Updates"
-            />
-            <FaArrowRight />
-          </div>
-          <div className=" py-4  space-y-4  text-gray-400">
-            <p> Exceptional Service. Less Disruption 100% Guaranteed. </p>
+          <p className="font-medium">Other Locations</p>
 
-            <div className="flex gap-5 text-white">
-              <FaSquareFacebook />
-              <FaInstagram />
-              <SiIndeed />
-              <FaTwitter />
+          <div className=" py-4  space-y-4  text-gray-400">
+            <div className="">
+              <p className="font-medium text-white">
+                Asian Regional Head Office
+              </p>
+              <p>
+                9/3rt Street Number-2, Sanjeeva Reddy Nagar, Hyderabad,
+                Telangana 500038 INDIA
+              </p>
             </div>
+            <div className="">
+              <p className="font-medium text-white">
+                Europe Regional Head Office
+              </p>
+              <p>Via Dante Alighieri 5, Pero, Milano, Italy</p>
+            </div>
+            <div className="">
+              <p  className="font-medium text-white">South Asian & Middle East Head office</p>
+              <p>G 34 Phase 1 DHA</p>
+              <p>Lahore 54792</p>
+            </div>
+
+           
           </div>
         </div>
       </div>

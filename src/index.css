@@ -94,6 +94,14 @@ body {
   transition: 0.3s;
 }
 
+
+.tech_bg {
+background-image: url("./assets/images/tech-bg-1.jpg");
+  background-position: center;
+  background-position: center;
+  background-size: cover;
+}
+
 .count-banner {
   background-image: url("./assets/images/counter.jpg");
   background-position: center;
@@ -113,4 +121,10 @@ body {
   z-index: -1;
   border-radius: 670px 0 0 0;
   opacity: 0.45;
+}
+
+.whatweoffer{
+  background-image: url("./assets/images/offer-bg-1.jpg");
+
+  
 }

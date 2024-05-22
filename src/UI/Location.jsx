@@ -5,7 +5,7 @@ const Location = () => {
   return (
     <div className="relative">
       <div className="  lg:absolute flex justify-center items-center   lg:top-[-6.5rem]  pt-8  w-full  ">
-        <div className="w-full lg:w-[70%] bg-blue-600 mx-auto p-8 ">
+        <div className="w-full lg:w-[80%] bg-blue-600 mx-auto p-8 ">
           <div className="flex  flex-col md:flex-row md:justify-between justify-center  gap-8 items-center">
             <div className="md:p-8">
               <div className=" text-lg  md:text-3xl  md:text-start  text-center font-semibold   text-white">

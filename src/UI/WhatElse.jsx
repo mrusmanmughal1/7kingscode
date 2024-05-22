@@ -3,7 +3,7 @@ import { FaCheck } from "react-icons/fa6";
 import DMOre from "./DMOre";
 const WhatElse = () => {
   return (
-    <div className="bg-[#F3F4F8]   flex w-full   justify-center">
+    <div className="bg-[#F3F4F8] tech_bg   flex w-full   justify-center">
       <div className="flex w-11/12 md:w-3/4 lg:flex-row flex-col lg:gap-32 gap-10  items-center ">
         <div className=" mx-auto sm:order-1  md:order-none  py-14 ">
           <div className="w-full">

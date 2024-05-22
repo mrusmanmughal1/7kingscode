@@ -48,11 +48,11 @@ const TechnologyChallenges = () => {
               What we Solve
             </p>
           </div>
-          <p className="text-2xl leading-8 md:text-4xl  font-bold pt-4 pb-10 w-1/3 md:w-full    text-center">
+          <p className="text-2xl leading-8 md:text-4xl  font-bold pt-4 pb-10 w-full md:w-full    text-center">
             Help You Overcome Your <br></br> Technology Challenges
           </p>
         </div>
-        <div className="flex flex-wrap md:flex-row gap-6 justify-center mt-4  w-full 2xl:w-3/4 mx-auto">
+        <div className="flex flex-col gap-8 lg:gap-0 flex-wrap md:flex-row   justify-between md:justify-center lg:justify-between mt-4  w-11/12 md:w-3/4  lg:w-[80%] 2xl:w-[80%] mx-auto">
           {container.map((item, index) => (
             <div
               key={index}

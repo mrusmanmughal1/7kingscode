@@ -18,39 +18,37 @@ const HeaderMain = ({ mode }) => {
           >
             <nav className="">
               <ul
-                onClick={() => settoggle(!toggle)}
                 className={`flex md:flex-row flex-col font-medium  text-blue-700  w-full md:text-center md:max-h-fit  gap-12 md:gap-10 cursor-pointer    ${
                   mode ? "text-white" : "text-black"
                 }`}
               >
                 <li className="header-li">
-                  <a href="#main">What We do </a>
+                  <a href="#">What We do </a>
                   {/* Services */}
                 </li>
                 <li className="header-li">
-                  <a href="#about-me">who we are </a>
+                  <a href="#">who we are </a>
                   {/* about us 
                   leader ship */}
                 </li>
                 <li className="header-li">
-                  <a href="#skills">Newsroom </a>
+                  <a href="#">Newsroom </a>
                 </li>
 
                 <li className="header-li">
-                  <a href="#Projects">Contact Us </a>
+                  <a href="#">Contact Us </a>
                 </li>
                 <li className="header-li  ">
-                  <a href="#Projects">Careers </a>
+                  <a href="#">Careers </a>
                 </li>
-                
               </ul>
             </nav>
           </div>
-          <div className="flex px-4   md:px-0items-center gap-4">
+          <div className="flex px-4   md:px-0 items-center ">
             <NavLink
               target="_blank"
               rel="noreferrer"
-              className="px-4 py-3        capitalize  md:px-8 md:py-3  text-white    hover:bg-black   bg-blue-secondary transition-all duration-700 rounded-md bg-bluecolor cursor-pointer font-semibold"
+              className="px-4 py-3        capitalize  md:px-8 md:py-3  text-white    hover:bg-black   bg-blue-secondary transition-all duration-700 rounded-md bg-bluecolor cursor-pointer font-medium"
             >
               Careers{" "}
             </NavLink>

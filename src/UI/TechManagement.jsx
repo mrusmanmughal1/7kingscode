@@ -6,8 +6,8 @@ import { BsCapslock } from "react-icons/bs";
 import DMOre from "./DMOre";
 const TechManagement = () => {
   return (
-    <div className=" w-11/12 sm:w-3/4 lg:w-11/12 mx-auto  py-10">
-    <div className="flex flex-col lg:flex-row w-full lg:w-3/4 mx-auto gap-2 sm:p-4 lg:p-0">
+    <div className=" mx-auto  py-10">
+    <div className="flex flex-col lg:flex-row 2xl:w-3/4   w-11/12  sm:w-3/4 lg:w-11/12  mx-auto gap-2 sm:p-4 lg:p-0">
       <div className="flex   justify-center items-center lg:w-1/2">
         <img src={techmanage} alt="techmanage" className="w-full lg:w-8/12 relative lg:top-[-10rem]" />
       </div>

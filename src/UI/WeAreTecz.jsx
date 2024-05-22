@@ -7,7 +7,7 @@ import DMOre from "./DMOre";
 const WeAreTecz = () => {
   return (
     <div>
-      <div className=" w-11/12 md:w-3/4 mx-auto">
+      <div className=" w-11/12 md:w-4/5 2xl:w-3/4 mx-auto">
         <div className="flex  lg:flex-row flex-col  gap-x-32  justify-center items-center py-20 lg:py-32">
           {/* 1st section  */}
           <div className="relative w-full   space-y-6">
