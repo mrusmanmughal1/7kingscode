@@ -93,15 +93,22 @@ body {
   -o-transition: 0.3s;
   transition: 0.3s;
 }
-
-
 .tech_bg {
-background-image: url("./assets/images/tech-bg-1.jpg");
+  background-image: url("./assets/images/tech-bg-1.jpg");
   background-position: center;
   background-position: center;
   background-size: cover;
 }
 
+/* // main top   */
+.main-top-banner {
+  background-image: url("https://images.unsplash.com/photo-1623479322729-28b25c16b011?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D/assets/images/bg-page-title.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+  width: 100%;
+}
 .count-banner {
   background-image: url("./assets/images/counter.jpg");
   background-position: center;
@@ -115,9 +122,6 @@ background-image: url("./assets/images/tech-bg-1.jpg");
 .businessGrowth {
   background-image: url("./assets/images/feature-about-bg.jpg");
 }
-
-.whatweoffer{
+.whatweoffer {
   background-image: url("./assets/images/offer-bg-1.jpg");
-
-  
 }

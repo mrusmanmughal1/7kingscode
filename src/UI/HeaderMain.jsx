@@ -10,7 +10,9 @@ const HeaderMain = ({ mode }) => {
     <header className={` relative  main    mx-auto md:px-5  md:bg-white `}>
       <div className="relative  lg:w-11/12 md:w-9/12 mx-auto flex items-center justify-around">
         <div className="flex   relative   items-center justify-between  w-full  py-2 ">
-          <Logo />
+          <NavLink to={"/"}>
+            <Logo />
+          </NavLink>
           <div
             className={` ${
               toggle && "hidden"
@@ -23,20 +25,23 @@ const HeaderMain = ({ mode }) => {
                 }`}
               >
                 <li className="header-li">
-                  <a href="#">What We do </a>
+                  <NavLink to={"/services"} href="#">
+                    What We do{" "}
+                  </NavLink>
                   {/* Services */}
                 </li>
                 <li className="header-li">
-                  <a href="#">who we are </a>
+                  <NavLink to={"/about-us"} href="#">
+                    who we are{" "}
+                  </NavLink>
                   {/* about us 
                   leader ship */}
                 </li>
-                <li className="header-li">
-                  <a href="#">Newsroom </a>
-                </li>
 
                 <li className="header-li">
-                  <a href="#">Contact Us </a>
+                  <NavLink to={"/contact-us"} href="#">
+                    Contact Us{" "}
+                  </NavLink>
                 </li>
                 <li className="header-li  ">
                   <a href="#">Careers </a>
