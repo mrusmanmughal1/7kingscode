@@ -1,7 +1,7 @@
 const FooterBottom = () => {
   return (
     <div className="bg-[#151327] w-full ">
-      <div className="w-11/12 md:w-3/4  text-sm mx-auto py-6 text-slate-300 font-thin flex justify-between">
+      <div className="w-11/12 md:w-4/5  text-sm mx-auto py-6 text-slate-300 font-thin flex justify-between">
         <div className="  lg:w-auto text-center w-full">
           <p>7KingsCode Software Solutions Pvt Ltd</p>
         </div>

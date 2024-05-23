@@ -19,11 +19,11 @@ const Counter = () => {
   return (
     <div className="relative">
       <div
-        className="   flex  relative count-banner       gap-4 items-center 
+        className="flex  relative count-banner     gap-4 items-center 
       justify-center  mx-auto  "
       >
         <div className="absolute inset-0 bg-blue-secondary opacity-85 "></div>
-        <div className="flex w-3/4   mx-auto  items-center lg:flex-row flex-col">
+        <div className="md:flex w-3/4  grid grid-cols-2   mx-auto  items-center lg:flex-row flex-col">
           {Arr.map((val, i) => {
             return (
               <div
