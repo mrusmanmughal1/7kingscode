@@ -18,8 +18,8 @@ const Main = () => {
       <WeAreTecz />
       <Counter />
       <TechManagement />
-      <OurPartners />
       <TechnologyChallenges />
+      <OurPartners />
       <WhatElse />
       <Location />
     </div>

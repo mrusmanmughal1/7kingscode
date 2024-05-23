@@ -35,22 +35,62 @@ const OurPartners = () => {
     image14,
     image15,
     image16,
+    image1,
+    image2,
+    image3,
+    image4,
+    image5,
+    image6,
+    image7,
+    image8,
+    image9,
+    image10,
+    image11,
+    image12,
+    image13,
+    image14,
+    image15,
+    image16,
+    image1,
+    image2,
+    image3,
+    image4,
+    image5,
+    image6,
+    image7,
+    image8,
+    image9,
+    image10,
+    image11,
+    image12,
+    image13,
+    image14,
+    image15,
+    image16,
   ];
 
   return (
-    <div className="w-11/12 mx-auto">
-      <div className="uppercase text-3xl text-blue-950 font-bold text-center pt-12">
+    <div className="w-full   mx-auto  bg-slate-50 py-20 ">
+      <div className="uppercase text-3xl text-blue-950 font-bold text-center py-12">
         Our Partners
       </div>
-      <div className="flex flex-wrap   items-center justify-center pt-8">
-        {partners.map((image, index) => (
-          <div
-            key={index}
-            className="m-4   sm:w-[50%] lg:w-[15%] hover:border border border-white hover:border-black p-4 transition-all duration-300  "
-          >
-            <img src={image} alt="partner" className=" h-auto w-full" />
-          </div>
-        ))}
+      <div className="slider ">
+        <div className="slide-track">
+          {partners.map((image, index) => (
+            <div key={index} className="slide">
+              <img src={image} alt="partner" className="  " />
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="slider2 ">
+        <div className="slide-track2">
+          {partners.map((image, index) => (
+            <div key={index} className="slide2">
+              <img src={image} alt="partner" className="  " />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

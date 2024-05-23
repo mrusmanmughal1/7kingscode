@@ -52,7 +52,7 @@ const TechnologyChallenges = () => {
             Help You Overcome Your <br></br> Technology Challenges
           </p>
         </div>
-        <div className="flex flex-col gap-8 lg:gap-0 flex-wrap md:flex-row   justify-between md:justify-center lg:justify-between mt-4  w-11/12 md:w-3/4  lg:w-[80%] 2xl:w-[80%] mx-auto">
+        <div className=" grid grid-cols-2   md:flex flex-col gap-8 lg:gap-0 flex-wrap md:flex-row   justify-between md:justify-center lg:justify-between mt-4  w-11/12 md:w-3/4  lg:w-[80%] 2xl:w-[80%] mx-auto">
           {container.map((item, index) => (
             <div
               key={index}
