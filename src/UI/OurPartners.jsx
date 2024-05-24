@@ -1,21 +1,21 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import image1 from "../assets/images/ibm_logo.jpg";
-import image2 from "../assets/images/apex systems.jpg";
-import image3 from "../assets/images/NEC.png";
-import image4 from "../assets/images/Flydubai.png";
-import image5 from "../assets/images/Artech.png";
-import image6 from "../assets/images/infinite.jpg";
-import image7 from "../assets/images/Collabera_logo.png";
-import image8 from "../assets/images/kforce_logo.webp";
-import image9 from "../assets/images/World_Fuel_Services_logo.png";
-import image10 from "../assets/images/NSI-America.jpg";
-import image11 from "../assets/images/rose international.jpg";
-import image12 from "../assets/images/HCL.png";
-import image13 from "../assets/images/juniper-networks.png";
-import image14 from "../assets/images/jobsshopper.jpg";
-import image15 from "../assets/images/national grid.png";
-import image16 from "../assets/images/sunera tech.png";
+import image1 from "../assets/images/slider/1.png";
+import image2 from "../assets/images/slider/2.png";
+import image3 from "../assets/images/slider/3.png";
+import image4 from "../assets/images/slider/4.png";
+import image5 from "../assets/images/slider/5.png";
+import image6 from "../assets/images/slider/6.png";
+import image7 from "../assets/images/slider/7.png";
+import image8 from "../assets/images/slider/8.png";
+import image9 from "../assets/images/slider/9.png";
+import image10 from "../assets/images/slider/10.png";
+import image11 from "../assets/images/slider/11.png";
+import image12 from "../assets/images/slider/12.png";
+import image13 from "../assets/images/slider/13.png";
+import image14 from "../assets/images/slider/14.png";
+// import image15 from "../assets/images/slider/15.png";
+// import image16 from "../assets/images/slider/16.png";
 
 const OurPartners = () => {
   const partners = [
@@ -33,8 +33,7 @@ const OurPartners = () => {
     image12,
     image13,
     image14,
-    image15,
-    image16,
+
     image1,
     image2,
     image3,
@@ -49,8 +48,7 @@ const OurPartners = () => {
     image12,
     image13,
     image14,
-    image15,
-    image16,
+
     image1,
     image2,
     image3,
@@ -65,8 +63,6 @@ const OurPartners = () => {
     image12,
     image13,
     image14,
-    image15,
-    image16,
   ];
 
   return (

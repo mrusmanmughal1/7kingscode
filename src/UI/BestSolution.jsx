@@ -8,18 +8,18 @@ const BestSolution = () => {
   const [hover , setHover]=useState()
   const arrofContent = [
     {
-      title: "A Best Business Solutions",
-      desc: " We offers a full-cycle development services that meet business ",
+      title: "Consulting Services",
+      desc: " IT Strategy and Planning,Business Process Analysis and Optimization,IT Governance and Compliance",
       icon: <CiBank />,
     },
     {
-      title: "Business Growth Planning",
-      desc: " We offers a full-cycle development services that meet business",
+      title: "Cyber Security Services",
+      desc: " Security Risk Assessments,Vulnerability Management,Penetration Testing,Incident Response and Recovery",
       icon: <BsBarChart />,
     },
     {
-      title: "Search Engine Optimization",
-      desc: " We offers a full-cycle development services that meet business ",
+      title: "Software Solutions",
+      desc: " Custom Software Development ,Enterprise Resource Planning (ERP) , Software Development, ",
       icon: <IoRocketOutline />,
     },
   ];
@@ -30,13 +30,13 @@ const BestSolution = () => {
           key={index} 
           onMouseOver={()=>setHover(index)}
           onMouseLeave={() => setHover(null)}
-          className="  overflow-hidden  hover:bg-black shadow-sm space-y-2 text-black hover:text-white  hover:-translate-y-8 transition-all duration-500  leading-8 px-8 py-8"
+          className="  overflow-hidden  hover:bg-black shadow-sm space-y-2 text-black hover:text-white  hover:-translate-y-8 transition-all duration-500   px-8 py-8"
         >
           <div className=" flex justify-between   items-center font-bold ">
             <p className="hover:text-blue-secondary duration-500 transition-all  text-xl lg:text-[20px]   ">  {item.title} </p>
             <p className={ `${hover === index && 'before:bg-blue-900 before:opacity-100 text-white '} text-5xl  text-blue-secondary relative   widget -top-4 best-icon ` }>{item.icon}</p>
           </div>
-          <p className={`${hover === index &&  "text-white"} text-gray-500  text-xl lg:text-[14px]  `}>{item.desc}</p>
+          <p className={`${hover === index &&  "text-white"} text-gray-500  text-xl lg:text-[14px]  leading-7 `}>{item.desc}</p>
         </div>
       ))}
     </div>
