@@ -21,7 +21,9 @@ const HeaderMain = ({ mode }) => {
     <header className={` relative  main    mx-auto    md:bg-white `}>
       <div className="relative  lg:w-11/12 md:w-9/12 mx-auto flex items-center justify-around">
         <div className="flex   relative   items-center justify-between  w-full  py-2 ">
-          <Logo />
+          <NavLink to={"/"}>
+            <Logo />
+          </NavLink>
           <div
             className={`   flex capitalize  bg-white w-full top-16  p-4 md:top-0   md:relative  z-50   md:flex-row justify-between md:justify-center  md:items-center py-5     `}
           >
