@@ -125,8 +125,6 @@ body {
 
 .whatweoffer {
   background-image: url("./assets/images/offer-bg-1.jpg");
- 
-  
 }
 
 /* // partners slider  */
@@ -136,7 +134,7 @@ body {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-250px * 30));
+    transform: translateX(calc(-250px * 20));
   }
 }
 
@@ -168,7 +166,7 @@ body {
     transform: translateX(0);
   }
   0% {
-    transform: translateX(calc(-250px * 35));
+    transform: translateX(calc(-250px * 20));
   }
 }
 

@@ -24,10 +24,10 @@ const Location = () => {
         </div>
       </div>
 
-      <div className=" flex w-full items-center  lg:mt-28">
+      <div className="  w-full items-center  lg:mt-28">
         <iframe
           className="w-full h-[500px]"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3578.405452749085!2d-80.25505822571802!3d26.248501288321116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d90514edcb9f43%3A0xf7d230b41095b629!2s1401%20N%20University%20Dr%2C%20Coral%20Springs%2C%20FL%2033071%2C%20USA!5e0!3m2!1sen!2s!4v1716479832435!5m2!1sen!2s"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3578.4068755853145!2d-80.25503262413!3d26.248455088320124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d91b9c80dabeff%3A0xdb1740c7c75555c8!2s7%20Kings%20Code!5e0!3m2!1sen!2s!4v1716488955070!5m2!1sen!2s"
         ></iframe>
       </div>
     </div>
