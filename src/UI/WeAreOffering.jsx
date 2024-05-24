@@ -49,7 +49,7 @@ const WeAreOffering = () => {
               <div className="text-6xl flex justify-center">
                 <p>{item.icon}</p>
               </div>
-              <div className=" items-center font-semibold  w-full text-center  ">
+              <div className=" items-center font-medium  w-full text-center  ">
                 <p>{item.title} </p>
               </div>
               <div>

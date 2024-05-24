@@ -5,9 +5,7 @@ import OurBenifits from "../UI/OurBenifits";
 import BusinessGrowth from "../UI/BusinessGrowth";
 import Counter from "../UI/Counter";
 import TechManagement from "../UI/TechManagement";
-import Header from "../Components/Header";
 import SolveProblem from "../UI/SolveProblem";
-import Footer from "../Components/Footer";
 
 const About = () => {
   return (

@@ -45,7 +45,7 @@ const TalkWithUs = () => {
             />
           </div>
           <div className="p-2 flex">
-            <div className=" mb-4 border-l-2 pl-8 border-gray-600">
+            <div className=" mb-4 border-l-2 p-8 border-gray-600">
               <h3 className="text-xl font-semibold mb-2">Pakistan Office</h3>
               <div className="flex">
                 <p className="flex items-center text-5xl text-gray-700">
@@ -68,7 +68,7 @@ const TalkWithUs = () => {
                 <p>info@7kingscode.com</p>
               </div>
             </div>
-            <div className=" mb-4 border-l-2 pl-8 border-gray-600">
+            <div className="mb-4 p-8 border-l-2 pl-8 border-gray-600">
               <h3 className="text-xl font-semibold mb-2">India Office</h3>
               <div className="flex">
                 <p className="flex items-center text-5xl text-gray-700">

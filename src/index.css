@@ -124,74 +124,71 @@ body {
 }
 .whatweoffer {
   background-image: url("./assets/images/offer-bg-1.jpg");
-<<<<<<< HEAD
-}
-=======
-
-  
 }
 
 /* // partners slider  */
 
-
-
 @keyframes scroll {
-	0% { transform: translateX(0); }
-	100% { transform: translateX(calc(-250px * 20))}
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 20));
+  }
 }
 
 .slider {
-	height: 200px;
-	margin: auto;
-	overflow:hidden;
-	position: relative;
-	width: auto;
+  height: 200px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: auto;
 }
-	
-	.slide-track {
-		animation: scroll 80s linear infinite;
-		display: flex;
-		width: calc(250px * 186);
-	}
-	.slide {
-		height: 400px;
-		width: 250px;
-	}
+
+.slide-track {
+  animation: scroll 80s linear infinite;
+  display: flex;
+  width: calc(250px * 186);
+}
+.slide {
+  height: 400px;
+  width: 250px;
+}
 .slide img {
   height: 150px;
-  width:150px;
+  width: 150px;
   object-fit: contain;
 }
 
-
-
-
 @keyframes scroll2 {
-	100% { transform: translateX(0); }
-	0% { transform: translateX(calc(-250px * 20))}
+  100% {
+    transform: translateX(0);
+  }
+  0% {
+    transform: translateX(calc(-250px * 20));
+  }
 }
 
 .slider2 {
-	height: 200px;
-	margin: auto;
-	overflow:hidden;
-	position: relative;
-	width: auto;
+  height: 200px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: auto;
 }
-	
-	.slide-track2 {
-		animation: scroll2 70s linear infinite;
-		display: flex;
-    align-items: center;
-		width: calc(250px * 186);
-	}
-	.slide2 {
-		height: 400px;
-		width: 250px;
-	}
+
+.slide-track2 {
+  animation: scroll2 70s linear infinite;
+  display: flex;
+  align-items: center;
+  width: calc(250px * 186);
+}
+.slide2 {
+  height: 400px;
+  width: 250px;
+}
 .slide2 img {
   height: 150px;
-  width:150px;
+  width: 150px;
   object-fit: contain;
 }
->>>>>>> 87f4e6bd5feefb7955c6a5ef089ad56ae9602adb
