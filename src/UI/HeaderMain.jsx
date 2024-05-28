@@ -45,11 +45,23 @@ const HeaderMain = ({ mode }) => {
                   leader ship */}
                 </li>
                 <li
-                  className="header-li hover:font-medium relative "
-                  onMouseOver={() => sethover(true)}
-                  onMouseLeave={() => sethover(false)}
+                  className="header-li hover:font-medium   dropdown inline-block relative "
+                  // onMouseOver={() => sethover(true)}
+                  // onMouseLeave={() => sethover(false)}
                 >
-                  <a href="#">Services </a>
+                  <a href="#" className="dropdown">
+                    Services{" "}
+                  </a>
+
+                  <div className="dropdown-menu absolute hidden bg-white  top-10  text-gray-700 pt-1">
+                    <div className="flex gap-8 p-10 w-full">
+                      {services.map((val, i) => (
+                        <p key={i} className="font-medium  ">
+                          {val}
+                        </p>
+                      ))}
+                    </div>
+                  </div>
                 </li>
 
                 <li className="header-li hover:font-medium">
@@ -71,7 +83,7 @@ const HeaderMain = ({ mode }) => {
           </div>
         </div>
       </div>
-      <div
+      {/* <div
         className={`${
           hover ? " block" : "hidden "
         }  absolute     w-full z-[999]`}
@@ -89,7 +101,7 @@ const HeaderMain = ({ mode }) => {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
     </header>
   );
 };

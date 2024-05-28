@@ -77,8 +77,8 @@ const FooterMain = () => {
                   </div>
                   <div className="">
                     <p className="font-medium text-white ">Dubai</p>
-                    <p className="text-sm">
-                      9/3rt, Ground Floor, SR Nagar, Hyd-500038.
+                    <p className="text-xs">
+                      516 Pinnacle Building - Al Barsha 1 - Dubai - United Arab
                     </p>
                   </div>
                 </div>
@@ -87,22 +87,23 @@ const FooterMain = () => {
                     <img src={india} alt="" />
                   </div>
                   <div className="">
-                    <p className="font-medium text-white">Dubai</p>
-                    <p className="text-sm">
-                      9/3rt, Ground Floor, SR Nagar, Hyd-500038.
+                    <p className="font-medium text-white">Italy</p>
+                    <p className="text-xs">
+                      Via Dante Alighieri, 5, Pero (MI)- ITALY
                     </p>
                   </div>
                 </div>
               </div>
-              <div className="flex justify-between">
+              <div className="flex gap-3 justify-between">
                 <div className="flex w-full  flex-col md:flex-row gap-2">
                   <div className="w-24">
                     <img src={pakistan} alt="" />
                   </div>
                   <div className="">
-                    <p className="font-medium text-white">Dubai</p>
-                    <p className="text-sm">
-                      9/3rt, Ground Floor, SR Nagar, Hyd-500038.
+                    <p className="font-medium text-white">India</p>
+                    <p className="text-xs">
+                      9/3rt, Ground Floor, Sri Lakshmi Nilayam, SR Nagar,
+                      Hyd-500038.
                     </p>
                   </div>
                 </div>
@@ -111,9 +112,10 @@ const FooterMain = () => {
                     <img src={usa} alt="" />
                   </div>
                   <div className="">
-                    <p className="font-medium text-white">Dubai</p>
-                    <p className="text-sm">
-                      9/3rt, Ground Floor, SR Nagar, Hyd-500038.
+                    <p className="font-medium text-white">Pakistan</p>
+                    <p className="text-xs">
+                      Plot 16, DHA Phase 8 - Ex Park View Block D Park View CHS,
+                      Lahore, Punjab
                     </p>
                   </div>
                 </div>

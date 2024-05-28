@@ -8,7 +8,7 @@ const WeAreTecz = () => {
   return (
     <div>
       <div className=" w-11/12 md:w-4/5 2xl:w-3/4 mx-auto">
-        <div className="flex  lg:flex-row flex-col  gap-x-32  justify-center items-center py-20 lg:py-32">
+        <div className="flex  lg:flex-row flex-col  gap-x-32 gap-y-10 md:gap-y-0  justify-center items-center py-20 lg:py-32">
           {/* 1st section  */}
           <div className="relative w-full   ">
             <img className="px-20 hidden lg:block  pb-4" src={a1} />
@@ -28,7 +28,7 @@ const WeAreTecz = () => {
             </div>
           </div>
           {/* 2nd Section  */}
-          <div className=" w-full   py-14 ">
+          <div className=" w-full   py-4 ">
             <div className="">
               <ol>
                 <li className="text-blue-secondary font-bold">
@@ -36,11 +36,11 @@ const WeAreTecz = () => {
                 </li>
               </ol>
             </div>
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col ">
               <div className="text-4xl font-semibold py-5">
                 We ‘re Partner of Your Innovation
               </div>
-              <div className=" text-slate-400 pb-8">
+              <div className=" text-slate-400 pb-4">
                 At 7kings Code,we understand that innovation drives
                 success.That’s why we’re more than just a service provider we’re
                 your partners in innovation.Our commitment to excellence and
