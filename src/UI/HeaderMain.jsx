@@ -32,11 +32,15 @@ const HeaderMain = ({ mode }) => {
                 className={`flex md:flex-row flex-col font-thin   text-blue-700  w-full md:text-center md:max-h-fit  gap-12 md:gap-10 cursor-pointer     `}
               >
                 <li className="header-li hover:font-medium ">
-                  <a href="#">What We do </a>
+                  <NavLink to={"/services"} href="#">
+                    What We do{" "}
+                  </NavLink>
                   {/* Services */}
                 </li>
                 <li className="header-li hover:font-medium">
-                  <a href="#">who we are </a>
+                  <NavLink to={"/about-us"} href="#">
+                    who we are{" "}
+                  </NavLink>
                   {/* about us 
                   leader ship */}
                 </li>
@@ -49,7 +53,9 @@ const HeaderMain = ({ mode }) => {
                 </li>
 
                 <li className="header-li hover:font-medium">
-                  <a href="#">Contact Us </a>
+                  <NavLink to={"/contact-us"} href="#">
+                    Contact Us{" "}
+                  </NavLink>
                 </li>
               </ul>
             </nav>

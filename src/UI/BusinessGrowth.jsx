@@ -24,17 +24,17 @@ const BestSolution = () => {
     },
   ];
   return (
-    <div className="businessGrowth pb-32">
-      <div className="flex lg:flex-row flex-col container gap-20 w-11/12 pt-16 md:pt-24 lg:w-3/4 mx-auto">
+    <div className="businessGrowth pb-16">
+      <div className="flex lg:flex-row flex-col container gap-16 w-11/12 pt-16 md:pt-24 lg:w-3/4 mx-auto">
         {aa.map((item, index) => (
           <div
             key={index}
             onMouseOver={() => setHover(index)}
             onMouseLeave={() => setHover(null)}
             className="  overflow-hidden bg-white  hover:bg-black shadow-md space-y-2 text-black hover:text-white  
-          hover:-translate-y-8 transition-all duration-500  leading-8 px-8 py-8"
+          hover:-translate-y-8 transition-all duration-500  px-8 py-8"
           >
-            <div className=" flex justify-between   items-center font-bold text-xl  ">
+            <div className=" flex justify-between  items-center font-bold text-xl  ">
               <p>{item.title} </p>
               <p
                 className={`${
