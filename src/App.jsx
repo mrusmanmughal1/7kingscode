@@ -6,7 +6,11 @@ import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import About from "./pages/About";
 import Error from "./pages/Error";
+<<<<<<< HEAD
 import { Toaster } from "react-hot-toast";
+=======
+import UXDesigner from "./UI/UXDesigner";
+>>>>>>> 8462ddedd86edc867fcc1f868b2959063c859afd
 const App = () => {
   return (
     <div>
@@ -17,7 +21,11 @@ const App = () => {
           <Route path="/contact-us" element={<Contact />} />
           <Route path="/about-us" element={<About />} />
           <Route path="/services" element={<Services />} />
+<<<<<<< HEAD
           <Route path="/services/:id" element={<Services />} />
+=======
+          <Route path="/uxdesigner" element={<UXDesigner />} />
+>>>>>>> 8462ddedd86edc867fcc1f868b2959063c859afd
           <Route path="*" element={<Error />} />
         </Routes>
         <Footer />
