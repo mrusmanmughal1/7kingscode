@@ -30,18 +30,10 @@ const Hero = () => {
         </div>
         <div className=" flex  items-end bottom-64 lg:bottom-28  2xl:bottom-44 relative h-screen">
           <div className="relative w-full">
-            <div className="flex   gap-7   md:gap-20">
-              <div className="w-[10%] "></div>
-              <div className="uppercase absolute  z  w-[10%] top-[18%]  items-center  rotate-90    text-white font-semibold">
-                <div className=" flex gap-10">
-                  <p>FACEBook</p>
-                  <p>Twitter</p>
-                  <p>Instagram</p>
-                </div>
-              </div>
+            <div className=" ps-10 lg:ps-20 2xl:ps-36    gap-7   md:gap-20">
               <div className="w-full  space-y-8">
-                <span className=" text-white p-2 px-4 bg-[#211f2e]">
-                  NEVER STOP NEVER GIVE UP
+                <span className=" text-white p-2 px-4 text-xs md:text-base  uppercase bg-[#211f2e]">
+                  NEVER STOP NEVER GIVE UP Always Find Solution
                 </span>
                 <div className="   uppercase relative   pt- z-40 w-full  font-bold text-white">
                   <span className="text-blue-secondary fade text-5xl md:text-7xl 2xl:text-8xl">

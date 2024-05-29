@@ -6,6 +6,7 @@ import BusinessGrowth from "../UI/BusinessGrowth";
 import Counter from "../UI/Counter";
 import TechManagement from "../UI/TechManagement";
 import SolveProblem from "../UI/SolveProblem";
+import BestSolution from "../UI/BestSolution";
 
 const About = () => {
   return (
@@ -16,7 +17,9 @@ const About = () => {
       />
 
       <OurBenifits />
-      <BusinessGrowth />
+      
+      <BestSolution/>
+      {/* <BusinessGrowth /> */}
       <Counter />
       <TechManagement />
       <SolveProblem />

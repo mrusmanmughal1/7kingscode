@@ -1,5 +1,4 @@
 /* eslint-disable no-unused-vars */
-import React from "react";
 import {
   AiOutlineExclamationCircle,
   AiOutlineForm,
@@ -8,14 +7,32 @@ import {
 import contact from "../assets/images/contact-main.jpg";
 import { GrFormLocation } from "react-icons/gr";
 import { FaSquarePhone } from "react-icons/fa6";
-import { FaMailBulk, FaVoicemail } from "react-icons/fa";
 import { CiEdit, CiPhone } from "react-icons/ci";
 import { SlUser } from "react-icons/sl";
+import toast from "react-hot-toast";
+import { useFormik } from "formik";
+import { ContactFormSchema } from "../helpers/FormSchema";
 
 const TalkWithUs = () => {
+  const credentials = {
+    Email: "",
+    Phone: "",
+    Subject: "",
+    Message: "",
+  };
+
+  const { values, errors, touched, handleChange, handleSubmit, handleBlur } =
+    useFormik({
+      initialValues: credentials,
+      onSubmit: (values, action) => {
+        action.resetForm();
+        console.log(values);
+      },
+      validationSchema: ContactFormSchema,
+    });
   return (
-    <div className="p-10 lg:p-40 w-11/12 mx-auto">
-      <div className="flex flex-col lg:flex-row gap-32">
+    <div className="py-24  w-11/12 lg:w-[80%] mx-auto">
+      <div className="flex flex-col lg:flex-row  lg:gap-32">
         {/* Content Section */}
 
         <div className="w-full lg:w-1/2">
@@ -44,11 +61,11 @@ const TalkWithUs = () => {
               className="w-full h-auto rounded-md"
             />
           </div>
-          <div className="p-2 flex">
+          <div className="p-2 flex  lg:text-xs flex-col lg:flex-row">
             <div className=" mb-4 border-l-2 p-8 border-gray-600">
-              <h3 className="text-xl font-semibold mb-2">Pakistan Office</h3>
+              <h3 className="text-xl  font-semibold mb-2">Pakistan Office</h3>
               <div className="flex">
-                <p className="flex items-center text-5xl text-gray-700">
+                <p className="flex  text-5xl text-gray-700">
                   <GrFormLocation />
                 </p>
                 <p>
@@ -96,19 +113,25 @@ const TalkWithUs = () => {
         </div>
         {/* Form Section */}
         <div className="w-full py-24 lg:w-1/2">
-          <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
-            <div className="flex gap-6">
-              <div className="border px-2 w-full flex items-center gap-2 ">
+          <form className="space-y-4" onSubmit={handleSubmit}>
+            {/* <div className="flex flex-col lg:flex-row gap-6">
+              <div className="border p-4 w-full flex items-center gap-2 ">
                 <p>
-                  <SlUser className="text-2xl text-gray-500" />
+                  <SlUser className="     text-gray-500" />
                 </p>
                 <input
                   type="text"
                   id="name"
-                  className="outline-none bottom-0"
+                  className="outline-none w-full  bottom-0"
                   placeholder="First Name"
                   aria-required="true"
+                  name="first_name"
                 />
+                {errors.Email && touched.Email && (
+                <p className="text-start px-1  text-sm font-semibold text-red-600">
+                  {errors.Email}
+                </p>
+              )}
               </div>
               <div className="border w-full p-4 flex  items-center gap-2 ">
                 <p>
@@ -117,68 +140,122 @@ const TalkWithUs = () => {
                 <input
                   type="text"
                   id="name"
-                  className="outline-none bottom-0"
+                  name="last_name"
+                  className="outline-none  w-full bottom-0"
                   placeholder="Last Name"
                   aria-required="true"
                 />
               </div>
+            </div> */}
+            <div className="">
+              <div className={`${ errors.Email && ' border-2 border-red-600'} border p-4 flex  items-center gap-2 `}>
+                <p>
+                  <AiOutlineMail className="text-2xl text-gray-500" />
+                </p>
+                <input
+                  type="email"
+                  id="Email"
+                  name="Email"
+                  className="outline-none  w-full  bottom-0"
+                  placeholder="Email Address"
+                  aria-required="true"
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  value={values.Email}
+                />
+              </div>
+
+              <div className="">
+                {errors.Email && touched.Email && (
+                  <p className="text-start  text-xs font-semibold text-red-600">
+                    {errors.Email}
+                  </p>
+                )}
+              </div>
             </div>
-            <div className="border p-4 flex  items-center gap-2 ">
-              <p>
-                <AiOutlineMail className="text-2xl text-gray-500" />
-              </p>
-              <input
-                type="email"
-                id="email"
-                className="outline-none bottom-0"
-                placeholder="Email Address"
-                aria-required="true"
-              />
+            <div className="">
+              <div className={`${ errors.Phone && ' border-2 border-red-600'} border p-4 flex  items-center gap-2 `}>
+                <p>
+                  <CiPhone className="text-2xl text-gray-500" />
+                </p>
+                <input
+                  type="number"
+                  id="Phone"
+                  name="Phone"
+                  className="outline-none w-full  bottom-0"
+                  placeholder="Phone Number"
+                  aria-required="true"
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  value={values.Phone}
+                />
+              </div>
+              {errors.Phone && touched.Phone && (
+                <p className="text-start px-1  text-xs font-semibold text-red-600">
+                  {errors.Phone}
+                </p>
+              )}
             </div>
-            <div className="border p-4 flex  items-center gap-2 ">
-              <p>
-                <CiPhone className="text-2xl text-gray-500" />
-              </p>
-              <input
-                type="number"
-                id="phone"
-                className="outline-none bottom-0"
-                placeholder="Phone Number"
-                aria-required="true"
-              />
-            </div>
+
             <div className="border p-4 flex  items-center gap-2 ">
               <p>
                 <SlUser className="text-2xl text-gray-500" />
               </p>
               <input
                 type="text"
+                name="Company"
                 id="name"
-                className="outline-none bottom-0"
+                className="outline-none w-full  bottom-0"
                 placeholder="Company Name"
                 aria-required="true"
+                onChange={handleChange}
+                onBlur={handleBlur}
+                value={values.Company}
               />
             </div>
-            <div className="border p-4 flex  items-center gap-2 ">
-              <p>
-                <AiOutlineExclamationCircle className="text-2xl text-gray-500" />
-              </p>
-              <input
-                type="text"
-                id="subject"
-                className="outline-none bottom-0"
-                placeholder="Your Subject"
-                aria-required="true"
-              />
+            <div className="">
+              <div className={`${ errors.Subject && ' border-2 border-red-600'} border p-4 flex  items-center gap-2 `}>
+                <p>
+                  <AiOutlineExclamationCircle className="text-2xl text-gray-500" />
+                </p>
+                <input
+                  type="text"
+                  id="Subject"
+                  name="Subject"
+                  className="outline-none w-full  bottom-0"
+                  placeholder="Your Subject"
+                  aria-required="true"
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  value={values.Subject}
+                />
+              </div>
+
+              {errors.Subject && touched.Subject && (
+                <p className="text-start px-1  text-xs font-semibold text-red-600">
+                  {errors.Subject}
+                </p>
+              )}
             </div>
-            <div className="border p-4 flex gap-2">
-              <CiEdit className="text-2xl text-gray-500" />
-              <textarea
-                className="outline-none flex-1 resize-none"
-                rows="5"
-                placeholder="Write Your Message"
-                aria-required="true"
-              ></textarea>
+            <div className="">
+              <div className={`${ errors.Message && ' border-2 border-red-600'} border p-4 flex     gap-2 `}>
+                <CiEdit className="text-2xl text-gray-500" />
+                <textarea
+                  className="outline-none  w-full flex-1 resize-none"
+                  rows="5"
+                  name="Message"
+                  placeholder="Write Your Message"
+                  aria-required="true"
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  value={values.Message}
+                ></textarea>
+              </div>
+              {errors.Message && touched.Message && (
+                <p className="text-start px-2  text-xs font-semibold text-red-600">
+                  {errors.Message}
+                </p>
+              )}
             </div>
             <div>
               <button

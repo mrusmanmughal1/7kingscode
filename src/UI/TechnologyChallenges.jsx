@@ -45,7 +45,7 @@ const TechnologyChallenges = () => {
           <div className="">
             <span className="w-2 h-2 bg-white rounded-full "> </span>
             <p className="text-xl md:text-xl font-semibold text-[#3C72FC]">
-              What we Solve
+              We Provide Solutions 
             </p>
           </div>
           <p className="text-2xl leading-8 md:text-4xl  font-bold pt-4 pb-10 w-full md:w-full    text-center">

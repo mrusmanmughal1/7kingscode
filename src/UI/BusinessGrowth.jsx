@@ -1,6 +1,5 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
-import feature from "../assets/images/feature-about-bg.jpg";
 import { CiBank } from "react-icons/ci";
 import { IoBusinessSharp } from "react-icons/io5";
 import { GiFlyingDagger } from "react-icons/gi";

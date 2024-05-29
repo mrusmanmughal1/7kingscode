@@ -1,6 +1,8 @@
 import whatelsebanner from "../assets/images/whatelse.jpg";
 import { FaCheck } from "react-icons/fa6";
 import DMOre from "./DMOre";
+import { RiGlobalLine } from "react-icons/ri";
+import { TbTargetArrow } from "react-icons/tb";
 const WhatElse = () => {
   return (
     <div className="bg-[#F3F4F8] tech_bg   flex w-full   justify-center">
@@ -8,7 +10,7 @@ const WhatElse = () => {
         <div className=" mx-auto sm:order-1  md:order-none  py-14 ">
           <div className="w-full">
             <ol>
-              <li className="text-blue-secondary font-bold">What Else Here</li>
+              <li className="text-blue-secondary font-bold">Who we are</li>
             </ol>
           </div>
           <div className="flex flex-col w-full gap-4">
@@ -25,7 +27,7 @@ const WhatElse = () => {
             <div className="flex gap-4">
               <div className="  ">
                 <p className="bg-blue-100 p-4">
-                <FaCheck className="  bg-blue-100  text-3xl text-blue-secondary" />
+                <TbTargetArrow className="  bg-blue-100  text-3xl text-blue-secondary" />
                 </p>
               </div>
               <div className=" space-y-1 md:w-96">
@@ -41,12 +43,12 @@ const WhatElse = () => {
             <div className="flex gap-4">
               <div className="">
               <p className="bg-blue-100 p-4">
-                <FaCheck className=" bg-blue-100  text-3xl text-blue-secondary" />
+                <RiGlobalLine className=" bg-blue-100  text-3xl text-blue-secondary" />
                 </p>
               </div>
               <div className="space-y-1 md:w-96">
                 <div className="font-semibold text-lg  ">
-                  Work With Global Brands
+                   Global Outreach
                 </div>
                 <p className="text-gray-400">
                   Donec suscipit ante ipsum. Donec convallis quam at tortor
@@ -55,7 +57,7 @@ const WhatElse = () => {
               </div>
             </div>
             <div className="flex gap-6">
-              <DMOre/>
+              <DMOre to='/about-us'/>
             </div>
           </div>
         </div>

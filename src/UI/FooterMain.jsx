@@ -9,7 +9,7 @@ import { FaTwitter } from "react-icons/fa";
 import Dubai from "../assets/images/dubai.png";
 import india from "../assets/images/india.png";
 import pakistan from "../assets/images/pakistan.png";
-import usa from "../assets/images/usa.png";
+import itly from "../assets/images/usa.png";
 
 const FooterMain = () => {
   return (
@@ -20,7 +20,6 @@ const FooterMain = () => {
             <Logo />
           </div>
           <p className="text-xs text-gray-400">
-            {" "}
             An Award-winning Miami IT Support Company That delivers all the
             power and capabilities of your own IT Department without the hassle
             and expenses of managing it yourself. Simply put you get more time
@@ -28,19 +27,21 @@ const FooterMain = () => {
           </p>
           <div className=" space-y-4 text-gray-400">
             <p className="flex gap-4">
-              {" "}
-              <FaSquarePhone className="text-blue-secondary" /> (+91) 9581016898{" "}
+              <FaSquarePhone className="text-blue-secondary" /> (+1) 9542728515
             </p>
             <p className="flex gap-4">
-              {" "}
               <SiImessage className="text-blue-secondary" /> info@7kingscode.com
             </p>
-            <p className="flex gap-4">
-              <FaMapMarkerAlt className="text-blue-secondary" />
-              1401 N University Dr suite 503, Coral Springs, FL 33071, United
-              State
-            </p>
-            <div className="flex gap-4 text-2xl md:text-lg text-white">
+
+            <div className="">
+              <p className="pb-3 font-medium text-white">HEAD OFFICE</p>
+              <p className="flex gap-4">
+                <FaMapMarkerAlt className="text-blue-secondary" />
+                1401 N University Dr suite 503, Coral Springs, FL 33071, United
+                State
+              </p>
+            </div>
+            <div className="flex gap-4 text-2xl md:text-lg 2xl:text-2xl text-white">
               <FaSquareFacebook />
               <FaInstagram />
               <SiIndeed />
@@ -64,7 +65,7 @@ const FooterMain = () => {
         </div>
 
         <div className=" md:w-[40%] w-full ">
-          <p className="font-medium">Other Offices</p>
+          <p className="font-medium">Global Offices</p>
 
           {/* //locations  */}
 
@@ -82,9 +83,9 @@ const FooterMain = () => {
                     </p>
                   </div>
                 </div>
-                <div className="flex  w-full flex-col md:flex-row   gap-2">
+                <div className="flex  w-full flex-col md:flex-row  ">
                   <div className="w-24">
-                    <img src={india} alt="" />
+                    <img src={itly} alt="" />
                   </div>
                   <div className="">
                     <p className="font-medium text-white">Italy</p>
@@ -97,7 +98,7 @@ const FooterMain = () => {
               <div className="flex gap-3 justify-between">
                 <div className="flex w-full  flex-col md:flex-row gap-2">
                   <div className="w-24">
-                    <img src={pakistan} alt="" />
+                    <img src={india} alt="" />
                   </div>
                   <div className="">
                     <p className="font-medium text-white">India</p>
@@ -109,7 +110,7 @@ const FooterMain = () => {
                 </div>
                 <div className="flex w-full  flex-col md:flex-row gap-2">
                   <div className="w-24">
-                    <img src={usa} alt="" />
+                    <img src={pakistan} alt="" />
                   </div>
                   <div className="">
                     <p className="font-medium text-white">Pakistan</p>

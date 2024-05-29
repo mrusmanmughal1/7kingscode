@@ -9,7 +9,7 @@ const Location = () => {
           <div className="flex  flex-col md:flex-row md:justify-between justify-center  gap-8 items-center">
             <div className="md:p-8">
               <div className=" text-lg  md:text-3xl  md:text-start  text-center font-semibold   text-white">
-                7KingsCode Always Ready For <br></br> Solve Your Problem
+                7 Kings Code Always Ready For <br></br> Solve Your Problem
               </div>
             </div>
             <div className="">

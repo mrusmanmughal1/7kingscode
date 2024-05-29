@@ -32,7 +32,7 @@ const WeAreTecz = () => {
             <div className="">
               <ol>
                 <li className="text-blue-secondary font-bold">
-                  Hey! We Are 7 Kings Code
+                  We Are 7 Kings Code
                 </li>
               </ol>
             </div>
@@ -41,7 +41,7 @@ const WeAreTecz = () => {
                 We ‘re Partner of Your Innovation
               </div>
               <div className=" text-slate-400 pb-4">
-                At 7kings Code,we understand that innovation drives
+                At 7 kings Code,we understand that innovation drives
                 success.That’s why we’re more than just a service provider we’re
                 your partners in innovation.Our commitment to excellence and
                 dedication to your vision sets us apart ensuring that your
@@ -66,7 +66,7 @@ const WeAreTecz = () => {
                   <AiFillSetting className="text-4xl text-blue-secondary" />
                 </div>
                 <div className=" space-y-1 w-96">
-                  <div className="font-semibold text-lg  ">Focus</div>
+                  <div className="font-semibold text-lg  ">Our Vision</div>
 
                   <p className="text-gray-400">
                     We are committed to supporting our clients and partners in
