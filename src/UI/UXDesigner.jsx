@@ -55,7 +55,7 @@ const UXDesigner = () => {
               alt="UI Design"
             />
             <img
-              className="block sm:hidden lg:hidden"
+              className="block w-full sm:hidden lg:hidden"
               src={a1}
               alt="AI Design"
             />
@@ -74,8 +74,26 @@ const UXDesigner = () => {
                 <FiPhone />
               </div>
               <div className="flex flex-col">
-                <p>Call Us</p>
+                <p className="text-gray-300">Call Us</p>
                 <p>+99 345 234 5678</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-4">
+              <div className="bg-blue-950 p-2 rounded-full">
+                <IoMail />
+              </div>
+              <div className="flex flex-col">
+                <p className="text-gray-300">Write to us</p>
+                <p>info@7kingscode.com</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-4">
+              <div className="bg-blue-950 p-2 rounded-full">
+                <IoLocation />
+              </div>
+              <div className="flex flex-col">
+                <p className="text-gray-300">Our Address</p>
+                <p>1401 Coral Springs, United States</p>
               </div>
             </div>
           </div>
