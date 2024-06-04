@@ -16,8 +16,8 @@ const UXDesigner = () => {
           title="7 Kings Code - IT Solutions & Technology"
         />
       </div>
-      <div className="w-[80%] lg:w-[70%] mx-auto py-32">
-        <div className="flex flex-col lg:flex-row gap-24">
+      <div className="w-[80%] lg:w-[70%] mx-auto py-16">
+        <div className="flex flex-col lg:flex-row gap-20">
           {/* left  */}
           <div className="bg-[#F6F7F9] p-8 w-full lg:w-[30%] space-y-10">
             <div className="font-semibold text-xl">Services</div>
@@ -98,7 +98,7 @@ const UXDesigner = () => {
             </div>
           </div>
           {/* right  */}
-          <div className="w-full lg:w-[70%] space-y-4">
+          <div className="w-full lg:w-[70%] space-y-4 pb-16">
             <div className="text-2xl font-semibold">
               <p>UI/UX Designing</p>
             </div>
