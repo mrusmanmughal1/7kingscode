@@ -29,7 +29,7 @@ const HeaderMain = ({ mode }) => {
           >
             <nav className="">
               <ul
-                className={`flex md:flex-row flex-col font-thin   text-blue-700  w-full md:text-center md:max-h-fit  gap-12 md:gap-10 cursor-pointer     `}
+                className={`flex md:flex-row flex-col font-thin   text-black  w-full md:text-center md:max-h-fit  gap-12 md:gap-10 cursor-pointer     `}
               >
                 <li className="header-li hover:font-medium ">
                   <NavLink to={"/services"} href="#">
