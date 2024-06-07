@@ -85,19 +85,6 @@ const WeAreTecz = () => {
                   </p>
                 </div>
               </div>
-
-              <div className="flex gap-6">
-                <DMOre />
-                <div className="flex  items-center gap-2">
-                  <div className="">
-                    <img src="https://data.themeim.com/wp/tecz/wp-content/uploads/2023/09/avatar-1.png" />
-                  </div>{" "}
-                  <div className="">
-                    <p className="font-semibold">Abdul Ismail</p>
-                    <p>CEO FOUNDER</p>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>

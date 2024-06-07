@@ -6,7 +6,7 @@ const Contact = () => {
     <div>
       <MainBanner
         text="Contact"
-        title="7 Kings Code  -IT Solutions & Technology"
+        title="WE PROVIDE ENTERPRISE-LEVEL SOLUTIONS"
       />
       <ContactForm />
     </div>

@@ -38,19 +38,16 @@ const TechnologyChallenges = () => {
   return (
     <div className="relative whatweSolve py-32">
       <div
-        className="  inset-0     flex flex-col items-center 
+        className="  inset-0     flex flex-col items-center
       justify-center text-white"
       >
         <div className="flex  flex-col justify-center items-center gap-2">
-          <div className="">
+          <div className=" mb-10">
             <span className="w-2 h-2 bg-white rounded-full "> </span>
-            <p className="text-xl md:text-xl font-semibold text-[#3C72FC]">
-              We Provide Solutions 
+            <p className="text-xl md:text-2xl font-semibold text-[#3C72FC]">
+              OUR PRODUCTS
             </p>
           </div>
-          <p className="text-2xl leading-8 md:text-4xl  font-bold pt-4 pb-10 w-full md:w-full    text-center">
-            Help You Overcome Your <br></br> Technology Challenges
-          </p>
         </div>
         <div className=" grid grid-cols-2   md:flex flex-col gap-8 lg:gap-0 flex-wrap md:flex-row   justify-between md:justify-center lg:justify-between mt-4  w-11/12 md:w-3/4  lg:w-[80%] 2xl:w-[80%] mx-auto">
           {container.map((item, index) => (

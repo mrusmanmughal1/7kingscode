@@ -8,9 +8,9 @@ const Services = () => {
     <div>
       <MainBanner
         text="Services"
-        title="7 Kings Code  -IT Solutions & Technology"
+        title="WE PROVIDE ENTERPRISE-LEVEL SOLUTIONS"
       />
-      <BestSolution/>
+      <BestSolution />
       <WeAreOffering />
       <SolveProblem />
     </div>

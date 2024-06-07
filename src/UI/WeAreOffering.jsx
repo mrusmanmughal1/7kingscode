@@ -25,9 +25,7 @@ const WeAreOffering = () => {
     </div>
   );
 };
-
 export default WeAreOffering;
-
 export const AllServices = () => {
   const Services = [
     {
@@ -105,16 +103,14 @@ export const AllServices = () => {
       },
     ],
   };
-
   return (
     <Slider {...settings}>
       {Services.map((item, i) => {
         console.log(i);
-
         return (
           <div key={i} className="     ">
             <div
-              className=" bg-[#0F0C1D]  mx-10 border border-white hover:bg-blue-secondary 
+              className=" bg-[#0F0C1D]  mx-10 border border-white hover:bg-blue-secondary
               shadow-md space-y-3 text-white hover:text-white leading-6 px-8 py-8"
             >
               <div className="text-6xl flex justify-center">
@@ -124,7 +120,7 @@ export const AllServices = () => {
                 <p>{item.title} </p>
               </div>
               <div>
-                <p className="text-white text-xs">{item.desc}</p>
+                <p className="text-gray-700 text-xs">{item.desc}</p>
               </div>
             </div>
           </div>
