@@ -6,7 +6,7 @@ import { AiOutlinePhone } from "react-icons/ai";
 
 const WeAreTecz = () => {
   return (
-    <div className="p-6 md:p-16">
+    <div className="p-4 md:p-16">
       <div className="w-full md:w-11/12 lg:w-3/4 mx-auto">
         <div className="flex flex-col lg:flex-row justify-center items-center py-10 lg:py-16">
           {/* 1st section */}
@@ -30,7 +30,7 @@ const WeAreTecz = () => {
             </div>
           </div>
           {/* 2nd Section */}
-          <div className="w-full lg:w-1/2 px-6 lg:px-24 py-6 lg:py-14">
+          <div className="w-full lg:w-1/2 lg:px-24 py-6 lg:py-14">
             <div className="mb-4 lg:mb-8">
               <ol>
                 <li className="text-blue-secondary font-bold">

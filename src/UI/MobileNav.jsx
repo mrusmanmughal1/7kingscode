@@ -9,7 +9,9 @@ const MobileNav = ({ mode }) => {
   return (
     <div className="relative">
       <div className="  w-11/12 mx-auto flex justify-between items-center ">
-        <Logo />
+        <NavLink to={"/"} href="#">
+          <Logo />
+        </NavLink>
         <div className="flex px-4  md:px-0 items-center gap-4">
           {toggle ? (
             <p onClick={() => settoggle(!toggle)}>
@@ -23,7 +25,7 @@ const MobileNav = ({ mode }) => {
           )}
         </div>
         {toggle && (
-          <nav className="absolute top-14 left-0 w-full bg-white z-[100] p-4">
+          <nav className="mobile-nav absolute top-16 left-100 w-full bg-white z-[100] p-4 animate-slideIn h-screen">
             <ul
               onClick={() => settoggle(!toggle)}
               className={`flex  flex-col font-medium  text-black  w-full  md:max-h-fit  gap-4 md:gap-10 cursor-pointer    ${

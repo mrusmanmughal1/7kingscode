@@ -194,10 +194,17 @@ body {
   object-fit: contain;
 }
 
-
 /* Drop down for Services  */
-
 
 .dropdown:hover .dropdown-menu {
   display: block;
+}
+@media (max-width: 600px) {
+  .slide2 {
+    height: 400px;
+    width: 175px;
+  }
+  .slide {
+    width: 200px;
+  }
 }

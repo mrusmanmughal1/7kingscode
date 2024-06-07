@@ -24,7 +24,7 @@ const BestSolution = () => {
     },
   ];
   return (
-    <div className="p-6 md:p-16">
+    <div className=" md:p-12">
       <div className=" flex lg:flex-row flex-col container gap-10 2xl:gap-20  w-11/12  lg:w-[80%] 2xl:w-3/4  pt-20 md:pt-32   mx-auto">
         {arrofContent.map((item, index) => (
           <div

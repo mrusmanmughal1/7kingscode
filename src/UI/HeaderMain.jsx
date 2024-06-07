@@ -6,17 +6,7 @@ const HeaderMain = ({ mode }) => {
   const [isSticky, setIsSticky] = useState();
   const [hover, sethover] = useState();
 
-  const services = [
-    "usman",
-    " ilyas ",
-    " Mughal ",
-    "usman",
-    " ilyas ",
-    " Mughal ",
-    "usman",
-    " ilyas ",
-    " Mughal ",
-  ];
+  const services = ["Web ", " IT "];
   return (
     <header className={` relative  main    mx-auto    md:bg-white `}>
       <div className="relative  lg:w-11/12 md:w-9/12 mx-auto flex items-center justify-around">
@@ -53,7 +43,7 @@ const HeaderMain = ({ mode }) => {
                     Services{" "}
                   </a>
 
-                  <div className="dropdown-menu absolute hidden bg-white  top-10  text-gray-700 pt-1">
+                  {/* <div className="dropdown-menu absolute hidden bg-white  top-10  text-gray-700 pt-1">
                     <div className="flex gap-8 p-10 w-full">
                       {services.map((val, i) => (
                         <p key={i} className="font-medium  ">
@@ -61,7 +51,7 @@ const HeaderMain = ({ mode }) => {
                         </p>
                       ))}
                     </div>
-                  </div>
+                  </div> */}
                 </li>
 
                 <li className="header-li hover:font-medium">

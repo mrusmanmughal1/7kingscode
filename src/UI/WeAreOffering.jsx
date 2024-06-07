@@ -10,7 +10,7 @@ const WeAreOffering = () => {
         </div>
         <div className="flex flex-col  pb-20 lg:flex-row gap-6 lg:gap-32 space-y-4">
           <div className="w-full text-4xl font-semibold">
-            We Provide Exclusive Service For Your Business 
+            We Provide Exclusive Service For Your Business
           </div>
           <div className="w-full text-gray-500">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do
@@ -124,7 +124,7 @@ export const AllServices = () => {
                 <p>{item.title} </p>
               </div>
               <div>
-                <p className="text-gray-700 text-xs">{item.desc}</p>
+                <p className="text-white text-xs">{item.desc}</p>
               </div>
             </div>
           </div>

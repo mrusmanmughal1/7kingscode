@@ -16,7 +16,7 @@ const UXDesigner = () => {
           title="7 Kings Code - IT Solutions & Technology"
         />
       </div>
-      <div className="w-[80%] lg:w-[70%] mx-auto py-16">
+      <div className="w-[90%] lg:w-[70%] mx-auto py-16 lg:py-32">
         <div className="flex flex-col lg:flex-row gap-20">
           {/* left  */}
           <div className="bg-[#F6F7F9] p-8 w-full lg:w-[30%] space-y-10">
@@ -62,7 +62,7 @@ const UXDesigner = () => {
           </div>
         </div>
       </div>
-      <div className="w-[80%] lg:w-[70%] mx-auto py-4">
+      <div className="w-[90%] lg:w-[70%] mx-auto py-4">
         <div className="flex flex-col lg:flex-row gap-24">
           {/* left  */}
           <div className="bg-blue-secondary text-white p-8 w-full lg:w-[30%] space-y-10">
@@ -70,7 +70,7 @@ const UXDesigner = () => {
               <p>Have Any Problem? Please Contact</p>
             </div>
             <div className="flex items-center gap-4">
-              <div className="bg-blue-950 p-2 rounded-full">
+              <div className="bg-blue-950 text-3xl p-3  rounded-full">
                 <FiPhone />
               </div>
               <div className="flex flex-col">
@@ -79,7 +79,7 @@ const UXDesigner = () => {
               </div>
             </div>
             <div className="flex items-center gap-4">
-              <div className="bg-blue-950 p-2 rounded-full">
+              <div className="bg-blue-950 text-3xl p-3  rounded-full">
                 <IoMail />
               </div>
               <div className="flex flex-col">
@@ -88,7 +88,7 @@ const UXDesigner = () => {
               </div>
             </div>
             <div className="flex items-center gap-4">
-              <div className="bg-blue-950 p-2 rounded-full">
+              <div className="bg-blue-950 text-3xl p-3 rounded-full">
                 <IoLocation />
               </div>
               <div className="flex flex-col">

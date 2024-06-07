@@ -31,7 +31,7 @@ const TalkWithUs = () => {
       validationSchema: ContactFormSchema,
     });
   return (
-    <div className="py-24  w-11/12 lg:w-[80%] mx-auto">
+    <div className="lg:py-24 py-16  w-11/12 lg:w-[80%] mx-auto">
       <div className="flex flex-col lg:flex-row  lg:gap-32">
         {/* Content Section */}
 
@@ -148,7 +148,11 @@ const TalkWithUs = () => {
               </div>
             </div> */}
             <div className="">
-              <div className={`${ errors.Email && ' border-2 border-red-600'} border p-4 flex  items-center gap-2 `}>
+              <div
+                className={`${
+                  errors.Email && " border-2 border-red-600"
+                } border p-4 flex  items-center gap-2 `}
+              >
                 <p>
                   <AiOutlineMail className="text-2xl text-gray-500" />
                 </p>
@@ -174,7 +178,11 @@ const TalkWithUs = () => {
               </div>
             </div>
             <div className="">
-              <div className={`${ errors.Phone && ' border-2 border-red-600'} border p-4 flex  items-center gap-2 `}>
+              <div
+                className={`${
+                  errors.Phone && " border-2 border-red-600"
+                } border p-4 flex  items-center gap-2 `}
+              >
                 <p>
                   <CiPhone className="text-2xl text-gray-500" />
                 </p>
@@ -214,7 +222,11 @@ const TalkWithUs = () => {
               />
             </div>
             <div className="">
-              <div className={`${ errors.Subject && ' border-2 border-red-600'} border p-4 flex  items-center gap-2 `}>
+              <div
+                className={`${
+                  errors.Subject && " border-2 border-red-600"
+                } border p-4 flex  items-center gap-2 `}
+              >
                 <p>
                   <AiOutlineExclamationCircle className="text-2xl text-gray-500" />
                 </p>
@@ -238,7 +250,11 @@ const TalkWithUs = () => {
               )}
             </div>
             <div className="">
-              <div className={`${ errors.Message && ' border-2 border-red-600'} border p-4 flex     gap-2 `}>
+              <div
+                className={`${
+                  errors.Message && " border-2 border-red-600"
+                } border p-4 flex     gap-2 `}
+              >
                 <CiEdit className="text-2xl text-gray-500" />
                 <textarea
                   className="outline-none  w-full flex-1 resize-none"

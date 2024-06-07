@@ -79,7 +79,7 @@ const OurPartners = () => {
           ))}
         </div>
       </div>
-      <div className="slider2 ">
+      <div className="slider2 w-[150px] ">
         <div className="slide-track2">
           {partners.map((image, index) => (
             <div key={index} className="slide2">

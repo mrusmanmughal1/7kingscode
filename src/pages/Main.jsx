@@ -10,12 +10,10 @@ import WhatElse from "../UI/WhatElse";
 import TechManagement from "../UI/TechManagement";
 
 const Main = () => {
-
-  
   return (
     <div>
       <Hero />
-      <BestSolution  />
+      =
       <WeAreTecz />
       <Counter />
       <TechManagement />

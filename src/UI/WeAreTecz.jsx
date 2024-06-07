@@ -17,9 +17,9 @@ const WeAreTecz = () => {
               src={a2}
             />
             <div className="flex items-end justify-center items md:justify-start gap-10 ">
-              <img className="  " src={a3} />
+              <img className=" w-full " src={a3} />
               <div className=" hidden md:block">
-                <p className="font-bold text-6xl ">10</p>
+                <p className="font-bold text-6xl ">10+</p>
                 <div className=" uppercase font-semibold ">
                   <p>Years of</p>
                   <p>Experience</p>
@@ -45,7 +45,7 @@ const WeAreTecz = () => {
                 success.That’s why we’re more than just a service provider we’re
                 your partners in innovation.Our commitment to excellence and
                 dedication to your vision sets us apart ensuring that your
-                projects reach their full potential
+                projects reach their full potential.
               </div>
             </div>
             <div className=" space-y-4">
@@ -56,8 +56,7 @@ const WeAreTecz = () => {
                 <div className=" space-y-1 w-96">
                   <p className="text-lg font-semibold ">Our Mission</p>
                   <p className="text-gray-400">
-                    Our mission drives us to continuously strive for excellence
-                    and innovation in everything we do.
+                    Never Stop, Never Give Up, Always Find Solution.
                   </p>
                 </div>
               </div>
@@ -69,11 +68,24 @@ const WeAreTecz = () => {
                   <div className="font-semibold text-lg  ">Our Vision</div>
 
                   <p className="text-gray-400">
-                    We are committed to supporting our clients and partners in
-                    achieving their goals, no matter the challenges
+                    Impact today to shape tomorrow's technology.
                   </p>
                 </div>
               </div>
+              <div className=" flex gap-4">
+                <div className="">
+                  <AiFillSetting className="text-4xl text-blue-secondary" />
+                </div>
+                <div className=" space-y-1 w-96">
+                  <div className="font-semibold text-lg  ">Our Values</div>
+
+                  <p className="text-gray-400">
+                    Equal Opportunity, Diversity & Inclusion, Respect &
+                    Integrity.
+                  </p>
+                </div>
+              </div>
+
               <div className="flex gap-6">
                 <DMOre />
                 <div className="flex  items-center gap-2">
