@@ -3,6 +3,8 @@ import a2 from "../assets/images/ai2.png";
 import a3 from "../assets/images/ai.png";
 import { AiFillSetting } from "react-icons/ai";
 import { FiTarget } from "react-icons/fi";
+import { AiOutlineCodeSandbox } from "react-icons/ai";
+import { AiOutlineSlack } from "react-icons/ai";
 import DMOre from "./DMOre";
 const WeAreTecz = () => {
   return (
@@ -17,7 +19,7 @@ const WeAreTecz = () => {
               src={a2}
             />
             <div className="flex items-end justify-center items md:justify-start gap-10 ">
-              <img className=" w-full " src={a3} />
+              <img className="  " src={a3} />
               <div className=" hidden md:block">
                 <p className="font-bold text-6xl ">10+</p>
                 <div className=" uppercase font-semibold ">
@@ -62,7 +64,7 @@ const WeAreTecz = () => {
               </div>
               <div className=" flex gap-4">
                 <div className="">
-                  <AiFillSetting className="text-4xl text-blue-secondary" />
+                  <AiOutlineSlack className="text-4xl text-blue-secondary" />
                 </div>
                 <div className=" space-y-1 w-96">
                   <div className="font-semibold text-lg  ">Our Vision</div>
@@ -74,7 +76,7 @@ const WeAreTecz = () => {
               </div>
               <div className=" flex gap-4">
                 <div className="">
-                  <AiFillSetting className="text-4xl text-blue-secondary" />
+                  <AiOutlineCodeSandbox className="text-4xl text-blue-secondary" />
                 </div>
                 <div className=" space-y-1 w-96">
                   <div className="font-semibold text-lg  ">Our Values</div>

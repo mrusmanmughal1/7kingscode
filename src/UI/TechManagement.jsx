@@ -3,10 +3,11 @@ import React from "react";
 import techmanage from "../assets/images/tech-manage.jpg";
 import { CiLock } from "react-icons/ci";
 import { BsCapslock } from "react-icons/bs";
+import { AiOutlinePython } from "react-icons/ai";
 import DMOre from "./DMOre";
 const TechManagement = () => {
   return (
-    <div className=" mx-auto  py-10">
+    <div className=" mx-auto  pt-10">
       <div className="flex flex-col lg:flex-row 2xl:w-3/4   w-11/12  sm:w-3/4 lg:w-11/12  mx-auto gap-2 sm:p-4 lg:p-0">
         <div className="flex   justify-center items-center lg:w-1/2">
           <img
@@ -64,7 +65,7 @@ const TechManagement = () => {
             </div>
             <div className="flex gap-4 items-center">
               <div className="">
-                <BsCapslock className="text-3xl lg:text-4xl text-blue-secondary" />
+                <AiOutlinePython className="text-3xl lg:text-4xl text-blue-secondary" />
               </div>
               <div className="space-y-1 w-full ">
                 <div className="font-semibold text-lg uppercase">

@@ -19,14 +19,14 @@ const BestSolution = () => {
     },
     {
       title: "MANAGEMENT CONSULTING",
-      desc: "7 Kings Code supports clients throughout their recruitment journey, from sourcing to negotiation. Our extensive database ensures selection of proficient consultants, driving business success.",
+      desc: "7 Kings Code supports clients throughout their recruitment journey, from sourcing to negotiation. ",
       icon: <GiFlyingDagger />,
     },
   ];
 
   return (
     <div className="businessGrowth pb-16">
-      <div className="flex lg:flex-row flex-col container gap-8 w-11/12 pt-16 md:pt-24 lg:w-[90%] mx-auto">
+      <div className="flex lg:flex-row flex-col container gap-8 w-11/12 pt-16 md:pt-24 lg:w-[80%] mx-auto">
         {aa.map((item, index) => (
           <div
             key={index}
@@ -48,9 +48,7 @@ const BestSolution = () => {
               </p>
             </div>
             <p
-              className={`${
-                hover === index ? "text-white" : "text-gray-500 text-xs"
-              }`}
+              className={`${hover === index ? "text-white" : "text-gray-500"}`}
             >
               {item.desc}
             </p>

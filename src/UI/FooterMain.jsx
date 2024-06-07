@@ -58,7 +58,7 @@ const FooterMain = () => {
               <SiImessage className="text-blue-secondary" /> info@7kingscode.com
             </p>
 
-            <div className="flex gap-4 text-2xl md:text-lg 2xl:text-2xl text-white">
+            <div className="flex gap-4 text-3xl md:text-2xl text-white">
               <FaSquareFacebook />
               <FaInstagram />
               <SiIndeed />

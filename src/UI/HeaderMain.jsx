@@ -6,10 +6,9 @@ const HeaderMain = ({ mode }) => {
   const [isSticky, setIsSticky] = useState();
   const [hover, sethover] = useState();
 
-  const services = ["Web ", " IT "];
   return (
-    <header className={` relative  main    mx-auto    md:bg-white `}>
-      <div className="relative  lg:w-11/12 md:w-9/12 mx-auto flex items-center justify-around">
+    <header className={` relative  main   mx-auto    md:bg-white `}>
+      <div className="relative    lg:w-11/12 md:w-9/12 mx-auto flex items-center justify-around">
         <div className="flex   relative   items-center justify-between  w-full  py-2 ">
           <NavLink to={"/"}>
             <Logo />
@@ -19,9 +18,9 @@ const HeaderMain = ({ mode }) => {
           >
             <nav className="">
               <ul
-                className={`flex md:flex-row flex-col font-thin   text-black  w-full md:text-center md:max-h-fit  gap-12 md:gap-10 cursor-pointer     `}
+                className={`flex md:flex-row flex-col font-thin  transition-all duration-1000   text-black  w-full md:text-center md:max-h-fit  gap-12 md:gap-10 cursor-pointer     `}
               >
-                <li className="header-li hover:font-medium ">
+                <li className="header-li hover:font-medium  transition-all duration-700">
                   <NavLink to={"/services"} href="#">
                     What We do{" "}
                   </NavLink>
@@ -42,16 +41,6 @@ const HeaderMain = ({ mode }) => {
                   <a href="#" className="dropdown">
                     Services{" "}
                   </a>
-
-                  {/* <div className="dropdown-menu absolute hidden bg-white  top-10  text-gray-700 pt-1">
-                    <div className="flex gap-8 p-10 w-full">
-                      {services.map((val, i) => (
-                        <p key={i} className="font-medium  ">
-                          {val}
-                        </p>
-                      ))}
-                    </div>
-                  </div> */}
                 </li>
 
                 <li className="header-li hover:font-medium">

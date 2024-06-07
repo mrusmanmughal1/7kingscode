@@ -5,9 +5,9 @@ import { RxRocket } from "react-icons/rx";
 import { AiOutlinePhone } from "react-icons/ai";
 const WeAreTecz = () => {
   return (
-    <div className="p-6 md:p-16">
+    <div className="">
       <div className="w-full md:w-11/12 lg:w-3/4 mx-auto">
-        <div className="flex flex-col lg:flex-row justify-center items-center py-10 lg:py-16">
+        <div className="flex flex-col lg:flex-row justify-center   py-10 lg:py-32">
           {/* 1st section */}
           <div className="relative w-full lg:w-1/2 mb-10 lg:mb-0">
             {/* <img
@@ -20,7 +20,7 @@ const WeAreTecz = () => {
             </div>
           </div>
           {/* 2nd Section */}
-          <div className="w-full lg:w-3/4 px-6 lg:px-24 py-6 lg:py-14">
+          <div className="w-full lg:w-3/4 px-6 lg:px-24 py-6 lg:py-8">
             <div className="mb-4 lg:mb-1">
               <ol>
                 <li className="text-blue-secondary text-lg font-bold">

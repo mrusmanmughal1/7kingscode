@@ -65,7 +65,7 @@ const UXDesigner = () => {
       <div className="w-[90%] lg:w-[70%] mx-auto py-4">
         <div className="flex flex-col lg:flex-row gap-24">
           {/* left  */}
-          <div className="bg-blue-secondary text-white p-8 w-full lg:w-[30%] space-y-10">
+          <div className="bg-blue-secondary text-white p-8 w-full  lg:w-[35%] 2xl:w-[30%] space-y-10">
             <div className="font-semibold text-xl">
               <p>Have Any Problem? Please Contact</p>
             </div>
