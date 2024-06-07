@@ -12,7 +12,7 @@ const Main = () => {
     <div>
       <Hero />
       <WeAreTecz />
-      <BusinessGrowth />
+
       <Counter />
       <TechManagement />
       <TechnologyChallenges />

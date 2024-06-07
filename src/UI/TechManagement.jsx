@@ -47,7 +47,7 @@ const TechManagement = () => {
                 </p>
               </div>
             </div>
-            <div className="flex gap-4 items-center">
+            <div className="flex gap-4 border-b pb-4 items-center">
               <div className="">
                 <BsCapslock className="text-3xl lg:text-4xl text-blue-secondary" />
               </div>
