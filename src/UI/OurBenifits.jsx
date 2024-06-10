@@ -53,9 +53,11 @@ const WeAreTecz = () => {
                 </div>
               </div>
               <div className="flex flex-col lg:flex-row gap-6">
-                <button className="bg-blue-secondary px-4 py-2 text-white">
-                  Discover More
-                </button>
+                <a href="https://ismailceo.com/" target="_blank">
+                  <button className="bg-blue-secondary px-4 py-3 text-medium text-white">
+                    Discover More
+                  </button>
+                </a>
                 <div className="flex items-center gap-2">
                   <img className="w-12 rounded-full" src={ceo} alt="CEO" />
                   <div>
