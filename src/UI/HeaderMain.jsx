@@ -21,7 +21,7 @@ const HeaderMain = ({ mode }) => {
                 className={`flex md:flex-row flex-col font-thin  transition-all duration-1000   text-black  w-full md:text-center md:max-h-fit  gap-12 md:gap-10 cursor-pointer     `}
               >
                 <li className="header-li hover:font-medium  transition-all duration-700">
-                  <NavLink to={"/services"} href="#">
+                  <NavLink to={"/"} href="#">
                     What We do{" "}
                   </NavLink>
                   {/* Services */}
@@ -38,9 +38,9 @@ const HeaderMain = ({ mode }) => {
                   // onMouseOver={() => sethover(true)}
                   // onMouseLeave={() => sethover(false)}
                 >
-                  <a href="#" className="dropdown">
+                  <NavLink to={"/services"} className="dropdown">
                     Services{" "}
-                  </a>
+                  </NavLink>
                 </li>
 
                 <li className="header-li hover:font-medium">

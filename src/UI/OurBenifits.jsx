@@ -1,6 +1,6 @@
 import { FaCheck } from "react-icons/fa";
 import b1 from "../assets/images/benifits-1.jpg";
-import b2 from "../assets/images/benifits-2.jpg";
+import ceo from "../assets/images/CEO.png";
 import { RxRocket } from "react-icons/rx";
 import { AiOutlinePhone } from "react-icons/ai";
 const WeAreTecz = () => {
@@ -30,7 +30,7 @@ const WeAreTecz = () => {
             </div>
             <div className="flex flex-col gap-2">
               <div className="text-3xl md:text-2xl font-semibold py-2">
-                We Revolutionizing businesses with technology
+                Revolutionizing businesses with technology
               </div>
               <div className="text-slate-400 pb-8">
                 7 Kings Code is a leading IT consulting firm serving partners
@@ -57,10 +57,7 @@ const WeAreTecz = () => {
                   Discover More
                 </button>
                 <div className="flex items-center gap-2">
-                  <img
-                    src="https://data.themeim.com/wp/tecz/wp-content/uploads/2023/09/avatar-1.png"
-                    alt="CEO"
-                  />
+                  <img className="w-12 rounded-full" src={ceo} alt="CEO" />
                   <div>
                     <p className="font-semibold">MR. ISMAIL</p>
                     <p>CEO & PRESIDENT</p>

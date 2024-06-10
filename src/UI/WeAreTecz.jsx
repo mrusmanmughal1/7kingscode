@@ -19,7 +19,7 @@ const WeAreTecz = () => {
               src={a2}
             />
             <div className="flex items-end justify-center items md:justify-start gap-10 ">
-              <img className="  " src={a3} />
+              <img className="w-full lg:w-auto " src={a3} />
               <div className=" hidden md:block">
                 <p className="font-bold text-6xl ">10+</p>
                 <div className=" uppercase font-semibold ">

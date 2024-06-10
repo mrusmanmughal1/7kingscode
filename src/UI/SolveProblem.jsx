@@ -9,7 +9,7 @@ const SolveProblem = () => {
           <div className="flex mx-auto   lg:w-[80%] flex-col gap-4 md:flex-row justify-between items-center">
             <div className="md:p-8">
               <div className=" text-lg  md:text-3xl  text-center   md:text-start md:w-8/12  font-semibold   text-white">
-                7KingsCode Always Ready For Solve Your Problem
+                7 Kings Code Always Ready For Solve Your Problem
               </div>
             </div>
             <div className="">

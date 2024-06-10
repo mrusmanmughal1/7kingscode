@@ -30,7 +30,7 @@ const FooterMain = () => {
           <div className="flex flex-col    items-start">
             <p className="font-medium  pb-8 text-center">Our Navigation</p>
             <div className="text-slate-400  gap-4  flex flex-col   ">
-              <p href="">About 7kings Code</p>
+              <p href="">About 7 kings Code</p>
 
               <p href="">Meet the Team</p>
 
@@ -52,7 +52,8 @@ const FooterMain = () => {
           </p>
           <div className=" space-y-4 text-gray-400">
             <p className="flex gap-4">
-              <FaSquarePhone className="text-blue-secondary" /> (+1) 9542728515
+              <FaSquarePhone className="text-blue-secondary" /> (+1)
+              954-272-8515
             </p>
             <p className="flex gap-4">
               <SiImessage className="text-blue-secondary" /> info@7kingscode.com

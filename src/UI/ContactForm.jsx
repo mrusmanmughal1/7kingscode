@@ -26,7 +26,7 @@ const TalkWithUs = () => {
       initialValues: credentials,
       onSubmit: (values, action) => {
         action.resetForm();
-        console.log(values);
+        // console.log(values);
       },
       validationSchema: ContactFormSchema,
     });
@@ -42,7 +42,7 @@ const TalkWithUs = () => {
               aria-hidden="true"
             />
             <p className="text-blue-secondary font-semibold pb-2 text-lg">
-              Let’s Talk With Us
+              Let’s Talk
             </p>
           </div>
           <div className="text-4xl font-bold mb-6">
@@ -54,12 +54,50 @@ const TalkWithUs = () => {
               symbols and processes that may be used to operate on such symbols.
             </p>
           </div>
-          <div className="mb-12">
-            <img
-              src={contact}
-              alt="Contact"
-              className="w-full h-auto rounded-md"
-            />
+
+          <div className="p-2 flex  lg:text-xs flex-col lg:flex-row">
+            <div className=" mb-4 border-l-2 p-8 border-gray-600">
+              <h3 className="text-xl  font-semibold mb-2">Dubai Office</h3>
+              <div className="flex">
+                <p className="flex  text-5xl text-gray-700">
+                  <GrFormLocation />
+                </p>
+                <p>Via Dante Alighieri,5, Pero (MI)- Italy</p>
+              </div>
+              <div className="flex space-y-2">
+                <p className="flex items-center px-3  text-2xl text-gray-700">
+                  <FaSquarePhone />
+                </p>
+                <p>(+91)9581016898</p>
+              </div>
+              <div className="flex space-y-2">
+                <p className="flex items-center px-3  text-2xl text-gray-700">
+                  <AiOutlineMail />
+                </p>
+                <p>info@7kingscode.com</p>
+              </div>
+            </div>
+            <div className="mb-4 p-8 border-l-2 pl-8 border-gray-600">
+              <h3 className="text-xl font-semibold mb-2">Italy Office</h3>
+              <div className="flex">
+                <p className="flex items-center text-5xl text-gray-700">
+                  <GrFormLocation />
+                </p>
+                <p>516 Pinnacle AlBarsha 1, Arab United Arab</p>
+              </div>
+              <div className="flex space-y-2">
+                <p className="flex items-center px-3  text-2xl text-gray-700">
+                  <FaSquarePhone />
+                </p>
+                <p>(+91)9581016898</p>
+              </div>
+              <div className="flex space-y-2">
+                <p className="flex items-center px-3  text-2xl text-gray-700">
+                  <AiOutlineMail />
+                </p>
+                <p>info@7kingscode.com</p>
+              </div>
+            </div>
           </div>
           <div className="p-2 flex  lg:text-xs flex-col lg:flex-row">
             <div className=" mb-4 border-l-2 p-8 border-gray-600">
