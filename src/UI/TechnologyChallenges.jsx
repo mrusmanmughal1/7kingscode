@@ -11,7 +11,7 @@ const TechnologyChallenges = () => {
   const [hover, setHover] = useState();
   const container = [
     {
-      title: "I Card",
+      title: "I-Card",
       icon: <AiOutlineGlobal />,
     },
     {
@@ -23,7 +23,7 @@ const TechnologyChallenges = () => {
       icon: <MdWifiTethering />,
     },
     {
-      title: "Desi MArt",
+      title: "Desi Mart",
       icon: <AiFillFund />,
     },
     {
@@ -31,7 +31,7 @@ const TechnologyChallenges = () => {
       icon: <AiFillCodepenSquare />,
     },
     {
-      title: "PITA HUT",
+      title: "Pita Hut",
       icon: <MdOutlineConnectedTv />,
     },
   ];

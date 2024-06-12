@@ -9,7 +9,10 @@ const WeAreTecz = () => {
       <div className="w-full md:w-11/12 lg:w-3/4 mx-auto">
         <div className="flex flex-col lg:flex-row justify-center   py-10 lg:py-32">
           {/* 1st section */}
-          <div className="relative w-full lg:w-1/2 mb-10 lg:mb-0">
+          <div
+            className="relative w-11/12 mx-auto
+           lg:w-1/2 mb-10 lg:mb-0"
+          >
             {/* <img
               className="absolute left-0 lg:left-52 bottom-0 hidden md:block"
               src={b2}
