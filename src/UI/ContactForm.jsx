@@ -55,32 +55,11 @@ const TalkWithUs = () => {
             </p>
           </div>
 
-          <div className="p-2 flex  lg:text-xs flex-col lg:flex-row">
-            <div className=" mb-4 border-l-2 p-8 border-gray-600">
+          <div className="p-2 flex   lg:text-xs flex-col lg:flex-row">
+            <div className=" mb-4 flex-1  border-l-2 p-8 border-gray-600">
               <h3 className="text-xl  font-semibold mb-2">Dubai Office</h3>
               <div className="flex">
                 <p className="flex  text-5xl text-gray-700">
-                  <GrFormLocation />
-                </p>
-                <p>Via Dante Alighieri,5, Pero (MI)- Italy</p>
-              </div>
-              <div className="flex space-y-2">
-                <p className="flex items-center px-3  text-2xl text-gray-700">
-                  <FaSquarePhone />
-                </p>
-                <p>(+91)9581016898</p>
-              </div>
-              <div className="flex space-y-2">
-                <p className="flex items-center px-3  text-2xl text-gray-700">
-                  <AiOutlineMail />
-                </p>
-                <p>info@7kingscode.com</p>
-              </div>
-            </div>
-            <div className="mb-4 p-8 border-l-2 pl-8 border-gray-600">
-              <h3 className="text-xl font-semibold mb-2">Italy Office</h3>
-              <div className="flex">
-                <p className="flex items-center text-5xl text-gray-700">
                   <GrFormLocation />
                 </p>
                 <p>516 Pinnacle AlBarsha 1, Arab United Arab</p>
@@ -98,17 +77,13 @@ const TalkWithUs = () => {
                 <p>info@7kingscode.com</p>
               </div>
             </div>
-          </div>
-          <div className="p-2 flex  lg:text-xs flex-col lg:flex-row">
-            <div className=" mb-4 border-l-2 p-8 border-gray-600">
-              <h3 className="text-xl  font-semibold mb-2">Pakistan Office</h3>
+            <div className="mb-4 p-8  flex-1  border-l-2 pl-8 border-gray-600">
+              <h3 className="text-xl font-semibold mb-2">Italy Office</h3>
               <div className="flex">
-                <p className="flex  text-5xl text-gray-700">
+                <p className="flex items-center text-5xl text-gray-700">
                   <GrFormLocation />
                 </p>
-                <p>
-                  Plot # 16, DHA Phase 8 Ex-Park View Block D,Lahore Pakistan
-                </p>
+                <p>Via Dante Alighieri,5, Pero (MI)- Italy</p>
               </div>
               <div className="flex space-y-2">
                 <p className="flex items-center px-3  text-2xl text-gray-700">
@@ -123,7 +98,30 @@ const TalkWithUs = () => {
                 <p>info@7kingscode.com</p>
               </div>
             </div>
-            <div className="mb-4 p-8 border-l-2 pl-8 border-gray-600">
+          </div>
+          <div className="p-2 flex  lg:text-xs flex-col lg:flex-row">
+            <div className=" mb-4 flex-1 border-l-2 p-8 border-gray-600">
+              <h3 className="text-xl  font-semibold mb-2">Pakistan Office</h3>
+              <div className="flex">
+                <p className="flex  text-5xl text-gray-700">
+                  <GrFormLocation />
+                </p>
+                <p>Plot # 16 Ex- View Park Phase 8 DHA Lahore Cantt</p>
+              </div>
+              <div className="flex space-y-2">
+                <p className="flex items-center px-3  text-2xl text-gray-700">
+                  <FaSquarePhone />
+                </p>
+                <p>(+91)9581016898</p>
+              </div>
+              <div className="flex space-y-2">
+                <p className="flex items-center px-3  text-2xl text-gray-700">
+                  <AiOutlineMail />
+                </p>
+                <p>info@7kingscode.com</p>
+              </div>
+            </div>
+            <div className="mb-4 p-8  flex-1 border-l-2 pl-8 border-gray-600">
               <h3 className="text-xl font-semibold mb-2">India Office</h3>
               <div className="flex">
                 <p className="flex items-center text-5xl text-gray-700">
