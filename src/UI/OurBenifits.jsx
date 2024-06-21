@@ -19,7 +19,7 @@ const WeAreTecz = () => {
               alt="Benefits"
             /> */}
             <div className="flex items-end gap-4 lg:gap-10">
-              <img src={b1} alt="Benefits" />
+              <img src={b1} alt="Benefits" className="w-full" />
             </div>
           </div>
           {/* 2nd Section */}

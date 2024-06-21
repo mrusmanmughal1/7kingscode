@@ -14,7 +14,7 @@ const SolveProblem = () => {
             </div>
             <div className="">
               <button
-                className="bg-white text-black py-5 px-12 font-semibold rounded hover:bg-black 
+                className="bg-white text-black py-2 px-14 font-semibold rounded hover:bg-black 
               hover:text-white hover:translate-y-1 transition duration-300"
               >
                 Discover More
