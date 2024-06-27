@@ -27,20 +27,16 @@ const UXDesigner = () => {
                 />
               </div>
 
-              <div className="text-justify">
+              <div className="text-justify space-y-4">
                 <div className="text-2xl font-semibold">
-                  <p>UI/UX Designing</p>
+                  <p>UI/UX DESIGNING</p>
                 </div>
                 <p>
-                  Lorem ipsum is simply free text used by copytyping refreshing.
-                  Neque porro est qui dolorem ipsum quia quaed inventore
-                  veritatis et quasi architecto beatae vitae dicta sunt
-                  explicabo. Aelltes port lacus quis enim var sed efficitur
-                  turpis gilla sed sit amet finibus eros. Lorem Ipsum is simply
-                  dummy text of the printing and typesetting industry. Lorem
-                  Ipsum has been the industry standard dummy text ever since the
-                  1500s, when an unknown printer took a galley of type and
-                  scrambled it to make a type specimen book.
+                  User experience is at the heart of digital success. Our UI/UX
+                  designing services focus on creating intuitive and engaging
+                  interfaces that enhance user satisfaction and drive
+                  engagement. We blend creativity with functionality to deliver
+                  designs that are both beautiful and effective.
                 </p>
               </div>
             </div>

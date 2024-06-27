@@ -11,8 +11,8 @@ import { AiOutlineAim } from "react-icons/ai";
 const Counter = () => {
   const Arr = [
     { count: "347", des: "Projects Completed", icon: <AiOutlineAim /> },
-    { count: "456", des: "IT Specialist", icon: <AiOutlineTeam /> },
-    { count: "32", des: "Happy Clients", icon: <AiOutlineSchedule /> },
+    { count: "100", des: "IT Specialist", icon: <AiOutlineTeam /> },
+    { count: "200", des: "Happy Clients", icon: <AiOutlineSchedule /> },
     { count: "423", des: "Smart Solution ", icon: <MdOutlineTouchApp /> },
   ];
   const [counterOn, setCounterOn] = useState(false);

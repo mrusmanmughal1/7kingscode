@@ -31,7 +31,7 @@ const HeaderMain = ({ mode }) => {
                     who we are{" "}
                   </NavLink>
                   {/* about us 
-                  leader ship */}
+                    leader ship */}
                 </li>
                 <li
                   className="header-li hover:font-medium   dropdown inline-block relative "
@@ -52,31 +52,35 @@ const HeaderMain = ({ mode }) => {
             </nav>
           </div>
           <div className="flex px-4   md:px-0 items-center ">
-            <NavLink className="px-4 py-3        capitalize  md:px-8 md:py-3  text-white    hover:bg-black   bg-blue-secondary transition-all duration-700 rounded-md bg-bluecolor cursor-pointer font-medium">
+            <NavLink
+              to={"/careers"}
+              href=""
+              className="px-4 py-3        capitalize  md:px-8 md:py-3  text-white    hover:bg-black   bg-blue-secondary transition-all duration-700 rounded-md bg-bluecolor cursor-pointer font-medium"
+            >
               Careers{" "}
             </NavLink>
           </div>
         </div>
       </div>
       {/* <div
-        className={`${
-          hover ? " block" : "hidden "
-        }  absolute     w-full z-[999]`}
-      >
-        <div
           className={`${
-            hover && " opacity-100"
-          }   "opacity-0 bg-white   opacity-70 transition-all  duration-1000   "`}
+            hover ? " block" : "hidden "
+          }  absolute     w-full z-[999]`}
         >
-          <div className="flex gap-8">
-            {services.map((val, i) => (
-              <p key={i} className="font-medium  ">
-                {val}
-              </p>
-            ))}
+          <div
+            className={`${
+              hover && " opacity-100"
+            }   "opacity-0 bg-white   opacity-70 transition-all  duration-1000   "`}
+          >
+            <div className="flex gap-8">
+              {services.map((val, i) => (
+                <p key={i} className="font-medium  ">
+                  {val}
+                </p>
+              ))}
+            </div>
           </div>
-        </div>
-      </div> */}
+        </div> */}
     </header>
   );
 };

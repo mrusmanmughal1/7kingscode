@@ -7,7 +7,7 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 import { FiPhone } from "react-icons/fi";
 import { IoLocation, IoMail } from "react-icons/io5";
 
-const CloudService = () => {
+const BusinessIntelligence = () => {
   return (
     <>
       <div className="flex  gap-44 mx-auto  ">
@@ -32,15 +32,15 @@ const CloudService = () => {
 
               <div className="text-justify space-y-4">
                 <div className="text-2xl font-semibold">
-                  <p>Web Development</p>
+                  <p>Business Intelligence</p>
                 </div>
                 <p>
-                  Your website is your digital storefront. Our website
-                  development services ensure that you have a powerful online
-                  presence that attracts, engages, and converts visitors. From
-                  responsive designs to robust functionalities, we build
-                  websites that are scalable, secure, and optimized for
-                  performance
+                  Transform your data into strategic assets with our business
+                  intelligence services. We provide comprehensive BI solutions
+                  that help you gather, analyze, and visualize data to make
+                  informed decisions. Our tools and techniques enable you to
+                  gain deeper insights into your business performance and market
+                  trends, driving growth and innovation.
                 </p>
               </div>
             </div>
@@ -51,4 +51,4 @@ const CloudService = () => {
   );
 };
 
-export default CloudService;
+export default BusinessIntelligence;

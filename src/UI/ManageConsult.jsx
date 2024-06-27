@@ -7,12 +7,12 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 import { FiPhone } from "react-icons/fi";
 import { IoLocation, IoMail } from "react-icons/io5";
 
-const CloudService = () => {
+const ManageConsult = () => {
   return (
     <>
-      <div className="flex gap-44 mx-auto  ">
-        <div className="  mx-auto ">
-          <div className="flex  gap-24">
+      <div className="flex  gap-44 mx-auto  ">
+        <div className="    mx-auto ">
+          <div className="flex lg:flex-row gap-24">
             {/* left  */}
 
             {/* right  */}
@@ -30,20 +30,16 @@ const CloudService = () => {
                 />
               </div>
 
-              <div className="text-justify">
+              <div className="text-justify space-y-4">
                 <div className="text-2xl font-semibold">
-                  <p>Cloud Services</p>
+                  <p>MANAGEMENT CONSULTING</p>
                 </div>
                 <p>
-                  Lorem ipsum is simply free text used by copytyping refreshing.
-                  Neque porro est qui dolorem ipsum quia quaed inventore
-                  veritatis et quasi architecto beatae vitae dicta sunt
-                  explicabo. Aelltes port lacus quis enim var sed efficitur
-                  turpis gilla sed sit amet finibus eros. Lorem Ipsum is simply
-                  dummy text of the printing and typesetting industry. Lorem
-                  Ipsum has been the industry standard dummy text ever since the
-                  1500s, when an unknown printer took a galley of type and
-                  scrambled it to make a type specimen book.
+                  Navigate complex business challenges with confidence. Our
+                  management consultants bring a wealth of experience and
+                  strategic insight to help you optimize operations, improve
+                  performance, and drive growth. We partner with you to create
+                  actionable plans that deliver measurable results
                 </p>
               </div>
             </div>
@@ -54,4 +50,4 @@ const CloudService = () => {
   );
 };
 
-export default CloudService;
+export default ManageConsult;

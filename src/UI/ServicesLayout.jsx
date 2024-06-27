@@ -19,50 +19,64 @@ const ServicesLayout = () => {
         <div className="w-[90%] lg:w-[30%] mx-auto  ">
           <div className="flex flex-col lg:flex-col gap-20">
             {/* left  */}
-            <div className="bg-[#F6F7F9] shadow-md  p-8  w-full mx-auto  space-y-4">
-              <div className="font-semibold text-xl">Services</div>
+            <div className="bg-[#F6F7F9] shadow-md  p-4  w-full mx-auto">
+              <div className="font-semibold text-xl pl-4">Services</div>
 
               <NavLink
                 to="UXDesigner"
                 className="flex justify-between items-center hover:bg-black hover:text-white p-4"
               >
                 UI/UX Designing
-                <AiOutlineArrowRight />
+                <AiOutlineArrowRight className="text-lg" />
               </NavLink>
               <NavLink
-                to="CloudService"
-                className="flex justify-between items-center hover:bg-black hover:text-white p-4 "
+                to="OnShoreOffShoreTeam"
+                className="flex justify-between  capitalize items-center  hover:bg-black hover:text-white p-4 "
               >
-                Cloud Service
-                <AiOutlineArrowRight />
+                Off Shore & On Shore Teams
+                <AiOutlineArrowRight className="text-lg" />
               </NavLink>
               <NavLink
-                to="ITManagement"
+                to="TalentAquisition"
+                className="flex justify-between  items-center hover:bg-black hover:text-white p-4"
+              >
+                Talent Acquisition and Visa Sponsorship
+                <AiOutlineArrowRight className="text-2xl" />
+              </NavLink>
+              <NavLink
+                to="ManageConsult"
                 className="flex justify-between items-center hover:bg-black hover:text-white p-4"
               >
-                IT Management
-                <AiOutlineArrowRight />
+                Management Consulting
+                <AiOutlineArrowRight className="text-lg" />
               </NavLink>
               <NavLink
-                to="DataVisualization"
+                to="DataAnalysis"
                 className="flex justify-between items-center hover:bg-black hover:text-white p-4"
               >
-                Data Visualization
-                <AiOutlineArrowRight />
-              </NavLink>
-              <NavLink
-                to="SecuritySystem"
-                className="flex justify-between items-center hover:bg-black hover:text-white p-4"
-              >
-                Security System
-                <AiOutlineArrowRight />
+                Data Analysis
+                <AiOutlineArrowRight className="text-lg" />
               </NavLink>
               <NavLink
                 to="WebDevelopment"
                 className="flex justify-between items-center hover:bg-black hover:text-white p-4"
               >
                 Web Development
-                <AiOutlineArrowRight />
+                <AiOutlineArrowRight className="text-lg" />
+              </NavLink>
+              <NavLink
+                to="DigitalMarketing"
+                className="flex justify-between items-center hover:bg-black hover:text-white p-4"
+              >
+                Digital Marketing
+                <AiOutlineArrowRight className="text-lg" />
+              </NavLink>
+              <NavLink
+                to="BusinessIntelligence"
+                className="flex justify-between items-center hover:bg-black hover:text-white p-4"
+              >
+                Business Intelligence
+                <AiOutlineArrowRight className="text-lg" />
               </NavLink>
             </div>
             {/* right  */}

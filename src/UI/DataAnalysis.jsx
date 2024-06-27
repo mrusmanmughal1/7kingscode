@@ -7,7 +7,7 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 import { FiPhone } from "react-icons/fi";
 import { IoLocation, IoMail } from "react-icons/io5";
 
-const CloudService = () => {
+const DataAnalysis = () => {
   return (
     <>
       <div className="flex  gap-44 mx-auto  ">
@@ -32,15 +32,15 @@ const CloudService = () => {
 
               <div className="text-justify space-y-4">
                 <div className="text-2xl font-semibold">
-                  <p>Web Development</p>
+                  <p>Data Analysis</p>
                 </div>
                 <p>
-                  Your website is your digital storefront. Our website
-                  development services ensure that you have a powerful online
-                  presence that attracts, engages, and converts visitors. From
-                  responsive designs to robust functionalities, we build
-                  websites that are scalable, secure, and optimized for
-                  performance
+                  Unlock the power of your data with our data analysis services.
+                  We help you turn raw data into actionable insights, enabling
+                  you to make informed decisions and stay ahead of the
+                  competition. Our experts use advanced analytics tools and
+                  techniques to uncover patterns and trends that drive business
+                  value
                 </p>
               </div>
             </div>
@@ -51,4 +51,4 @@ const CloudService = () => {
   );
 };
 
-export default CloudService;
+export default DataAnalysis;

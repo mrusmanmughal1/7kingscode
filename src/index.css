@@ -208,3 +208,8 @@ body {
     width: 200px;
   }
 }
+
+li .active {
+  color: #323875;
+  font-weight: 600;
+}

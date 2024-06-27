@@ -7,7 +7,7 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 import { FiPhone } from "react-icons/fi";
 import { IoLocation, IoMail } from "react-icons/io5";
 
-const ITManagement = () => {
+const DigitalMarketing = () => {
   return (
     <>
       <div className="flex  gap-44 mx-auto  ">
@@ -30,20 +30,16 @@ const ITManagement = () => {
                 />
               </div>
 
-              <div className="text-justify">
+              <div className="text-justify space-y-4">
                 <div className="text-2xl font-semibold">
-                  <p>Data Visualization</p>
+                  <p>Digital Marketing</p>
                 </div>
                 <p>
-                  Lorem ipsum is simply free text used by copytyping refreshing.
-                  Neque porro est qui dolorem ipsum quia quaed inventore
-                  veritatis et quasi architecto beatae vitae dicta sunt
-                  explicabo. Aelltes port lacus quis enim var sed efficitur
-                  turpis gilla sed sit amet finibus eros. Lorem Ipsum is simply
-                  dummy text of the printing and typesetting industry. Lorem
-                  Ipsum has been the industry standard dummy text ever since the
-                  1500s, when an unknown printer took a galley of type and
-                  scrambled it to make a type specimen book.
+                  In today’s digital age, a strong online presence is crucial.
+                  Our digital marketing services are designed to boost your
+                  brand visibility and drive traffic to your site. We craft
+                  strategies that deliver tangible results and maximize ROI from
+                  SEO and content marketing to social media and PPC campaigns
                 </p>
               </div>
             </div>
@@ -54,4 +50,4 @@ const ITManagement = () => {
   );
 };
 
-export default ITManagement;
+export default DigitalMarketing;
