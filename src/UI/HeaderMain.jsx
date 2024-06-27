@@ -52,11 +52,7 @@ const HeaderMain = ({ mode }) => {
             </nav>
           </div>
           <div className="flex px-4   md:px-0 items-center ">
-            <NavLink
-              target="_blank"
-              rel="noreferrer"
-              className="px-4 py-3        capitalize  md:px-8 md:py-3  text-white    hover:bg-black   bg-blue-secondary transition-all duration-700 rounded-md bg-bluecolor cursor-pointer font-medium"
-            >
+            <NavLink className="px-4 py-3        capitalize  md:px-8 md:py-3  text-white    hover:bg-black   bg-blue-secondary transition-all duration-700 rounded-md bg-bluecolor cursor-pointer font-medium">
               Careers{" "}
             </NavLink>
           </div>
