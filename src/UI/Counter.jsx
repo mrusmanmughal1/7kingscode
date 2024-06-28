@@ -43,6 +43,8 @@ const Counter = () => {
                         {counterOn && (
                           <CountUp start={0} end={val.count} duration={2} />
                         )}
+                        {i == 1 ? "+" : ""}
+                        {i == 2 ? "+" : ""}
                       </h2>
                     </ScrollTrigger>
                   </div>

@@ -22,6 +22,7 @@ import ManageConsult from "./UI/ManageConsult";
 import DataAnalysis from "./UI/DataAnalysis";
 import DigitalMarketing from "./UI/DigitalMarketing";
 import BusinessIntelligence from "./UI/BusinessIntelligence";
+import ApplyForm from "./UI/ApplyForm";
 
 const App = () => {
   return (
@@ -54,6 +55,7 @@ const App = () => {
           <Route path="/careers" element={<Careers />} />
           <Route path="/filters" element={<Filters />} />
           <Route path="/Careersdetail" element={<Careersdetail />} />
+          <Route path="/ApplyForm" element={<ApplyForm />} />
 
           <Route path="*" element={<Error />} />
         </Routes>

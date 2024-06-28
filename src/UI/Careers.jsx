@@ -46,8 +46,8 @@ const Careers = () => {
                     <p>IT-Development</p>
                     <NavLink to="/Careersdetail">
                       <button
-                        className="text-xs bg-blue-secondary font-semibold px-6
-               rounded-md py-2 border border-black hover:text-black hover:bg-blue-secondary"
+                        className="text-xs bg-blue-secondary font-medium px-6 py-3 text-white
+               rounded-md  border border-black hover:text-black hover:bg-blue-secondary"
                       >
                         VIEW MORE
                       </button>
