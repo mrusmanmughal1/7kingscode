@@ -1,5 +1,5 @@
 import { useFormik } from "formik";
-import { AiOutlineExclamationCircle, AiOutlineMail } from "react-icons/ai";
+import { AiOutlineMail } from "react-icons/ai";
 import { CiEdit, CiPhone } from "react-icons/ci";
 import { SlUser } from "react-icons/sl";
 import { ApplyFormSchema } from "../helpers/FormSchema";
@@ -10,21 +10,51 @@ const ApplyForm = () => {
     Email: "",
     Phone: "",
     Description: "",
+    cv: "",
   };
-  const { values, errors, touched, handleChange, handleSubmit, handleBlur } =
-    useFormik({
-      initialValues: credentials,
-      onSubmit: (values, action) => {
-        // action.resetForm();
-        console.log(values);
-      },
-      validationSchema: ApplyFormSchema,
-    });
+  const {
+    values,
+    errors,
+    touched,
+    handleChange,
+    handleSubmit,
+    handleBlur,
+    setFieldValue,
+  } = useFormik({
+    initialValues: credentials,
+    onSubmit: (values, action) => {
+      // action.resetForm();
+      console.log(values);
+      const formData = new FormData();
+      Object.keys(values).forEach((key) => {
+        formData.append(key, values[key]);
+      });
+
+      sendData(formData);
+    },
+    validationSchema: ApplyFormSchema,
+  });
+
+  const sendData = async (data) => {
+    try {
+      const res = await fetch("http://31.220.22.196:5173", {
+        method: "POST",
+        body: data,
+        headers: {
+          "Content-Type": "multipart/form-data",
+        },
+      });
+      //   setFilePath(res.data.filePath);
+    } catch (err) {
+      console.error(err);
+    }
+  };
+
   return (
     <div className="w-[80%] pb-24">
       <div className="w-[50%] mx-auto">
         <div className="capitalize flex flex-col pb-8 text-4xl font-semibold text-blue-secondary pt-12">
-          <p>Apply Now</p>
+          <p className="w-full border- border-black">Apply Now</p>
         </div>
         <form className="space-y-4" onSubmit={handleSubmit}>
           <div className="">
@@ -118,24 +148,24 @@ const ApplyForm = () => {
           <div className="">
             <div
               className={`${
-                errors.Message && " border-2 border-red-600"
+                errors.Description && " border-2 border-red-600"
               } border p-4 flex     gap-2 `}
             >
               <CiEdit className="text-2xl text-gray-500" />
               <textarea
                 className="outline-none  w-full flex-1 resize-none"
                 rows="5"
-                name="Message"
+                name="Description"
                 placeholder="Description"
                 aria-required="true"
                 onChange={handleChange}
                 onBlur={handleBlur}
-                value={values.Message}
+                value={values.Description}
               ></textarea>
             </div>
-            {errors.Message && touched.Message && (
+            {errors.Description && touched.Description && (
               <p className="text-start px-2  text-xs font-semibold text-red-600">
-                {errors.Message}
+                {errors.Description}
               </p>
             )}
           </div>
@@ -143,24 +173,24 @@ const ApplyForm = () => {
           <div className="">
             <div
               className={`${
-                errors.Message && " border-2 border-red-600"
+                errors.cv && " border-2 border-red-600"
               }   p-4 flex     gap-2 `}
             >
               <input
                 className="outline-none  w-full flex-1 resize-none"
-                rows="5"
                 type="file"
-                name="Message"
+                name="cv"
                 placeholder="Description"
                 aria-required="true"
-                onChange={handleChange}
                 onBlur={handleBlur}
-                value={values.Message}
+                onChange={(event) => {
+                  setFieldValue("cv", event.currentTarget.files[0]);
+                }}
               ></input>
             </div>
-            {errors.Message && touched.Message && (
+            {errors.cv && touched.cv && (
               <p className="text-start px-2  text-xs font-semibold text-red-600">
-                {errors.Message}
+                {errors.cv}
               </p>
             )}
           </div>

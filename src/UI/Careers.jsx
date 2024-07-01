@@ -2,9 +2,29 @@ import { BiWorld } from "react-icons/bi";
 import MainBanner from "./MainBanner";
 import Filters from "./Filters";
 import { NavLink } from "react-router-dom";
+import { LuMoveRight } from "react-icons/lu";
 
 const Careers = () => {
-  const joblisting = [1, 2, 3, 4, 5];
+  const joblisting = [
+    {
+      title: "Quality Analyst Automation Test Engineer",
+      Location: "Coral Springs, FL",
+      Requirement: "Onsite -IT- Development/ Quality Analyst",
+      link: "/QualityAnalyst",
+    },
+    {
+      title: "SharePoint Developer",
+      Location: "Coral Springs, FL",
+      Requirement: "Onsite -IT- Development/ SharePoint Developer",
+      link: "/SharePointDeveloper",
+    },
+    {
+      title: "Business Analyst",
+      Location: "Coral Springs, FL",
+      Requirement: "Onsite -IT- Development/ Business Analyst",
+      link: "/BusinessAnalyst",
+    },
+  ];
   return (
     <div className="">
       <div>
@@ -33,23 +53,18 @@ const Careers = () => {
                 className="text-blue-secondary border-b border-black pt-8"
               >
                 <div className="w-full md:w-full justify-between flex flex-col gap-4">
-                  <p className="uppercase font-bold">
-                    Software Development Manager
-                  </p>
+                  <p className="uppercase font-bold">{v.title}</p>
                   <div className="text-xs flex gap-28 text-black items-center w-full justify-between pb-2">
                     <div className="">
                       <p className="flex gap-2 items-center w-full justify-between">
-                        <BiWorld /> Lahore , Pakistan
+                        <BiWorld /> {v.Location}
                       </p>
                     </div>
-                    <p>Contract</p>
-                    <p>IT-Development</p>
-                    <NavLink to="/Careersdetail">
-                      <button
-                        className="text-xs bg-blue-secondary font-medium px-6 py-3 text-white
-               rounded-md  border border-black hover:text-black hover:bg-blue-secondary"
-                      >
-                        VIEW MORE
+                    <p>{v.Requirement}</p>
+
+                    <NavLink to={v.link}>
+                      <button className="text-2xl text-blue-secondary">
+                        <LuMoveRight />
                       </button>
                     </NavLink>
                   </div>

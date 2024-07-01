@@ -9,20 +9,19 @@ import Error from "./pages/Error";
 import { Toaster } from "react-hot-toast";
 import UXDesigner from "./UI/UXDesigner";
 import OnShoreOffShoreTeam from "./UI/OnShoreOffShoreTeam";
-import ITManagement from "./UI/TalentAquisition";
-import DataVisualization from "./UI/ManageConsult";
-import SecuritySystem from "./UI/DataAnalysis";
 import WebDevelopment from "./UI/WebDevelopment";
 import ServicesLayout from "./UI/ServicesLayout";
 import Careers from "./UI/Careers";
 import Filters from "./UI/Filters";
-import Careersdetail from "./UI/Careersdetail";
+import QualityAnalyst from "./UI/QualityAnalyst";
 import TalentAquisition from "./UI/TalentAquisition";
 import ManageConsult from "./UI/ManageConsult";
 import DataAnalysis from "./UI/DataAnalysis";
 import DigitalMarketing from "./UI/DigitalMarketing";
 import BusinessIntelligence from "./UI/BusinessIntelligence";
 import ApplyForm from "./UI/ApplyForm";
+import SharePointDeveloper from "./UI/SharePointDeveloper";
+import BusinessAnalyst from "./UI/BusinessAnalyst";
 
 const App = () => {
   return (
@@ -54,8 +53,13 @@ const App = () => {
           <Route path="/services" element={<Services />} />
           <Route path="/careers" element={<Careers />} />
           <Route path="/filters" element={<Filters />} />
-          <Route path="/Careersdetail" element={<Careersdetail />} />
+          <Route path="/QualityAnalyst" element={<QualityAnalyst />} />
           <Route path="/ApplyForm" element={<ApplyForm />} />
+          <Route
+            path="/SharePointDeveloper"
+            element={<SharePointDeveloper />}
+          />
+          <Route path="/BusinessAnalyst" element={<BusinessAnalyst />} />
 
           <Route path="*" element={<Error />} />
         </Routes>

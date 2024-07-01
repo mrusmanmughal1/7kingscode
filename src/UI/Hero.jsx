@@ -46,7 +46,7 @@ const Hero = () => {
                     IT Presence
                   </p>
                 </div>
-                <DMOre />
+                <DMOre to={"/about-us"} />
               </div>
             </div>
           </div>
