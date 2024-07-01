@@ -22,11 +22,6 @@ const Hero = () => {
         </div>
         <div className="       flex   justify-between  w-[45%] 2xl:w-[45%]   z-50 transition   duration-700 absolute left-[12%] top-[10%]  2xl:top-[15%]">
           <img src={bannerimg} alt="" className="fadeimg hidden lg:block" />
-          <div>
-            <div className="p-10  hidden lg:block rounded-full bg-white text-black">
-              <FaPlay className="text-xl" />
-            </div>
-          </div>
         </div>
         <div className=" flex  items-end bottom-64 lg:bottom-28  2xl:bottom-44 relative h-screen">
           <div className="relative w-full">

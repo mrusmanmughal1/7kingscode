@@ -10,6 +10,7 @@ import Dubai from "../assets/images/dubai.png";
 import india from "../assets/images/india.png";
 import pakistan from "../assets/images/pakistan.png";
 import itly from "../assets/images/usa.png";
+import { NavLink } from "react-router-dom";
 
 const FooterMain = () => {
   return (
@@ -30,13 +31,21 @@ const FooterMain = () => {
           <div className="flex flex-col    items-start">
             <p className="font-medium  pb-8 text-center">Our Navigation</p>
             <div className="text-slate-400  gap-4  flex flex-col   ">
-              <p href="">About 7 kings Code</p>
+              <NavLink to={"/"}>
+                <p> What We Do </p>
+              </NavLink>
 
-              <p href="">Meet the Team</p>
+              <NavLink to={"/about-us"}>
+                <p> Who we Are </p>
+              </NavLink>
 
-              <p href="">News & Projects </p>
+              <NavLink to={"/services"}>
+                <p> Services </p>
+              </NavLink>
 
-              <p href="">Contact</p>
+              <NavLink to={"/contact-us"}>
+                <p> Contact Us </p>
+              </NavLink>
             </div>
           </div>
         </div>

@@ -6,11 +6,11 @@ import { ApplyFormSchema } from "../helpers/FormSchema";
 
 const ApplyForm = () => {
   const credentials = {
-    Name: "",
-    Email: "",
-    Phone: "",
-    Description: "",
-    cv: "",
+    name: "",
+    email: "",
+    phone_number: "",
+    description: "",
+    file: "",
   };
   const {
     values,
@@ -23,28 +23,37 @@ const ApplyForm = () => {
   } = useFormik({
     initialValues: credentials,
     onSubmit: (values, action) => {
-      // action.resetForm();
-      console.log(values);
       const formData = new FormData();
       Object.keys(values).forEach((key) => {
         formData.append(key, values[key]);
       });
 
       sendData(formData);
+      action.resetForm();
     },
     validationSchema: ApplyFormSchema,
   });
 
   const sendData = async (data) => {
     try {
-      const res = await fetch("http://31.220.22.196:5173", {
-        method: "POST",
-        body: data,
-        headers: {
-          "Content-Type": "multipart/form-data",
-        },
-      });
-      //   setFilePath(res.data.filePath);
+      const res = await fetch(
+        "https://339b-103-217-179-73.ngrok-free.app/submit/",
+        {
+          method: "POST",
+          body: data,
+          // Do not set Content-Type header; the browser will set it automatically
+        }
+      );
+
+      if (res.status !== "success") {
+        // Handle non-200 responses
+        const errorData = await res.json();
+        console.error("Error:", errorData);
+      } else {
+        const responseData = await res.json();
+        console.log("Success:", responseData);
+        // setFilePath(responseData.filePath);
+      }
     } catch (err) {
       console.error(err);
     }
@@ -60,7 +69,7 @@ const ApplyForm = () => {
           <div className="">
             <div
               className={`${
-                errors.Name && " border-2 border-red-600"
+                errors.name && " border-2 border-red-600"
               } border p-4 flex  items-center gap-2 `}
             >
               <p>
@@ -68,21 +77,21 @@ const ApplyForm = () => {
               </p>
               <input
                 type="text"
-                id="Name"
-                name="Name"
+                id="name"
+                name="name"
                 className="outline-none  w-full  bottom-0"
                 placeholder="Your Name"
                 aria-required="true"
                 onChange={handleChange}
                 onBlur={handleBlur}
-                value={values.Name}
+                value={values.name}
               />
             </div>
 
             <div className="">
-              {errors.Name && touched.Name && (
+              {errors.name && touched.Name && (
                 <p className="text-start  text-xs font-semibold text-red-600">
-                  {errors.Name}
+                  {errors.name}
                 </p>
               )}
             </div>
@@ -90,7 +99,7 @@ const ApplyForm = () => {
           <div className="">
             <div
               className={`${
-                errors.Email && " border-2 border-red-600"
+                errors.email && " border-2 border-red-600"
               } border p-4 flex  items-center gap-2 `}
             >
               <p>
@@ -98,21 +107,21 @@ const ApplyForm = () => {
               </p>
               <input
                 type="email"
-                id="Email"
-                name="Email"
+                id="email"
+                name="email"
                 className="outline-none  w-full  bottom-0"
                 placeholder="Email Address"
                 aria-required="true"
                 onChange={handleChange}
                 onBlur={handleBlur}
-                value={values.Email}
+                value={values.email}
               />
             </div>
 
             <div className="">
-              {errors.Email && touched.Email && (
+              {errors.email && touched.email && (
                 <p className="text-start  text-xs font-semibold text-red-600">
-                  {errors.Email}
+                  {errors.email}
                 </p>
               )}
             </div>
@@ -120,7 +129,7 @@ const ApplyForm = () => {
           <div className="">
             <div
               className={`${
-                errors.Phone && " border-2 border-red-600"
+                errors.phone_number && " border-2 border-red-600"
               } border p-4 flex  items-center gap-2 `}
             >
               <p>
@@ -128,19 +137,19 @@ const ApplyForm = () => {
               </p>
               <input
                 type="number"
-                id="Phone"
-                name="Phone"
+                id="phone_number"
+                name="phone_number"
                 className="outline-none w-full  bottom-0"
                 placeholder="Phone Number"
                 aria-required="true"
                 onChange={handleChange}
                 onBlur={handleBlur}
-                value={values.Phone}
+                value={values.phone_number}
               />
             </div>
-            {errors.Phone && touched.Phone && (
+            {errors.phone_number && touched.phone_number && (
               <p className="text-start px-1  text-xs font-semibold text-red-600">
-                {errors.Phone}
+                {errors.phone_number}
               </p>
             )}
           </div>
@@ -148,24 +157,24 @@ const ApplyForm = () => {
           <div className="">
             <div
               className={`${
-                errors.Description && " border-2 border-red-600"
+                errors.description && " border-2 border-red-600"
               } border p-4 flex     gap-2 `}
             >
               <CiEdit className="text-2xl text-gray-500" />
               <textarea
                 className="outline-none  w-full flex-1 resize-none"
                 rows="5"
-                name="Description"
-                placeholder="Description"
+                name="description"
+                placeholder="description"
                 aria-required="true"
                 onChange={handleChange}
                 onBlur={handleBlur}
-                value={values.Description}
+                value={values.description}
               ></textarea>
             </div>
-            {errors.Description && touched.Description && (
+            {errors.description && touched.description && (
               <p className="text-start px-2  text-xs font-semibold text-red-600">
-                {errors.Description}
+                {errors.description}
               </p>
             )}
           </div>
@@ -173,24 +182,24 @@ const ApplyForm = () => {
           <div className="">
             <div
               className={`${
-                errors.cv && " border-2 border-red-600"
+                errors.file && " border-2 border-red-600"
               }   p-4 flex     gap-2 `}
             >
               <input
                 className="outline-none  w-full flex-1 resize-none"
                 type="file"
-                name="cv"
+                name="file"
                 placeholder="Description"
                 aria-required="true"
                 onBlur={handleBlur}
                 onChange={(event) => {
-                  setFieldValue("cv", event.currentTarget.files[0]);
+                  setFieldValue("file", event.currentTarget.files[0]);
                 }}
               ></input>
             </div>
-            {errors.cv && touched.cv && (
+            {errors.file && touched.file && (
               <p className="text-start px-2  text-xs font-semibold text-red-600">
-                {errors.cv}
+                {errors.file}
               </p>
             )}
           </div>

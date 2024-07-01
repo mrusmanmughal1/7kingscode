@@ -32,16 +32,16 @@ const BestSolution = () => {
     <div className="businessGrowth pb-16">
       <div className="flex lg:flex-row flex-col container gap-8 w-11/12 pt-16 md:pt-24 lg:w-[80%] mx-auto">
         {aa.map((item, index) => (
-          <NavLink key={index} to={item.link}>
-            <div
-              key={index}
-              onMouseOver={() => setHover(index)}
-              onMouseLeave={() => setHover(null)}
-              className={`overflow-hidden bg-white hover:bg-black shadow-md space-y-2 text-black hover:text-white
-              hover:-translate-y-8 transition-all duration-500 px-8 py-8 flex-1 ${
-                hover === index ? "lg:-translate-y-8" : ""
-              }`}
-            >
+          <div
+            key={index}
+            onMouseOver={() => setHover(index)}
+            onMouseLeave={() => setHover(null)}
+            className={`overflow-hidden bg-white hover:bg-black shadow-md space-y-2 text-black hover:text-white
+                hover:-translate-y-8 transition-all duration-500 px-8 py-8 flex-1 ${
+                  hover === index ? "lg:-translate-y-8" : ""
+                }`}
+          >
+            <NavLink key={index} to={item.link}>
               <div className="flex justify-between items-center font-bold text-lg">
                 <p>{item.title}</p>
                 <p
@@ -61,8 +61,8 @@ const BestSolution = () => {
               >
                 {item.desc}
               </p>
-            </div>
-          </NavLink>
+            </NavLink>
+          </div>
         ))}
       </div>
     </div>

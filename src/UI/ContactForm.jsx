@@ -55,7 +55,7 @@ const TalkWithUs = () => {
             </p>
           </div>
 
-          <div className="p-2 flex   lg:text-xs flex-col lg:flex-row">
+          <div className="p-2 flex    lg:text-xs flex-col lg:flex-row">
             <div className=" mb-4 flex-1  border-l-2 p-8 border-gray-600">
               <h3 className="text-xl  font-semibold mb-2">Dubai Office</h3>
               <div className="flex">

@@ -90,7 +90,7 @@ const ServicesLayout = () => {
                 </div>
                 <div className="flex flex-col">
                   <p className="text-gray-300">Call Us</p>
-                  <p>+99 345 234 5678</p>
+                  <p>(+1) 954-272-8515</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">
@@ -108,7 +108,10 @@ const ServicesLayout = () => {
                 </div>
                 <div className="flex flex-col">
                   <p className="text-gray-300">Our Address</p>
-                  <p>1401 Coral Springs, United States</p>
+                  <p>
+                    1401 N University Dr suite 503, Coral Springs, FL 33071,
+                    United State
+                  </p>
                 </div>
               </div>
             </div>
