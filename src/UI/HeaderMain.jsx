@@ -38,9 +38,42 @@ const HeaderMain = ({ mode }) => {
                   // onMouseOver={() => sethover(true)}
                   // onMouseLeave={() => sethover(false)}
                 >
-                  <NavLink to={"/services"} className="dropdown">
-                    Services{" "}
-                  </NavLink>
+                  <div to={"/services"} className="dropdown">
+                    <div className="">
+                      <div className="dropdown inline-block relative">
+                        <button className="   rounded inline-flex items-center">
+                          <span className="mr-1">What We Offer</span>
+                          <svg
+                            className="fill-current h-4 w-4"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 20 20"
+                          >
+                            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />{" "}
+                          </svg>
+                        </button>
+                        <ul className="dropdown-menu absolute hidden text-gray-700 pt-1">
+                          <NavLink to={"/services"}>
+                            <li className="">
+                              <a
+                                className="rounded-t bg-white hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap"
+                                href="#"
+                              >
+                                Services
+                              </a>
+                            </li>
+                          </NavLink>
+                          <li className="">
+                            <a
+                              className="bg-white hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap"
+                              href="#"
+                            >
+                              Products
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
                 </li>
 
                 <li className="header-li hover:font-medium">

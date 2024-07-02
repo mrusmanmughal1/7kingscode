@@ -40,8 +40,8 @@ const BusinessAnalyst = () => {
               Requires a Bachelor’s Degree in Computer Science, Software
               Engineering or Information Technology and 2 years of computer/IT
               experience. This must include 2 years of experience in the
-              following skill sets: Kanban Technologies; Agile; Scrum; Product
-              backlogs; Maintaining Sprint. Must be willing to travel and
+              following skill sets: Kanban Technologies, Agile, Scrum, Product
+              backlogs, Maintaining Sprint. Must be willing to travel and
               relocate. 40 hours/week, $126,000 per year.
             </p>
           </div>

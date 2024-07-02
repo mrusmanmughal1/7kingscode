@@ -32,12 +32,12 @@ const Careers = () => {
           text="Contact"
           title="WE PROVIDE ENTERPRISE-LEVEL SOLUTIONS"
         />
-        <div className="w-[60%] mx-auto pb-32">
+        <div className="lg:w-[60%] w-[90%] mx-auto pb-32">
           <div className="flex flex-col space-y-8 pt-12">
-            <p className="text-2xl font-semibold text-blue-secondary">
+            <p className="text-2xl  font-semibold text-blue-secondary">
               DISCOVER NEW OPPORTUNITIES
             </p>
-            <p>
+            <p className="text-justify">
               Looking for your next IT job opportunity? We specialize in
               matching proven technology professionals with the right jobs
               across a range of specialties and experience levels. Explore
@@ -57,7 +57,7 @@ const Careers = () => {
                   <div className="text-xs flex gap-28 text-black items-center w-full justify-between pb-2">
                     <div className="">
                       <p className="flex gap-2 items-center w-full justify-between">
-                        <BiWorld /> {v.Location}
+                        <BiWorld className="text-xl" /> {v.Location}
                       </p>
                     </div>
                     <p>{v.Requirement}</p>

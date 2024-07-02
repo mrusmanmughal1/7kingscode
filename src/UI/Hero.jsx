@@ -2,7 +2,12 @@ import banner from "../assets/images/banner3.jpg";
 import bannerimg from "../assets/images/bannertop.png";
 import { FaPlay } from "react-icons/fa";
 import DMOre from "./DMOre";
+import { useTypewriter } from "react-simple-typewriter";
 const Hero = () => {
+  const [text] = useTypewriter({
+    words: ["7 KINGS CODE", "7 KINGS CODE", " 7 KINGS CODE"],
+    loop: {},
+  });
   return (
     <div className="bg-primary h-screen  overflow-hidden ">
       <div className=" relative">
@@ -31,8 +36,11 @@ const Hero = () => {
                   NEVER STOP, NEVER GIVE UP, ALWAYS FIND SOLUTION.
                 </span>
                 <div className="   uppercase relative   pt- z-40 w-full  font-bold text-white">
-                  <span className="text-blue-secondary fade text-5xl md:text-7xl 2xl:text-8xl">
-                    7 kings code
+                  <span
+                    id="typewriter"
+                    className="text-blue-secondary fade text-5xl md:text-7xl 2xl:text-8xl"
+                  >
+                    {text}
                   </span>
                   <br></br>
                   <p className=" text-2xl 2xl:text-5xl"> elevating your </p>
