@@ -1,8 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import MainBanner from "./MainBanner";
-import UI from "../assets/images/UI.webp";
-import a1 from "../assets/images/ai.png";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { FiPhone } from "react-icons/fi";
 import { IoLocation, IoMail } from "react-icons/io5";
@@ -21,6 +19,81 @@ const ServicesLayout = () => {
             {/* left  */}
             <div className="bg-[#F6F7F9] shadow-md  p-4  w-full mx-auto">
               <div className="font-semibold text-xl pl-4">Services</div>
+              {/* // yahan se  */}
+
+              {/* <div className="relative w-full  overflow-hidden">
+                <ul className="peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer"></ul>
+                <input
+                  type="checkbox"
+                  className=" peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer"
+                />
+                <div className="flex justify-between items-center hover:bg-black hover:text-white p-4">
+                  <h1 className="   ">Infrastructure Management</h1>
+                </div>
+                <div className=" absolute  top-5 right-3 text-white transition-transform duration-500 rotate-0 peer-checked:rotate-90 ">
+                  <AiOutlineArrowRight className="text-black" />
+                </div>
+                <div className="   overflow-hidden transition-all duration-500  max-h-0 peer-checked:max-h-40 ">
+                  <div className="  px-4">
+                    <NavLink
+                      to="UXDesigner"
+                      className="flex justify-between items-center      "
+                    >
+                      Network Management
+                    </NavLink>
+                    <NavLink
+                      to="UXDesigner"
+                      className="flex py-2 justify-between items-center      "
+                    >
+                      Network Management
+                    </NavLink>
+                    <NavLink
+                      to="UXDesigner"
+                      className="flex justify-between items-center      "
+                    >
+                      Network Management
+                    </NavLink>
+                  </div>
+                </div>
+              </div> */}
+
+              {/* yahan tak  */}
+
+              <NavLink
+                to="UXDesigner"
+                className="flex justify-between items-center hover:bg-black hover:text-white p-4"
+              >
+                Infrastructure Management
+                <AiOutlineArrowRight className="text-lg" />
+              </NavLink>
+              <NavLink
+                to="UXDesigner"
+                className="flex justify-between items-center hover:bg-black hover:text-white p-4"
+              >
+                Application Management
+                <AiOutlineArrowRight className="text-lg" />
+              </NavLink>
+              <NavLink
+                to="UXDesigner"
+                className="flex justify-between items-center hover:bg-black hover:text-white p-4"
+              >
+                Security Services
+                <AiOutlineArrowRight className="text-lg" />
+              </NavLink>
+              <NavLink
+                to="UXDesigner"
+                className="flex justify-between items-center hover:bg-black hover:text-white p-4"
+              >
+                End-User Support
+                <AiOutlineArrowRight className="text-lg" />
+              </NavLink>
+              <NavLink
+                to="UXDesigner"
+                className="flex justify-between items-center hover:bg-black hover:text-white p-4"
+              >
+                Data Management
+                <AiOutlineArrowRight className="text-lg" />
+              </NavLink>
 
               <NavLink
                 to="UXDesigner"

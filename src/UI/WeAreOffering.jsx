@@ -5,7 +5,7 @@ import Slider from "react-slick";
 const WeAreOffering = () => {
   return (
     <div className="whatweoffer">
-      <div className="   lg:w-4/5 mx-auto w-11/12    py-20 text-white">
+      <div className="   lg:w-4/5 mx-auto w-11/12     py-20 text-white">
         <div className="">
           <p className="text-blue-secondary font-medium">What We're Offering</p>
         </div>

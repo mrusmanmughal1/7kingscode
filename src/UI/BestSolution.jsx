@@ -1,37 +1,41 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
-import { CiBank } from "react-icons/ci";
-import { BsBarChart } from "react-icons/bs";
-import { IoRocketOutline } from "react-icons/io5";
+import { NavLink } from "react-router-dom";
+import { RiBuilding2Line } from "react-icons/ri";
+import { TbDeviceMobileCog } from "react-icons/tb";
+import { GrShieldSecurity } from "react-icons/gr";
 const BestSolution = () => {
   const [hover, setHover] = useState();
 
-  const arrofContent = [
+  const arr = [
     {
-      title: "Consulting Services",
-      desc: " IT Strategy and Planning,Business Process Analysis and Optimization,IT Governance and Compliance",
-      icon: <CiBank />,
+      title: "Infrastructure Management",
+      desc: "Ensuring robust, efficient, and scalable IT infrastructure for seamless operations.",
+      icon: <RiBuilding2Line />,
+      link: "/service/OnShoreOffShoreTeam",
     },
     {
-      title: "Cyber Security Services",
-      desc: " Security Risk Assessments,Vulnerability Management,Penetration Testing,Incident Response and Recovery",
-      icon: <BsBarChart />,
+      title: " Application Management",
+      desc: " End-to-end services for optimizing, maintaining, and supporting your software applications..",
+      icon: <TbDeviceMobileCog />,
+      link: "/service/TalentAquisition",
     },
     {
-      title: "Software Solutions",
-      desc: " Custom Software Development ,Enterprise Resource Planning (ERP) , Software Development, ",
-      icon: <IoRocketOutline />,
+      title: "Security Services",
+      desc: "Comprehensive protection solutions to safeguard your assets and data. ",
+      icon: <GrShieldSecurity />,
+      link: "/service/ManageConsult",
     },
   ];
   return (
-    <div className=" md:p-12">
-      <div className=" flex lg:flex-row flex-col container gap-10 2xl:gap-20  w-11/12  lg:w-[80%] 2xl:w-3/4  pt-20 md:pt-32   mx-auto">
-        {arrofContent.map((item, index) => (
+    <div className="businessGrowth  md:">
+      <div className=" flex lg:flex-row flex-col container gap-10    w-11/12  lg:w-[80%] 2xl:w-3/4  py-20     mx-auto">
+        {arr.map((item, index) => (
           <div
             key={index}
             onMouseOver={() => setHover(index)}
             onMouseLeave={() => setHover(null)}
-            className="  overflow-hidden  hover:bg-black shadow-sm space-y-2 text-black hover:text-white  hover:-translate-y-8 transition-all duration-500   px-8 py-8"
+            className="  overflow-hidden  w-[33%] hover:bg-black  space-y-2 bg-white shadow-md text-black hover:text-white  hover:-translate-y-8 transition-all duration-500   px-8 py-8"
           >
             <div className=" flex justify-between   items-center font-bold ">
               <p className="hover:text-blue-secondary duration-500 transition-all  text-xl lg:text-[20px]   ">

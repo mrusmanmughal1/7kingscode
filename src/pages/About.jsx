@@ -18,7 +18,7 @@ const About = () => {
 
       <OurBenifits />
       <Counter />
-      <BusinessGrowth />
+      <BestSolution />
       <SolveProblem />
     </div>
   );

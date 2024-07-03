@@ -21,7 +21,7 @@ const QualityAnalyst = () => {
             <p>Title: Quality Analyst Automation Test Engineer</p>
           </div>
           <div className="w- flex text-justify flex-col pt-12">
-            <p className=" text-2xl">EXPERIENCE:</p>
+            <p className=" text-2xl">Job Requirement:</p>
             <p>
               7 Kings Code LLC seeks a Quality Analyst Automation Test Engineer
               in Coral Springs, FL. Perform Functional, Regression testing, and
@@ -50,14 +50,13 @@ const QualityAnalyst = () => {
               <p>-Net Framework</p>
               <p>-Devops</p>
               <p>-MVC</p> <p> -SQL</p>
+              <p>-Must be willing to travel and relocate.</p>
+              <br></br>
               <p>
-                -Must be willing to travel and relocate. 40 hours/week, $107,869
-                per year
-              </p>{" "}
-              <p> -Must also have authority to work permanently in the U.S</p>
-              <p>
-                -Applicants who are interested in this position may apply at
-                www.jobpostingtoday.com (ref #13719) for consideration
+                40 hours/week, $107,869 per year Must also have authority to
+                work permanently in the U.S Applicants who are interested in
+                this position may apply at www.jobpostingtoday.com (ref #13719)
+                for consideration.
               </p>
             </p>
           </div>

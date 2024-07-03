@@ -22,6 +22,7 @@ import BusinessIntelligence from "./UI/BusinessIntelligence";
 import ApplyForm from "./UI/ApplyForm";
 import SharePointDeveloper from "./UI/SharePointDeveloper";
 import BusinessAnalyst from "./UI/BusinessAnalyst";
+import Contactpage from "./UI/Contactpage";
 
 const App = () => {
   return (
@@ -55,6 +56,7 @@ const App = () => {
           <Route path="/filters" element={<Filters />} />
           <Route path="/QualityAnalyst" element={<QualityAnalyst />} />
           <Route path="/ApplyForm" element={<ApplyForm />} />
+          <Route path="/contactpage" element={<Contactpage />} />
           <Route
             path="/SharePointDeveloper"
             element={<SharePointDeveloper />}
