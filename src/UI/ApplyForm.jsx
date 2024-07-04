@@ -55,7 +55,6 @@ const ApplyForm = () => {
         console.log("Success:", responseData);
         // setFilePath(responseData.filePath);
       }
-      s;
     } catch (err) {
       console.error(err);
     }
@@ -63,7 +62,7 @@ const ApplyForm = () => {
 
   return (
     <div className=" bg-slate-200 py-20    ">
-      <div className="w-[70%] mx-auto flex shadow-2xl">
+      <div className="w-[90%] lg:w-[70%] mx-auto flex shadow-2xl">
         <div className=" w-full bg-slate-100 p-10  ">
           <div className="capitalize flex flex-col pb-8 text-4xl font-semibold text-blue-secondary  ">
             <p className="w-full">Apply Now</p>
@@ -217,7 +216,7 @@ const ApplyForm = () => {
             </div>
           </form>
         </div>
-        <div className="     ">
+        <div className="  hidden md:block   ">
           <img className="w-full    " src={apply} alt="" />
         </div>
       </div>

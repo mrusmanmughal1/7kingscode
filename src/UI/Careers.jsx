@@ -54,7 +54,7 @@ const Careers = () => {
               >
                 <div className="w-full md:w-full justify-between flex flex-col gap-4">
                   <p className="uppercase font-bold">{v.title}</p>
-                  <div className="text-xs flex gap-28 text-black items-center w-full justify-between pb-2">
+                  <div className="text-xs flex gap-20 lg:gap-28 text-black items-center w-full justify-between pb-2">
                     <div className="">
                       <p className="flex gap-2 items-center w-full justify-between">
                         <BiWorld className="text-xl" /> {v.Location}

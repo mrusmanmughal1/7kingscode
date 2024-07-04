@@ -9,7 +9,7 @@ const BusinessAnalyst = () => {
           text="Contact"
           title="WE PROVIDE ENTERPRISE-LEVEL SOLUTIONS"
         />
-        <div className="w-[70%] mx-auto pt-24">
+        <div className="w-[90%] lg:w-[70%] mx-auto pt-24">
           <div>
             <p className="text-xl border-b border-black text-blue-secondary font-semibold pb-2">
               Business Analyst
@@ -20,7 +20,7 @@ const BusinessAnalyst = () => {
             <p>Onsite - IT - Development / Business Analyst </p>
             <p>Title: Business Analyst</p>
           </div>
-          <div className="w-[70%] flex flex-col pt-12">
+          <div className="w-[90%] lg:w-[70%] flex flex-col pt-12">
             <p className=" text-2xl">Job Requirement:</p>
             <p>
               7 Kings Code LLC seeks a SharePoint Developer in Coral Springs,

@@ -51,7 +51,7 @@ const BusinessGrowth = () => {
 
   return (
     <div className="businessGrowth pb-16">
-      <div className="grid grid-cols-3 lg:flex-row flex-col container gap-8 w-11/12 pt-16 md:pt-24 lg:w-[80%] mx-auto">
+      <div className="grid grid-cols-1 lg:grid-cols-3 lg:flex-row flex-col container gap-8 w-11/12 pt-16 md:pt-24 lg:w-[80%] mx-auto">
         {aa.map((item, index) => (
           <div
             key={index}
