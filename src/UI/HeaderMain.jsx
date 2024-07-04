@@ -55,14 +55,16 @@ const HeaderMain = ({ mode }) => {
                               </a>
                             </li>
                           </NavLink>
-                          <li className="">
-                            <a
-                              className="bg-white hover:bg-gray-100 py-3 px-4 block whitespace-no-wrap"
-                              href="#"
-                            >
-                              Products
-                            </a>
-                          </li>
+                          <NavLink to={"/Products"}>
+                            <li className="">
+                              <a
+                                className="bg-white hover:bg-gray-100 py-3 px-4 block whitespace-no-wrap"
+                                href="#"
+                              >
+                                Products
+                              </a>
+                            </li>
+                          </NavLink>
                         </ul>
                       </div>
                     </div>
