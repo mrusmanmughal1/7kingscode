@@ -4,12 +4,8 @@ import { SiImessage } from "react-icons/si";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { FaSquareFacebook } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
-import { SiIndeed } from "react-icons/si";
 import { FaTwitter } from "react-icons/fa";
-import Dubai from "../assets/images/dubai.png";
-import india from "../assets/images/india.png";
-import pakistan from "../assets/images/pakistan.png";
-import itly from "../assets/images/usa.png";
+import { FaLinkedinIn } from "react-icons/fa6";
 import { NavLink } from "react-router-dom";
 
 const FooterMain = () => {
@@ -69,9 +65,26 @@ const FooterMain = () => {
             </p>
 
             <div className="flex gap-4 text-3xl md:text-2xl text-white">
-              <FaSquareFacebook />
-              <FaInstagram />
-              <SiIndeed />
+              <a
+                href="https://web.facebook.com/profile.php?id=100077385620343"
+                target="_blank"
+              >
+                {" "}
+                <FaSquareFacebook />
+              </a>
+              <a
+                href="https://www.instagram.com/7kingscode/?hl=en"
+                target="_blank"
+              >
+                <FaInstagram />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/7-kings-code/"
+                target="_blank"
+              >
+                {" "}
+                <FaLinkedinIn />
+              </a>
               <FaTwitter />
             </div>
           </div>

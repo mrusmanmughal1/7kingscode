@@ -9,7 +9,7 @@ const SharePointDeveloper = () => {
           text="Contact"
           title="WE PROVIDE ENTERPRISE-LEVEL SOLUTIONS"
         />
-        <div className="w-[90%] lg:w-[70%] mx-auto pt-24">
+        <div className="w-[90%] lg:w-[70%] mx-auto pt-24 pb-14">
           <div>
             <p className="text-xl border-b border-black text-blue-secondary font-semibold pb-2">
               Share Point Developer

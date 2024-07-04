@@ -40,13 +40,7 @@ const MobileNav = ({ mode }) => {
               <hr />
               <li className="header-li">
                 <NavLink to={"/services"} href="#">
-                  What We do{" "}
-                </NavLink>
-              </li>
-              <hr />
-              <li className="header-li">
-                <NavLink to={"/services"} href="#">
-                  Services{" "}
+                  What We Offer{" "}
                 </NavLink>
               </li>
               <hr />
@@ -58,7 +52,9 @@ const MobileNav = ({ mode }) => {
               </li>
               <hr />
               <li className="header-li  ">
-                <a href="#Projects">Careers </a>
+                <NavLink to={"/Careers"} href="#">
+                  Careers{" "}
+                </NavLink>
               </li>
             </ul>
           </nav>
