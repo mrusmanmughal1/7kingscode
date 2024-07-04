@@ -8,6 +8,7 @@ import WeAreTecz from "../UI/WeAreTecz";
 import TechManagement from "../UI/TechManagement";
 import WeAreOffering from "../UI/WeAreOffering";
 import Whitslider from "../UI/Whitslider";
+import BestSolution from "../UI/BestSolution";
 
 const Main = () => {
   return (
@@ -20,7 +21,9 @@ const Main = () => {
       <Counter />
       <TechManagement />
       <TechnologyChallenges />
-      <OurPartners />
+      {/* <OurPartners /> */}
+      <BestSolution />
+      <hr />
       <Location />
     </div>
   );

@@ -25,8 +25,12 @@ const Hero = () => {
             <div className="absolute inset-0 bg-[#4043ff] mix-blend-[#3f4fff] z-20 h-full  w-full   opacity-60 "></div>
           </div>
         </div>
-        <div className="       flex   justify-between  w-[45%] 2xl:w-[45%]   z-50 transition   duration-700 absolute left-[12%] top-[10%]  2xl:top-[15%]">
-          <img src={bannerimg} alt="" className="fadeimg hidden lg:block" />
+        <div className="       flex   justify-between    z-50 transition   duration-700 absolute left-[36%] top-[7%]  2xl:top-[12%]">
+          <img
+            src={bannerimg}
+            alt=""
+            className="fadeimg hidden lg:block  md:w-[120px] 2xl:w-[180px]"
+          />
         </div>
         <div className=" flex  items-end bottom-64 lg:bottom-28  2xl:bottom-44 relative h-screen">
           <div className="relative w-full">

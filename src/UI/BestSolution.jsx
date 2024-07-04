@@ -4,7 +4,12 @@ import { NavLink } from "react-router-dom";
 import { RiBuilding2Line } from "react-icons/ri";
 import { TbDeviceMobileCog } from "react-icons/tb";
 import { GrShieldSecurity } from "react-icons/gr";
+import { FaHeadphonesAlt } from "react-icons/fa";
+import { BsFillBuildingsFill } from "react-icons/bs";
+import { FaBitcoin } from "react-icons/fa6";
 import Slider from "react-slick";
+import { MdHealthAndSafety } from "react-icons/md";
+import { GiBookCover } from "react-icons/gi";
 const BestSolution = () => {
   const [hover, setHover] = useState();
 
@@ -12,31 +17,31 @@ const BestSolution = () => {
     {
       title: "Telecommunications",
       desc: " Advanced solutions to enhance connectivity and communication across networks.",
-      icon: <RiBuilding2Line />,
+      icon: <FaHeadphonesAlt />,
       link: "/service/OnShoreOffShoreTeam",
     },
     {
       title: " Real Estate",
       desc: "Comprehensive services for buying, selling, and managing properties efficiently..",
-      icon: <TbDeviceMobileCog />,
+      icon: <BsFillBuildingsFill />,
       link: "/service/TalentAquisition",
     },
     {
       title: "Finance and Banking",
       desc: " Innovative solutions to optimize financial operations and banking services. ",
-      icon: <GrShieldSecurity />,
+      icon: <FaBitcoin />,
       link: "/service/ManageConsult",
     },
     {
       title: "Health Care",
       desc: " Comprehensive services to enhance patient care and operational efficiency in healthcare settings.",
-      icon: <GrShieldSecurity />,
+      icon: <MdHealthAndSafety />,
       link: "/service/ManageConsult",
     },
     {
       title: "Education",
       desc: "Tailored solutions to foster learning and development through innovative educational practices. ",
-      icon: <GrShieldSecurity />,
+      icon: <GiBookCover />,
       link: "/service/ManageConsult",
     },
   ];

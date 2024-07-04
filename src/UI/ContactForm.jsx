@@ -40,7 +40,7 @@ const TalkWithUs = () => {
             <div className=" px-2 text-blue-secondary  font-bold text-4xl">
               ADDRESSES
             </div>
-            <div className=" mb-4  p-8 py-12 shadow-2xl  rounded-md duration-500    border-gray-600">
+            <div className=" mb-4  p-8 py-12  hover:shadow-2xl  rounded-md duration-500    border-gray-600">
               <div className="text-xl font-bold mb-2 ">HEAD OFFICE</div>
               <h3 className="text-xl  font-semibold mb-2 text-blu ">
                 USA Office
@@ -68,7 +68,7 @@ const TalkWithUs = () => {
               </div>
             </div>
 
-            <div className="p-2 flex  shadow-2xl  lg:text-xs flex-col lg:flex-row">
+            <div className="p-2 flex  hover:shadow-2xl  lg:text-xs flex-col lg:flex-row">
               <div className=" mb-4    p-8 border-gray-600">
                 <h3 className="text-xl  font-semibold mb-2">GCC Office</h3>
                 <div className="flex">
@@ -112,7 +112,7 @@ const TalkWithUs = () => {
                 </div>
               </div>
             </div>
-            <div className="p-2 flex  shadow-2xl lg:text-xs flex-col lg:flex-row">
+            <div className="p-2 flex  hover:shadow-2xl lg:text-xs flex-col lg:flex-row">
               <div className=" mb-4    p-8 border-gray-600">
                 <h3 className="text-xl  font-semibold mb-2">
                   South Asia Office
