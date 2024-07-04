@@ -71,7 +71,7 @@ const ProductDetails = () => {
   return (
     <div className="businessGrowth    ">
       <div className=" pt-20  text-blue-secondary   pb-8 text-3xl w-[75%] mx-auto  capitalize font-semibold  ">
-        Industries We Serve at 7KC
+        Products We Serve at 7KC
       </div>
       <div className="  w-[80%]   pb-20  mx-auto">
         <Slider {...settings}>

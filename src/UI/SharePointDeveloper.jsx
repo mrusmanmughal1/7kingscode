@@ -21,7 +21,7 @@ const SharePointDeveloper = () => {
             <p>Title: Share Point Developer</p>
           </div>
           <div className="w-[70%] flex flex-col pt-12">
-            <p className=" text-2xl">EXPERIENCE:</p>
+            <p className=" text-2xl">Job Requirement:</p>
             <p>
               7 Kings Code LLC seeks a SharePoint Developer in Coral Springs,
               FL. Perform build workflow forms using SharePoint Designer and
@@ -35,12 +35,19 @@ const SharePointDeveloper = () => {
             <br></br>
             <p className="text-2xl">JOB STATEMENT:</p>
             <p>
-              Requires a Master’s Degree in Computer Science, Software
+              -Requires a Master’s Degree in Computer Science, Software
               Engineering or Information Technology and 4 years of computer/IT
-              experience. This must include 2 years of experience in the
-              following skill sets: SharePoint Framework; Bootstrap; Power Apps;
-              JavaScript; HTML5; InfoPath. 40 hours/week, $125,482 per year.
+              experience.
+            </p>{" "}
+            <p>
+              -This must include 2 years of experience in the following skill
+              sets:
             </p>
+            <p>-SharePoint Framework</p>
+            <p>-Bootstrap</p>
+            <p>-Power Apps</p>
+            <p>-JavaScript</p>
+            <p>-HTML5</p> InfoPath. 40 hours/week, $125,482 per year.
           </div>
         </div>
       </div>
