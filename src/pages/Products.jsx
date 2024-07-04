@@ -1,5 +1,5 @@
-import BestSolution from "../UI/BestSolution";
 import MainBanner from "../UI/MainBanner";
+import ProductDetails from "../UI/ProductDetails";
 
 const Products = () => {
   return (
@@ -8,7 +8,7 @@ const Products = () => {
         text="About Us"
         title="WE PROVIDE ENTERPRISE-LEVEL SOLUTIONS"
       />
-      <BestSolution />
+      <ProductDetails />
     </div>
   );
 };
