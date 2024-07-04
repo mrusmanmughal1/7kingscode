@@ -8,7 +8,7 @@ import { GrUserManager } from "react-icons/gr";
 import { RiBuilding2Line } from "react-icons/ri";
 import { TbDeviceMobileCog } from "react-icons/tb";
 import { GrShieldSecurity } from "react-icons/gr";
-const BestSolution = () => {
+const BusinessGrowth = () => {
   const [hover, setHover] = useState(null);
   const aa = [
     {
@@ -90,4 +90,4 @@ const BestSolution = () => {
   );
 };
 
-export default BestSolution;
+export default BusinessGrowth;

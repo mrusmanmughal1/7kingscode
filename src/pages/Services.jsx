@@ -1,7 +1,7 @@
 import MainBanner from "../UI/MainBanner";
 import WeAreOffering from "../UI/WeAreOffering";
 import SolveProblem from "../UI/SolveProblem";
-import BestSolution from "../UI/BusinessGrowth";
+import BusinessGrowth from "../UI/BusinessGrowth";
 
 const Services = () => {
   return (
@@ -10,7 +10,7 @@ const Services = () => {
         text="Services"
         title="WE PROVIDE ENTERPRISE-LEVEL SOLUTIONS"
       />
-      <BestSolution />
+      <BusinessGrowth />
       <WeAreOffering />
       <SolveProblem />
     </div>
