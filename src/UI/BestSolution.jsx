@@ -15,34 +15,29 @@ const BestSolution = () => {
 
   const arr = [
     {
-      title: "Telecommunications",
+      title: "Telecommunication",
       desc: " Advanced solutions to enhance connectivity and communication across networks.",
       icon: <FaHeadphonesAlt />,
-      link: "/service/OnShoreOffShoreTeam",
     },
     {
       title: " Real Estate",
       desc: "Comprehensive services for buying, selling, and managing properties efficiently..",
       icon: <BsFillBuildingsFill />,
-      link: "/service/TalentAquisition",
     },
     {
       title: "Finance and Banking",
       desc: " Innovative solutions to optimize financial operations and banking services. ",
       icon: <FaBitcoin />,
-      link: "/service/ManageConsult",
     },
     {
       title: "Health Care",
       desc: " Comprehensive services to enhance patient care and operational efficiency in healthcare settings.",
       icon: <MdHealthAndSafety />,
-      link: "/service/ManageConsult",
     },
     {
       title: "Education",
       desc: "Tailored solutions to foster learning and development through innovative educational practices. ",
       icon: <GiBookCover />,
-      link: "/service/ManageConsult",
     },
   ];
   const settings = {
