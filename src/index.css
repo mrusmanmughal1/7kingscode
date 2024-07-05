@@ -17,6 +17,10 @@ body {
   line-height: 1.5;
 }
 
+a{
+  text-decoration: none;
+}
+
 .whatweSolve {
   background-image: url("./assets/images/banner-4.jpg");
 }
