@@ -93,7 +93,7 @@ const Whitslider = () => {
   ];
 
   return (
-    <div className="businessGrowth py-20">
+    <div className="businessGrowth py-24">
       <div className="    mx-auto w-[80%]">
         <Slider {...settings}>
           {val.map((item, index) => (

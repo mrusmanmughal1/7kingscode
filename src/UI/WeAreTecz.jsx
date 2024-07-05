@@ -10,7 +10,7 @@ const WeAreTecz = () => {
   return (
     <div>
       <div className=" w-11/12 md:w-4/5 2xl:w-3/4 mx-auto">
-        <div className="flex  lg:flex-row flex-col  gap-x-32 gap-y-10 md:gap-y-0  justify-center items-center py-20 lg:py-32">
+        <div className="flex  lg:flex-row flex-col  gap-x-20 gap-y-10 md:gap-y-0  justify-center items-center py-20 lg:py-32">
           {/* 1st section  */}
           <div className="relative w-full   ">
             <img className="px-20 hidden lg:block  pb-4" src={a1} />
@@ -87,6 +87,7 @@ const WeAreTecz = () => {
                   </p>
                 </div>
               </div>
+             
             </div>
           </div>
         </div>

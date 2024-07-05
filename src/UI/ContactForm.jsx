@@ -4,11 +4,9 @@ import {
   AiOutlineForm,
   AiOutlineMail,
 } from "react-icons/ai";
-import contact from "../assets/images/contact-main.jpg";
 import { FaSquarePhone } from "react-icons/fa6";
 import { CiEdit, CiPhone } from "react-icons/ci";
 import { SlUser } from "react-icons/sl";
-import toast from "react-hot-toast";
 import { useFormik } from "formik";
 import { ContactFormSchema } from "../helpers/FormSchema";
 import { PiMapPinLineFill } from "react-icons/pi";
@@ -36,40 +34,43 @@ const TalkWithUs = () => {
         <div className="flex flex-col lg:flex-row  lg:gap-32">
           {/* Content Section */}
 
-          <div className="w-full lg:w-1/2 ">
-            <div className=" px-2 text-blue-secondary  font-bold text-4xl">
+          <div className="w-full flex-1  ">
+            <div className="   text-blue-secondary  font-bold pb-4  text-4xl">
               ADDRESSES
             </div>
-            <div className=" mb-4  p-8 py-12  hover:shadow-2xl  rounded-md duration-500    border-gray-600">
-              <div className="text-xl font-bold mb-2 ">HEAD OFFICE</div>
-              <h3 className="text-xl  font-semibold mb-2 text-blu ">
-                USA Office
-              </h3>
-              <div className="flex justify-start">
-                <p className=" px-1   text-2xl text-gray-700">
-                  <PiMapPinLineFill className="text-blue-secondary" />
-                </p>
-                <p>
-                  1401 N University Dr suite 503, Coral Springs, FL 33071,
-                  United State
-                </p>
+            <div className="   mb-4   rounded-md duration-500      ">
+              <div className=" mb-4   hover:shadow-2xl duration-700  border p-8  ">
+                <h3 className="text-xl  font-semibold mb-2">HEAD OFFICE</h3>
+                <h3 className="text-xl  font-semibold mb-2">USA Office</h3>
+                <div className="mb-4   ">
+                <div className="flex">
+                  <p className="flex items-stat px-3 text-2xl text-gray-700">
+                    <PiMapPinLineFill className="text-blue-secondary" />
+                  </p>
+                  <p className="text-xs">
+                    9/3rt, Ground Floor, Sri Lakshmi Nilayam, SR Nagar,
+                    Hyd-500038.
+                  </p>
+                </div>
+                <div className="flex space-y-2">
+                  <p className="flex items-center px-3  text-2xl text-gray-700">
+                    <FaSquarePhone className="text-blue-secondary" />
+                  </p>
+                  <p className="text-xs">(+91)9581016898</p>
+                </div>
+                <div className="flex space-y-2">
+                  <p className="flex items-center px-3  text-2xl text-gray-700">
+                    <AiOutlineMail className="text-blue-secondary" />
+                  </p>
+                  <p className="text-xs">info@7kingscode.com</p>
+                </div>
               </div>
-              <div className="flex space-y-2">
-                <p className="flex items-center px-1  text-2xl text-gray-700">
-                  <FaSquarePhone className="text-blue-secondary" />
-                </p>
-                <p>(+1) 954-272-8515</p>
-              </div>
-              <div className="flex space-y-2">
-                <p className="flex items-center px-1 text-2xl text-gray-700">
-                  <AiOutlineMail className="text-blue-secondary" />
-                </p>
-                <p>info@7kingscode.com</p>
+                
+                 
               </div>
             </div>
-
-            <div className="p-2 flex  hover:shadow-2xl  lg:text-xs flex-col lg:flex-row">
-              <div className=" mb-4    p-8 border-gray-600">
+            <div className="  flex   gap-2  lg:text-xs flex-col lg:flex-row">
+              <div className=" mb-4  border  hover:shadow-2xl duration-700 p-8  ">
                 <h3 className="text-xl  font-semibold mb-2">GCC Office</h3>
                 <div className="flex">
                   <p className="flex  px-3   text-2xl text-gray-700">
@@ -90,7 +91,7 @@ const TalkWithUs = () => {
                   <p>info@7kingscode.com</p>
                 </div>
               </div>
-              <div className="mb-4 p-8     pl-8 border-gray-600">
+              <div className="mb-4 p-8   border hover:shadow-2xl duration-700   pl-8  ">
                 <h3 className="text-xl font-semibold mb-2">Europe Office</h3>
                 <div className="flex">
                   <p className="flex items-center  px-3 text-2xl text-gray-700">
@@ -112,8 +113,9 @@ const TalkWithUs = () => {
                 </div>
               </div>
             </div>
-            <div className="p-2 flex  hover:shadow-2xl lg:text-xs flex-col lg:flex-row">
-              <div className=" mb-4    p-8 border-gray-600">
+
+            <div className=" flex   gap-2 mt-4  lg:text-xs flex-col lg:flex-row">
+              <div className=" mb-4 border  hover:shadow-2xl duration-700  p-8  ">
                 <h3 className="text-xl  font-semibold mb-2">
                   South Asia Office
                 </h3>
@@ -136,7 +138,7 @@ const TalkWithUs = () => {
                   <p>info@7kingscode.com</p>
                 </div>
               </div>
-              <div className="mb-4 p-8    pl-8 border-gray-600">
+              <div className="mb-4 p-8 border  hover:shadow-2xl duration-700  pl-8  ">
                 <h3 className="text-xl font-semibold mb-2">East Asia Office</h3>
                 <div className="flex">
                   <p className="flex items-center px-3 text-2xl text-gray-700">

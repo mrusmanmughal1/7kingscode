@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import { CiBank } from "react-icons/ci";
 import { IoBusinessSharp } from "react-icons/io5";
-import { GiFlyingDagger } from "react-icons/gi";
 import { NavLink } from "react-router-dom";
 import { GrUserManager } from "react-icons/gr";
 import { RiBuilding2Line } from "react-icons/ri";
@@ -10,7 +9,7 @@ import { TbDeviceMobileCog } from "react-icons/tb";
 import { GrShieldSecurity } from "react-icons/gr";
 const BusinessGrowth = () => {
   const [hover, setHover] = useState(null);
-  const aa = [
+  const arr = [
     {
       title: "Infrastructure Management",
       desc: "Ensuring robust, efficient, and scalable IT infrastructure for seamless operations.",
@@ -50,9 +49,9 @@ const BusinessGrowth = () => {
   ];
 
   return (
-    <div className="businessGrowth pb-16">
-      <div className="grid grid-cols-1 lg:grid-cols-3 lg:flex-row flex-col container gap-8 w-11/12 pt-16 md:pt-24 lg:w-[80%] mx-auto">
-        {aa.map((item, index) => (
+    <div className="businessGrowth  py-24 ">
+      <div className="grid grid-cols-1 lg:grid-cols-3 lg:flex-row flex-col container gap-8 w-11/12  lg:w-[80%] mx-auto">
+        {arr.map((item, index) => (
           <div
             key={index}
             onMouseOver={() => setHover(index)}

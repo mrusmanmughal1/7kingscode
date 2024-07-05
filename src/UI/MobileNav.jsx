@@ -47,10 +47,7 @@ const MobileNav = ({ mode }) => {
               </li>
               <hr />
               <li className="header-li">
-                {/* <NavLink to={"/services"} href="#">
-                  What We Offer{" "}
-                </NavLink> */}
-                {/* onClick={() => settoggle(!toggle)} */}
+               
                 <div className="   text-black border-b">
                   <div className="relative w-full  overflow-hidden">
                     <input
@@ -63,7 +60,7 @@ const MobileNav = ({ mode }) => {
                     </div>
                     <div className=" absolute  top-3 right-3 text-white transition-transform duration-500 rotate-90 peer-checked:rotate-180 "></div>
                     <div className=" bg-white overflow-hidden transition-all duration-500  max-h-0 peer-checked:max-h-40 ">
-                      <div className="px-4">
+                      <div className="px-4 pb-2">
                         <li
                           className="header-li py-2"
                           onClick={() => settoggle(!toggle)}

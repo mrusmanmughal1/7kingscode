@@ -7,6 +7,7 @@ import Counter from "../UI/Counter";
 import TechManagement from "../UI/TechManagement";
 import SolveProblem from "../UI/SolveProblem";
 import BestSolution from "../UI/BestSolution";
+import CounterMini from "../UI/CounterMini";
 
 const About = () => {
   return (
@@ -17,7 +18,7 @@ const About = () => {
       />
 
       <OurBenifits />
-      <Counter />
+      <CounterMini/>
       <BestSolution />
       <SolveProblem />
     </div>

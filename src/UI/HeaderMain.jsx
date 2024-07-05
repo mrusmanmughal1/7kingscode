@@ -35,8 +35,7 @@ const HeaderMain = ({ mode }) => {
                 </li>
                 <li
                   className="header-li hover:font-medium   dropdown inline-block relative "
-                  // onMouseOver={() => sethover(true)}
-                  // onMouseLeave={() => sethover(false)}
+                 
                 >
                   <div to={"/services"} className="dropdown">
                     <div className="">
