@@ -13,6 +13,7 @@ const About = () => {
     <div>
       <MainBanner
         text="About Us"
+<<<<<<< HEAD
         title="WE PROVIDE ENTERPRISE-LEVEL SOLUTIONS."
       />
 
@@ -22,6 +23,14 @@ const About = () => {
       <BusinessGrowth />
       <Counter />
       {/* <TechManagement /> */}
+=======
+        title="WE PROVIDE ENTERPRISE-LEVEL SOLUTIONS"
+      />
+
+      <OurBenifits />
+      <Counter />
+      <BestSolution />
+>>>>>>> 36c0f7d30738991436ce5d3fd1b899fb456237f4
       <SolveProblem />
     </div>
   );

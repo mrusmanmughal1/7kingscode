@@ -3,7 +3,10 @@ const MainBanner = ({ url, text, title }) => {
     <div className=" h-40  overflow-hidden  relative main-top-banner flex  items-center bg-cover  ">
       <div className="absolute inset-0   opacity-60 "></div>
       <div className="text-2xl absolute  space-y-3  p-5  font-bold text-white md:ps-[10rem] lg:ps-[13rem]   ">
+<<<<<<< HEAD
        
+=======
+>>>>>>> 36c0f7d30738991436ce5d3fd1b899fb456237f4
         {/* <p className="  leading-loose text-4xl md:text-2xl  2xl:text-5xl ">
           {text}
         </p> */}
@@ -14,5 +17,4 @@ const MainBanner = ({ url, text, title }) => {
     </div>
   );
 };
-
 export default MainBanner;

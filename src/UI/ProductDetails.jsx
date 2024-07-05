@@ -4,40 +4,35 @@ import { NavLink } from "react-router-dom";
 import { RiBuilding2Line } from "react-icons/ri";
 import { TbDeviceMobileCog } from "react-icons/tb";
 import { GrShieldSecurity } from "react-icons/gr";
-import { FaHeadphonesAlt } from "react-icons/fa";
-import { BsFillBuildingsFill } from "react-icons/bs";
-import { FaBitcoin } from "react-icons/fa6";
 import Slider from "react-slick";
-import { MdHealthAndSafety } from "react-icons/md";
-import { GiBookCover } from "react-icons/gi";
-const BestSolution = () => {
+const ProductDetails = () => {
   const [hover, setHover] = useState();
 
   const arr = [
     {
-      title: "Telecommunication",
-      desc: " Advanced solutions to enhance connectivity and communication across networks.",
-      icon: <FaHeadphonesAlt />,
+      title: "I-Card",
+      desc: " A mobile application that scans card structures and divides them into text and image blocks, automatically populating contact fields within the app.",
+      icon: <RiBuilding2Line />,
     },
     {
-      title: " Real Estate",
-      desc: "Comprehensive services for buying, selling, and managing properties efficiently..",
-      icon: <BsFillBuildingsFill />,
+      title: "WholeSale EZ",
+      desc: "Comprehensive services for buying, selling, and managing wholesale properties efficiently, ensuring seamless transactions and operations.",
+      icon: <TbDeviceMobileCog />,
     },
     {
-      title: "Finance and Banking",
-      desc: " Innovative solutions to optimize financial operations and banking services. ",
-      icon: <FaBitcoin />,
+      title: "Jobs Shopper",
+      desc: " The top platform for finding and posting job applications, offering a seamless and efficient experience for job seekers and employers.",
+      icon: <GrShieldSecurity />,
     },
     {
-      title: "Health Care",
-      desc: " Comprehensive services to enhance patient care and operational efficiency in healthcare settings.",
-      icon: <MdHealthAndSafety />,
+      title: "Desi Mart",
+      desc: "  Helping people worldwide bag their carts with bulk grocery pickup or delivery. Fast, convenient service delivered right to your doorstep.",
+      icon: <GrShieldSecurity />,
     },
     {
-      title: "Education",
-      desc: "Tailored solutions to foster learning and development through innovative educational practices. ",
-      icon: <GiBookCover />,
+      title: "EMT",
+      desc: "Effortlessly track your time entries and access your pay stubs with just a click, ensuring accurate and efficient payroll management. ",
+      icon: <GrShieldSecurity />,
     },
   ];
   const settings = {
@@ -76,7 +71,7 @@ const BestSolution = () => {
   return (
     <div className="businessGrowth    ">
       <div className=" pt-20  text-blue-secondary   pb-8 text-3xl w-[75%] mx-auto  capitalize font-semibold  ">
-        Industries We Serve at 7KC
+        Our Products
       </div>
       <div className="  w-[80%]   pb-20  mx-auto">
         <Slider {...settings}>
@@ -88,7 +83,7 @@ const BestSolution = () => {
             >
               <NavLink key={index} to={item.link}>
                 <div
-                  className=" bg-white rounded-md text-black duration-700   h-48 mx-4 border border-white hover:bg-blue-secondary
+                  className=" bg-white rounded-md text-black duration-700   h-64 lg:h-60 mx-6 border border-white hover:bg-blue-secondary
             shadow-lg space-y-2   hover:text-white leading-6 px-8 py-8"
                 >
                   <div className="flex justify-between">
@@ -112,4 +107,4 @@ const BestSolution = () => {
   );
 };
 
-export default BestSolution;
+export default ProductDetails;

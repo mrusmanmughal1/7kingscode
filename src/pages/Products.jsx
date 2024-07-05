@@ -1,16 +1,16 @@
 import MainBanner from "../UI/MainBanner";
-import ContactForm from "../UI/ContactForm";
+import ProductDetails from "../UI/ProductDetails";
 
-const Contact = () => {
+const Products = () => {
   return (
     <div>
       <MainBanner
-        text="Contact"
+        text="About Us"
         title="WE PROVIDE ENTERPRISE-LEVEL SOLUTIONS"
       />
-      <ContactForm />
+      <ProductDetails />
     </div>
   );
 };
 
-export default Contact;
+export default Products;

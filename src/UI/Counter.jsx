@@ -11,8 +11,8 @@ import { AiOutlineAim } from "react-icons/ai";
 const Counter = () => {
   const Arr = [
     { count: "347", des: "Projects Completed", icon: <AiOutlineAim /> },
-    { count: "456", des: "IT Specialist", icon: <AiOutlineTeam /> },
-    { count: "32", des: "Happy Clients", icon: <AiOutlineSchedule /> },
+    { count: "100", des: "IT Specialist", icon: <AiOutlineTeam /> },
+    { count: "200", des: "Happy Clients", icon: <AiOutlineSchedule /> },
     { count: "423", des: "Smart Solution ", icon: <MdOutlineTouchApp /> },
   ];
   const [counterOn, setCounterOn] = useState(false);
@@ -43,6 +43,8 @@ const Counter = () => {
                         {counterOn && (
                           <CountUp start={0} end={val.count} duration={2} />
                         )}
+                        {i == 1 ? "+" : ""}
+                        {i == 2 ? "+" : ""}
                       </h2>
                     </ScrollTrigger>
                   </div>

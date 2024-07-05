@@ -66,8 +66,8 @@ const OurPartners = () => {
   ];
 
   return (
-    <div className="w-full   mx-auto  bg-slate-50 py-20 ">
-      <div className="uppercase text-3xl text-blue-950 font-bold text-center py-12">
+    <div className="w-full   mx-auto  bg-slate-50 pt-32 pb-20 ">
+      <div className="uppercase text-3xl text-blue-950 font-bold text-center pb-12">
         Our Partners
       </div>
       <div className="slider ">
@@ -79,7 +79,7 @@ const OurPartners = () => {
           ))}
         </div>
       </div>
-      <div className="slider2 ">
+      <div className="slider2 w-[150px] ">
         <div className="slide-track2">
           {partners.map((image, index) => (
             <div key={index} className="slide2">

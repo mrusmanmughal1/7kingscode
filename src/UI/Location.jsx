@@ -4,10 +4,14 @@ import React from "react";
 const Location = () => {
   return (
     <div className="relative">
+<<<<<<< HEAD
       <div className="  lg:absolute flex justify-center items-center       w-full  ">
       
       </div>
 
+=======
+      <div className="  lg:absolute flex justify-center items-center       w-full  "></div>
+>>>>>>> 36c0f7d30738991436ce5d3fd1b899fb456237f4
       <div className="  w-full items-center   ">
         <iframe
           className="w-full h-[400px]"

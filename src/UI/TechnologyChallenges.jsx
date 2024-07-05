@@ -11,44 +11,50 @@ const TechnologyChallenges = () => {
   const [hover, setHover] = useState();
   const container = [
     {
-      title: "website",
+      title: "I-Card",
       icon: <AiOutlineGlobal />,
     },
     {
-      title: "Android",
+      title: "WholeSale EZ",
       icon: <AiOutlineApple />,
     },
     {
-      title: "ISO",
+      title: "Jobs Shopper",
       icon: <MdWifiTethering />,
     },
     {
-      title: "ITO",
+      title: "Desi Mart",
       icon: <AiFillFund />,
     },
     {
-      title: "Wearable",
+      title: "EMT",
       icon: <AiFillCodepenSquare />,
     },
     {
-      title: "TV",
+      title: "Pita Hut",
       icon: <MdOutlineConnectedTv />,
     },
   ];
   return (
     <div className="relative whatweSolve py-32">
       <div
-        className="  inset-0     flex flex-col items-center 
+        className="  inset-0     flex flex-col items-center
       justify-center text-white"
       >
         <div className="flex  flex-col justify-center items-center gap-2">
           <div className=" mb-10">
             <span className="w-2 h-2 bg-white rounded-full "> </span>
             <p className="text-xl md:text-2xl font-semibold text-[#3C72FC]">
+<<<<<<< HEAD
              OUR PRODUCTS
             </p>
           </div>
           
+=======
+              OUR PRODUCTS
+            </p>
+          </div>
+>>>>>>> 36c0f7d30738991436ce5d3fd1b899fb456237f4
         </div>
         <div className=" grid grid-cols-2   md:flex flex-col gap-8 lg:gap-0 flex-wrap md:flex-row   justify-between md:justify-center lg:justify-between mt-4  w-11/12 md:w-3/4  lg:w-[80%] 2xl:w-[80%] mx-auto">
           {container.map((item, index) => (

@@ -7,12 +7,15 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 import { FiPhone } from "react-icons/fi";
 import { IoLocation, IoMail } from "react-icons/io5";
 
-const UXDesigner = () => {
+const BusinessIntelligence = () => {
   return (
     <>
-      <div className="flex-row mx-auto  ">
+      <div className="flex  gap-44 mx-auto  ">
         <div className="    mx-auto ">
           <div className="flex lg:flex-row gap-24">
+            {/* left  */}
+
+            {/* right  */}
             <div className="w-full  flex flex-col gap-20 space-y-4 pb-16">
               <div className="w-full ">
                 <img
@@ -29,14 +32,15 @@ const UXDesigner = () => {
 
               <div className="text-justify space-y-4">
                 <div className="text-2xl font-semibold">
-                  <p>UI/UX DESIGNING</p>
+                  <p>Business Intelligence</p>
                 </div>
                 <p>
-                  User experience is at the heart of digital success. Our UI/UX
-                  designing services focus on creating intuitive and engaging
-                  interfaces that enhance user satisfaction and drive
-                  engagement. We blend creativity with functionality to deliver
-                  designs that are both beautiful and effective.
+                  Transform your data into strategic assets with our business
+                  intelligence services. We provide comprehensive BI solutions
+                  that help you gather, analyze, and visualize data to make
+                  informed decisions. Our tools and techniques enable you to
+                  gain deeper insights into your business performance and market
+                  trends, driving growth and innovation.
                 </p>
               </div>
             </div>
@@ -47,4 +51,4 @@ const UXDesigner = () => {
   );
 };
 
-export default UXDesigner;
+export default BusinessIntelligence;

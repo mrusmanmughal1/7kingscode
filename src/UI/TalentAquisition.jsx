@@ -7,12 +7,15 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 import { FiPhone } from "react-icons/fi";
 import { IoLocation, IoMail } from "react-icons/io5";
 
-const UXDesigner = () => {
+const TalentAquisition = () => {
   return (
     <>
-      <div className="flex-row mx-auto  ">
+      <div className="flex  gap-44 mx-auto  ">
         <div className="    mx-auto ">
           <div className="flex lg:flex-row gap-24">
+            {/* left  */}
+
+            {/* right  */}
             <div className="w-full  flex flex-col gap-20 space-y-4 pb-16">
               <div className="w-full ">
                 <img
@@ -29,14 +32,14 @@ const UXDesigner = () => {
 
               <div className="text-justify space-y-4">
                 <div className="text-2xl font-semibold">
-                  <p>UI/UX DESIGNING</p>
+                  <p>TALENT ACQUISITION & VISA SPONSORSHIP</p>
                 </div>
                 <p>
-                  User experience is at the heart of digital success. Our UI/UX
-                  designing services focus on creating intuitive and engaging
-                  interfaces that enhance user satisfaction and drive
-                  engagement. We blend creativity with functionality to deliver
-                  designs that are both beautiful and effective.
+                  Finding the right talent can be challenging. Our talent
+                  acquisition services are geared towards identifying and
+                  recruiting top-notch professionals who align with your
+                  business goals. We also provide visa sponsorship, making the
+                  process of hiring international talent smooth and hassle-free.
                 </p>
               </div>
             </div>
@@ -47,4 +50,4 @@ const UXDesigner = () => {
   );
 };
 
-export default UXDesigner;
+export default TalentAquisition;

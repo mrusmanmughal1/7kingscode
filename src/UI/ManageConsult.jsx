@@ -7,12 +7,15 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 import { FiPhone } from "react-icons/fi";
 import { IoLocation, IoMail } from "react-icons/io5";
 
-const UXDesigner = () => {
+const ManageConsult = () => {
   return (
     <>
-      <div className="flex-row mx-auto  ">
+      <div className="flex  gap-44 mx-auto  ">
         <div className="    mx-auto ">
           <div className="flex lg:flex-row gap-24">
+            {/* left  */}
+
+            {/* right  */}
             <div className="w-full  flex flex-col gap-20 space-y-4 pb-16">
               <div className="w-full ">
                 <img
@@ -29,14 +32,14 @@ const UXDesigner = () => {
 
               <div className="text-justify space-y-4">
                 <div className="text-2xl font-semibold">
-                  <p>UI/UX DESIGNING</p>
+                  <p>MANAGEMENT CONSULTING</p>
                 </div>
                 <p>
-                  User experience is at the heart of digital success. Our UI/UX
-                  designing services focus on creating intuitive and engaging
-                  interfaces that enhance user satisfaction and drive
-                  engagement. We blend creativity with functionality to deliver
-                  designs that are both beautiful and effective.
+                  Navigate complex business challenges with confidence. Our
+                  management consultants bring a wealth of experience and
+                  strategic insight to help you optimize operations, improve
+                  performance, and drive growth. We partner with you to create
+                  actionable plans that deliver measurable results
                 </p>
               </div>
             </div>
@@ -47,4 +50,4 @@ const UXDesigner = () => {
   );
 };
 
-export default UXDesigner;
+export default ManageConsult;

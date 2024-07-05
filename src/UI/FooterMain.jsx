@@ -4,12 +4,9 @@ import { SiImessage } from "react-icons/si";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { FaSquareFacebook } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
-import { SiIndeed } from "react-icons/si";
 import { FaTwitter } from "react-icons/fa";
-import Dubai from "../assets/images/dubai.png";
-import india from "../assets/images/india.png";
-import pakistan from "../assets/images/pakistan.png";
-import itly from "../assets/images/usa.png";
+import { FaLinkedinIn } from "react-icons/fa6";
+import { NavLink } from "react-router-dom";
 
 const FooterMain = () => {
   return (
@@ -25,50 +22,49 @@ const FooterMain = () => {
             and expenses of managing it yourself. Simply put you get more time
             to focus on growing your business
           </p>
-          <div className=" space-y-4 text-gray-400">
-            <p className="flex gap-4">
-              <FaSquarePhone className="text-blue-secondary" /> (+1) 9542728515
-            </p>
-            <p className="flex gap-4">
-              <SiImessage className="text-blue-secondary" /> info@7kingscode.com
-            </p>
-
-            <div className="">
-              <p className="pb-3 font-medium text-white">HEAD OFFICE</p>
-              <p className="flex gap-4">
-                <FaMapMarkerAlt className="text-blue-secondary" />
-                1401 N University Dr suite 503, Coral Springs, FL 33071, United
-                State
-              </p>
-            </div>
-            <div className="flex gap-4 text-2xl md:text-lg 2xl:text-2xl text-white">
-              <FaSquareFacebook />
-              <FaInstagram />
-              <SiIndeed />
-              <FaTwitter />
-            </div>
-          </div>
         </div>
         <div className=" w-full  md:w-[30%] flex    md:justify-center     ">
           <div className="flex flex-col    items-start">
             <p className="font-medium  pb-8 text-center">Our Navigation</p>
             <div className="text-slate-400  gap-4  flex flex-col   ">
-              <p href="">About 7kings Code</p>
+              <NavLink to={"/"}>
+                <p> What We Do </p>
+              </NavLink>
 
-              <p href="">Meet the Team</p>
+              <NavLink to={"/about-us"}>
+                <p> Who we Are </p>
+              </NavLink>
 
-              <p href="">News & Projects </p>
+              <NavLink to={"/services"}>
+                <p> Services </p>
+              </NavLink>
 
-              <p href="">Contact</p>
+              <NavLink to={"/contact-us"}>
+                <p> Contact Us </p>
+              </NavLink>
             </div>
           </div>
         </div>
 
-        <div className=" md:w-[40%] w-full ">
-          <p className="font-medium">Global Offices</p>
+        {/* //Head Office  */}
 
-          {/* //locations  */}
+        <div className="">
+          <p className="pb-3 font-medium text-white">HEAD OFFICE</p>
+          <p className="flex gap-4">
+            <FaMapMarkerAlt className="text-blue-secondary" />
+            1401 N University Dr suite 503, Coral Springs, FL 33071, United
+            State
+          </p>
+          <div className=" space-y-4 text-gray-400">
+            <p className="flex gap-4">
+              <FaSquarePhone className="text-blue-secondary" /> (+1)
+              954-272-8515
+            </p>
+            <p className="flex gap-4">
+              <SiImessage className="text-blue-secondary" /> info@7kingscode.com
+            </p>
 
+<<<<<<< HEAD
           <div className=" py-4  space-y-4     text-gray-400">
             <div className="flex gap-14  flex-col">
               <div className="flex   justify-between">
@@ -121,6 +117,30 @@ const FooterMain = () => {
                   </div>
                 </div>
               </div>
+=======
+            <div className="flex gap-4 text-3xl md:text-2xl text-white">
+              <a
+                href="https://web.facebook.com/profile.php?id=100077385620343"
+                target="_blank"
+              >
+                {" "}
+                <FaSquareFacebook />
+              </a>
+              <a
+                href="https://www.instagram.com/7kingscode/?hl=en"
+                target="_blank"
+              >
+                <FaInstagram />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/7-kings-code/"
+                target="_blank"
+              >
+                {" "}
+                <FaLinkedinIn />
+              </a>
+              <FaTwitter />
+>>>>>>> 36c0f7d30738991436ce5d3fd1b899fb456237f4
             </div>
           </div>
         </div>

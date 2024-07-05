@@ -1,36 +1,37 @@
 import { FaCheck } from "react-icons/fa";
 import b1 from "../assets/images/benifits-1.jpg";
-import b2 from "../assets/images/benifits-2.jpg";
+import ceo from "../assets/images/CEO.png";
 import { RxRocket } from "react-icons/rx";
 import { AiOutlinePhone } from "react-icons/ai";
-
 const WeAreTecz = () => {
   return (
-    <div className="p-6 md:p-16">
+    <div className="">
       <div className="w-full md:w-11/12 lg:w-3/4 mx-auto">
-        <div className="flex flex-col lg:flex-row justify-center items-center py-10 lg:py-16">
+        <div className="flex flex-col lg:flex-row justify-center   py-10 lg:py-32">
           {/* 1st section */}
+<<<<<<< HEAD
           <div className="relative w-full lg:w-1/2 mb-10 lg:mb-0">
+=======
+          <div
+            className="relative w-11/12 mx-auto
+           lg:w-1/2 mb-10 lg:mb-0"
+          >
+>>>>>>> 36c0f7d30738991436ce5d3fd1b899fb456237f4
             {/* <img
               className="absolute left-0 lg:left-52 bottom-0 hidden md:block"
               src={b2}
               alt="Benefits"
             /> */}
             <div className="flex items-end gap-4 lg:gap-10">
-              <img src={b1} alt="Benefits" />
-            </div>
-            <div className="absolute -bottom-6 lg:-bottom-10 left-4 sm:left-10 bg-white flex gap-4 lg:gap-8 px-4 lg:px-10 py-2 lg:py-5 border shadow-md">
-              <AiOutlinePhone className="bg-gray-300 font-bold text-3xl rounded-full justify-center">
-                Call
-              </AiOutlinePhone>
-              <div className="capitalize font-semibold">
-                <p>Call Anytime</p>
-                <p>+9026505050</p>
-              </div>
+              <img src={b1} alt="Benefits" className="w-full" />
             </div>
           </div>
           {/* 2nd Section */}
+<<<<<<< HEAD
           <div className="w-full lg:w-3/4 px-6 lg:px-24 py-6 lg:py-14">
+=======
+          <div className="w-full lg:w-3/4 px-6 lg:px-24 py-6 lg:py-8">
+>>>>>>> 36c0f7d30738991436ce5d3fd1b899fb456237f4
             <div className="mb-4 lg:mb-1">
               <ol>
                 <li className="text-blue-secondary text-lg font-bold">
@@ -40,7 +41,11 @@ const WeAreTecz = () => {
             </div>
             <div className="flex flex-col gap-2">
               <div className="text-3xl md:text-2xl font-semibold py-2">
+<<<<<<< HEAD
                 We Revolutionizing businesses with technology
+=======
+                Revolutionizing businesses with technology
+>>>>>>> 36c0f7d30738991436ce5d3fd1b899fb456237f4
               </div>
               <div className="text-slate-400 pb-8">
                 7 Kings Code is a leading IT consulting firm serving partners
@@ -57,21 +62,28 @@ const WeAreTecz = () => {
                 <div>{/* <RxRocket className="text-4xl text-black" /> */}</div>
                 <div className="space-y-1 w-full lg:w-96">
                   <p className="text-blue-secondary  text-lg font-semibold">
+<<<<<<< HEAD
                    " EXECUTION IS THE START OF THE RACE, NOT THE FINISHING LINE ”.
                     
                   </p>
                 </div>
               </div>
 
+=======
+                    " EXECUTION IS THE START OF THE RACE, NOT THE FINISHING LINE
+                    ”.
+                  </p>
+                </div>
+              </div>
+>>>>>>> 36c0f7d30738991436ce5d3fd1b899fb456237f4
               <div className="flex flex-col lg:flex-row gap-6">
-                <button className="bg-blue-secondary px-8 py-4 text-white">
-                  Discover More
-                </button>
+                <a href="https://ismailceo.com/" target="_blank">
+                  <button className="bg-blue-secondary px-4 py-3 text-medium text-white">
+                    Discover More
+                  </button>
+                </a>
                 <div className="flex items-center gap-2">
-                  <img
-                    src="https://data.themeim.com/wp/tecz/wp-content/uploads/2023/09/avatar-1.png"
-                    alt="CEO"
-                  />
+                  <img className="w-12 rounded-full" src={ceo} alt="CEO" />
                   <div>
                     <p className="font-semibold">MR. ISMAIL</p>
                     <p>CEO & PRESIDENT</p>
@@ -85,5 +97,4 @@ const WeAreTecz = () => {
     </div>
   );
 };
-
 export default WeAreTecz;

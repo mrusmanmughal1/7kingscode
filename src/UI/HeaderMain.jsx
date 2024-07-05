@@ -6,20 +6,9 @@ const HeaderMain = ({ mode }) => {
   const [isSticky, setIsSticky] = useState();
   const [hover, sethover] = useState();
 
-  const services = [
-    "usman",
-    " ilyas ",
-    " Mughal ",
-    "usman",
-    " ilyas ",
-    " Mughal ",
-    "usman",
-    " ilyas ",
-    " Mughal ",
-  ];
   return (
-    <header className={` relative  main    mx-auto    md:bg-white `}>
-      <div className="relative  lg:w-11/12 md:w-9/12 mx-auto flex items-center justify-around">
+    <header className={` relative  main   mx-auto    md:bg-white `}>
+      <div className="relative    lg:w-11/12 md:w-9/12 mx-auto flex items-center justify-around">
         <div className="flex   relative   items-center justify-between  w-full  py-2 ">
           <NavLink to={"/"}>
             <Logo />
@@ -29,10 +18,10 @@ const HeaderMain = ({ mode }) => {
           >
             <nav className="">
               <ul
-                className={`flex md:flex-row flex-col font-thin   text-black  w-full md:text-center md:max-h-fit  gap-12 md:gap-10 cursor-pointer     `}
+                className={`flex md:flex-row flex-col font-thin  transition-all duration-1000   text-black  w-full md:text-center md:max-h-fit  gap-12 md:gap-10 cursor-pointer     `}
               >
-                <li className="header-li hover:font-medium ">
-                  <NavLink to={"/services"} href="#">
+                <li className="header-li hover:font-medium  transition-all duration-700">
+                  <NavLink to={"/"} href="#">
                     What We do{" "}
                   </NavLink>
                   {/* Services */}
@@ -42,12 +31,13 @@ const HeaderMain = ({ mode }) => {
                     who we are{" "}
                   </NavLink>
                   {/* about us 
-                  leader ship */}
+                    leader ship */}
                 </li>
                 <li
                   className="header-li hover:font-medium   dropdown inline-block relative "
                  
                 >
+<<<<<<< HEAD
                   <a href="#" className="dropdown">
                     Services{" "}
                   </a>
@@ -59,6 +49,37 @@ const HeaderMain = ({ mode }) => {
                           {val}
                         </p>
                       ))} */}
+=======
+                  <div to={"/services"} className="dropdown">
+                    <div className="">
+                      <div className="dropdown inline-block relative">
+                        <button className="   rounded inline-flex items-center">
+                          <span className="mr-1">What We Offer</span>
+                        </button>
+                        <ul className="dropdown-menu absolute  s hidden text-gray-700 pt-1">
+                          <NavLink to={"/services"}>
+                            <li className="">
+                              <a
+                                className="rounded-t bg-white hover:bg-gray-100 py-3 px-10 block whitespace-no-wrap"
+                                href="#"
+                              >
+                                Services
+                              </a>
+                            </li>
+                          </NavLink>
+                          <NavLink to={"/Products"}>
+                            <li className="">
+                              <a
+                                className="bg-white hover:bg-gray-100 py-3 px-4 block whitespace-no-wrap"
+                                href="#"
+                              >
+                                Products
+                              </a>
+                            </li>
+                          </NavLink>
+                        </ul>
+                      </div>
+>>>>>>> 36c0f7d30738991436ce5d3fd1b899fb456237f4
                     </div>
                   </div>
                 </li>
@@ -73,8 +94,8 @@ const HeaderMain = ({ mode }) => {
           </div>
           <div className="flex px-4   md:px-0 items-center ">
             <NavLink
-              target="_blank"
-              rel="noreferrer"
+              to={"/careers"}
+              href=""
               className="px-4 py-3        capitalize  md:px-8 md:py-3  text-white    hover:bg-black   bg-blue-secondary transition-all duration-700 rounded-md bg-bluecolor cursor-pointer font-medium"
             >
               Careers{" "}
@@ -83,24 +104,24 @@ const HeaderMain = ({ mode }) => {
         </div>
       </div>
       {/* <div
-        className={`${
-          hover ? " block" : "hidden "
-        }  absolute     w-full z-[999]`}
-      >
-        <div
           className={`${
-            hover && " opacity-100"
-          }   "opacity-0 bg-white   opacity-70 transition-all  duration-1000   "`}
+            hover ? " block" : "hidden "
+          }  absolute     w-full z-[999]`}
         >
-          <div className="flex gap-8">
-            {services.map((val, i) => (
-              <p key={i} className="font-medium  ">
-                {val}
-              </p>
-            ))}
+          <div
+            className={`${
+              hover && " opacity-100"
+            }   "opacity-0 bg-white   opacity-70 transition-all  duration-1000   "`}
+          >
+            <div className="flex gap-8">
+              {services.map((val, i) => (
+                <p key={i} className="font-medium  ">
+                  {val}
+                </p>
+              ))}
+            </div>
           </div>
-        </div>
-      </div> */}
+        </div> */}
     </header>
   );
 };

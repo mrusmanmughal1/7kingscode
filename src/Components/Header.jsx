@@ -5,10 +5,10 @@ const Header = () => {
   return (
     <div>
       <div className="block lg:hidden">
-      <MobileNav/>
+        <MobileNav />
       </div>
       <div className="hidden lg:block">
-      <HeaderMain />
+        <HeaderMain />
       </div>
     </div>
   );
