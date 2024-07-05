@@ -4,7 +4,7 @@ import MainBanner from "./MainBanner";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { FiPhone } from "react-icons/fi";
 import { IoLocation, IoMail } from "react-icons/io5";
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink, Navigate, Outlet } from "react-router-dom";
 
 const ServicesLayout = () => {
   return (
@@ -13,7 +13,7 @@ const ServicesLayout = () => {
         text="About Us"
         title="WE PROVIDE ENTERPRISE-LEVEL SOLUTIONS"
       />
-      <div className="flex-col  flex  w-[100%] lg:flex-row lg:w-[80%]  mx-auto  gap-24 py-32">
+      <div className="flex-col  service flex  w-[100%] lg:flex-row lg:w-[80%]  mx-auto  gap-24 py-32">
         <div className="w-[90%] lg:w-[30%] mx-auto  ">
           <div className="flex flex-col lg:flex-col gap-20">
             {/* left  */}
@@ -21,132 +21,360 @@ const ServicesLayout = () => {
               <div className="font-semibold text-xl pl-4">Services</div>
               {/* // yahan se  */}
 
-              {/* <div className="relative w-full  overflow-hidden">
+              <div className="relative w-full   overflow-hidden">
+                <ul className="peer absolute   top-0 inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer"></ul>
+                <input
+                  type="checkbox"
+                  className=" peer  absolute top-0  inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer bg-blue-100"
+                />
+
+                <div className="flex   justify-between items-center  p-4">
+                  <h1 className="   ">Infrastructure Management</h1>
+                </div>
+
+                <div className=" absolute  top-5 right-3 text-white transition-transform duration-500 rotate-0 peer-checked:rotate-90 ">
+                  <AiOutlineArrowRight className="text-black" />
+                </div>
+                <div className="   overflow-hidden transition-all duration-500  max-h-0 peer-checked:max-h-44 ">
+                  <div className="text-sm  px-4 ps-8 text-gray-700">
+                    <NavLink
+                      to="NetworkManage"
+                      className="flex justify-between items-center      "
+                    >
+                      • Network Management
+                    </NavLink>
+                    <NavLink
+                      to="ServerManage"
+                      className="flex py-2  justify-between items-center      "
+                    >
+                      • Server Management
+                    </NavLink>
+                    <NavLink
+                      to="CloudServices"
+                      className="flex py-2 justify-between items-center      "
+                    >
+                      • Cloud Services
+                    </NavLink>
+                    <NavLink
+                      to="DataManage"
+                      className="flex py-2 justify-between items-center      "
+                    >
+                      • Data Center Management
+                    </NavLink>
+                    <NavLink
+                      to="VirtualManage"
+                      className="flex py-2 justify-between items-center      "
+                    >
+                      • Virtualization Management
+                    </NavLink>
+                  </div>
+                </div>
+              </div>
+              {/* yahan tak  */}
+              {/* // yahan se  */}
+              <div className="relative w-full  overflow-hidden">
                 <ul className="peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer"></ul>
                 <input
                   type="checkbox"
                   className=" peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer"
                 />
-                <div className="flex justify-between items-center hover:bg-black hover:text-white p-4">
-                  <h1 className="   ">Infrastructure Management</h1>
+                <div className="flex justify-between items-center hover:bg-blue-secondary hover:text-white p-4">
+                  <h1 className="   ">Application Management</h1>
                 </div>
                 <div className=" absolute  top-5 right-3 text-white transition-transform duration-500 rotate-0 peer-checked:rotate-90 ">
                   <AiOutlineArrowRight className="text-black" />
                 </div>
-                <div className="   overflow-hidden transition-all duration-500  max-h-0 peer-checked:max-h-40 ">
-                  <div className="  px-4">
+                <div className="   overflow-hidden transition-all duration-500  max-h-0 peer-checked:max-h-44 ">
+                  <div className="text-sm  px-4 ps-8 text-gray-700">
+                    <NavLink
+                      to="SoftwareMaintenance"
+                      className="flex justify-between items-center      "
+                    >
+                      • Software Support and Maintenance
+                    </NavLink>
+                    <NavLink
+                      to="Applicationhosting"
+                      className="flex py-2  justify-between items-center      "
+                    >
+                      • Application Hosting
+                    </NavLink>
+                    <NavLink
+                      to="CustomDevelop"
+                      className="flex py-2 justify-between items-center      "
+                    >
+                      • Custom Development
+                    </NavLink>
+                    <NavLink
+                      to="ApplicationIntegrate"
+                      className="flex py-2 justify-between items-center      "
+                    >
+                      • Application Integration
+                    </NavLink>
+                    <NavLink
+                      to="PerformanceMonitor"
+                      className="flex py-2 justify-between items-center      "
+                    >
+                      • Performance Monitoring
+                    </NavLink>
+                  </div>
+                </div>
+              </div>
+
+              {/* yahan tak  */}
+              {/* // yahan se  */}
+
+              <div className="relative w-full   overflow-hidden">
+                <ul className="peer absolute  top-0 inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer"></ul>
+                <input
+                  type="checkbox"
+                  className=" peer  absolute top-0  inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer bg-blue-100"
+                />
+                <div className="flex   justify-between items-center  p-4">
+                  <h1 className="   ">Security Services</h1>
+                </div>
+                <div className=" absolute  top-5 right-3 text-white transition-transform duration-500 rotate-0 peer-checked:rotate-90 ">
+                  <AiOutlineArrowRight className="text-black" />
+                </div>
+                <div className="   overflow-hidden transition-all duration-500  max-h-0 peer-checked:max-h-44 ">
+                  <div className="text-sm  px-4 ps-8 text-gray-700">
                     <NavLink
                       to="UXDesigner"
                       className="flex justify-between items-center      "
                     >
-                      Network Management
+                      • Cybersecurity Management
+                    </NavLink>
+                    <NavLink
+                      to="UXDesigner"
+                      className="flex py-2  justify-between items-center      "
+                    >
+                      • Compliance/Risk Management
                     </NavLink>
                     <NavLink
                       to="UXDesigner"
                       className="flex py-2 justify-between items-center      "
                     >
-                      Network Management
+                      • Security Monitoring/Incident Response
                     </NavLink>
+                    <NavLink
+                      to="UXDesigner"
+                      className="flex py-2 justify-between items-center      "
+                    >
+                      • Identity/Access Management
+                    </NavLink>
+                    <NavLink
+                      to="UXDesigner"
+                      className="flex py-2 justify-between items-center      "
+                    >
+                      • Data Encryption and Protection
+                    </NavLink>
+                  </div>
+                </div>
+              </div>
+              {/* yahan tak  */}
+
+              {/* // yahan se  */}
+
+              <div className="relative w-full   overflow-hidden">
+                <ul className="peer absolute  top-0 inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer"></ul>
+                <input
+                  type="checkbox"
+                  className=" peer  absolute top-0  inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer bg-blue-100"
+                />
+                <div className="flex   justify-between items-center  p-4">
+                  <h1 className="   ">End-User Support</h1>
+                </div>
+                <div className=" absolute  top-5 right-3 text-white transition-transform duration-500 rotate-0 peer-checked:rotate-90 ">
+                  <AiOutlineArrowRight className="text-black" />
+                </div>
+                <div className="   overflow-hidden transition-all duration-500  max-h-0 peer-checked:max-h-44 ">
+                  <div className="text-sm  px-4 ps-8 text-gray-700">
                     <NavLink
                       to="UXDesigner"
                       className="flex justify-between items-center      "
                     >
-                      Network Management
+                      • Help Desk Services
+                    </NavLink>
+                    <NavLink
+                      to="UXDesigner"
+                      className="flex py-2  justify-between items-center      "
+                    >
+                      • Desktop/Mobile Management
+                    </NavLink>
+                    <NavLink
+                      to="UXDesigner"
+                      className="flex py-2 justify-between items-center      "
+                    >
+                      • Remote Support
+                    </NavLink>
+                    <NavLink
+                      to="UXDesigner"
+                      className="flex py-2 justify-between items-center      "
+                    >
+                      • User Training and Education
+                    </NavLink>
+                    <NavLink
+                      to="UXDesigner"
+                      className="flex py-2 justify-between items-center      "
+                    >
+                      • Software/Hardware Troubleshooting
                     </NavLink>
                   </div>
                 </div>
-              </div> */}
+              </div>
+              {/* yahan tak  */}
+              {/* // yahan se  */}
 
+              <div className="relative w-full   overflow-hidden">
+                <ul className="peer absolute  top-0 inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer"></ul>
+                <input
+                  type="checkbox"
+                  className=" peer  absolute top-0  inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer bg-blue-100"
+                />
+                <div className="flex   justify-between items-center  p-4">
+                  <h1 className="   ">Data Management</h1>
+                </div>
+                <div className=" absolute  top-5 right-3 text-white transition-transform duration-500 rotate-0 peer-checked:rotate-90 ">
+                  <AiOutlineArrowRight className="text-black" />
+                </div>
+                <div className="   overflow-hidden transition-all duration-500  max-h-0 peer-checked:max-h-44 ">
+                  <div className="text-sm  px-4 ps-8 text-gray-700">
+                    <NavLink
+                      to="UXDesigner"
+                      className="flex justify-between items-center      "
+                    >
+                      • Backup and Disaster Recovery
+                    </NavLink>
+                    <NavLink
+                      to="UXDesigner"
+                      className="flex py-2  justify-between items-center      "
+                    >
+                      • Data Storage Solutions
+                    </NavLink>
+                    <NavLink
+                      to="UXDesigner"
+                      className="flex py-2 justify-between items-center      "
+                    >
+                      • Data Security
+                    </NavLink>
+                    <NavLink
+                      to="UXDesigner"
+                      className="flex py-2 justify-between items-center      "
+                    >
+                      • Data Analytics/Business Intelligence
+                    </NavLink>
+                    <NavLink
+                      to="UXDesigner"
+                      className="flex py-2 justify-between items-center      "
+                    >
+                      • Data Lifecycle Management
+                    </NavLink>
+                  </div>
+                </div>
+              </div>
+              {/* yahan tak  */}
+              {/* // yahan se  */}
+
+              <div className="relative w-full   overflow-hidden">
+                <ul className="peer absolute  top-0 inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer"></ul>
+                <input
+                  type="checkbox"
+                  className=" peer  absolute top-0  inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer bg-blue-100"
+                />
+                <div className="flex   justify-between items-center  p-4">
+                  <h1 className="   ">IT Consulting and Strategy</h1>
+                </div>
+                <div className=" absolute  top-5 right-3 text-white transition-transform duration-500 rotate-0 peer-checked:rotate-90 ">
+                  <AiOutlineArrowRight className="text-black" />
+                </div>
+                <div className="   overflow-hidden transition-all duration-500  max-h-0 peer-checked:max-h-44 ">
+                  <div className="text-sm  px-4 ps-8 text-gray-700">
+                    <NavLink
+                      to="UXDesigner"
+                      className="flex justify-between items-center      "
+                    >
+                      • IT Strategy and Planning
+                    </NavLink>
+                    <NavLink
+                      to="UXDesigner"
+                      className="flex py-2  justify-between items-center      "
+                    >
+                      • Technology Roadmap Development
+                    </NavLink>
+                    <NavLink
+                      to="UXDesigner"
+                      className="flex py-2 justify-between items-center      "
+                    >
+                      • Vendor Management
+                    </NavLink>
+                    <NavLink
+                      to="UXDesigner"
+                      className="flex py-2 justify-between items-center      "
+                    >
+                      • IT Policy and Governance
+                    </NavLink>
+                    <NavLink
+                      to="UXDesigner"
+                      className="flex py-2 justify-between items-center      "
+                    >
+                      • Cost Optimization
+                    </NavLink>
+                  </div>
+                </div>
+              </div>
               {/* yahan tak  */}
 
               <NavLink
                 to="UXDesigner"
-                className="flex justify-between items-center hover:bg-black hover:text-white p-4"
-              >
-                Infrastructure Management
-                <AiOutlineArrowRight className="text-lg" />
-              </NavLink>
-              <NavLink
-                to="UXDesigner"
-                className="flex justify-between items-center hover:bg-black hover:text-white p-4"
-              >
-                Application Management
-                <AiOutlineArrowRight className="text-lg" />
-              </NavLink>
-              <NavLink
-                to="UXDesigner"
-                className="flex justify-between items-center hover:bg-black hover:text-white p-4"
-              >
-                Security Services
-                <AiOutlineArrowRight className="text-lg" />
-              </NavLink>
-              <NavLink
-                to="UXDesigner"
-                className="flex justify-between items-center hover:bg-black hover:text-white p-4"
-              >
-                End-User Support
-                <AiOutlineArrowRight className="text-lg" />
-              </NavLink>
-              <NavLink
-                to="UXDesigner"
-                className="flex justify-between items-center hover:bg-black hover:text-white p-4"
-              >
-                Data Management
-                <AiOutlineArrowRight className="text-lg" />
-              </NavLink>
-
-              <NavLink
-                to="UXDesigner"
-                className="flex justify-between items-center hover:bg-black hover:text-white p-4"
+                className="flex justify-between items-center  hover:bg-blue-secondary hover:text-white p-4"
               >
                 UI/UX Designing
                 <AiOutlineArrowRight className="text-lg" />
               </NavLink>
               <NavLink
                 to="OnShoreOffShoreTeam"
-                className="flex justify-between  capitalize items-center  hover:bg-black hover:text-white p-4 "
+                className="flex justify-between  capitalize items-center  hover:bg-blue-secondary hover:text-white p-4 "
               >
                 Off Shore & On Shore Teams
                 <AiOutlineArrowRight className="text-lg" />
               </NavLink>
               <NavLink
                 to="TalentAquisition"
-                className="flex justify-between  items-center hover:bg-black hover:text-white p-4"
+                className="flex justify-between  items-center hover:bg-blue-secondary hover:text-white p-4"
               >
                 Talent Acquisition and Visa Sponsorship
                 <AiOutlineArrowRight className="text-2xl" />
               </NavLink>
               <NavLink
                 to="ManageConsult"
-                className="flex justify-between items-center hover:bg-black hover:text-white p-4"
+                className="flex justify-between items-center hover:bg-blue-secondary hover:text-white p-4"
               >
                 Management Consulting
                 <AiOutlineArrowRight className="text-lg" />
               </NavLink>
               <NavLink
                 to="DataAnalysis"
-                className="flex justify-between items-center hover:bg-black hover:text-white p-4"
+                className="flex justify-between items-center hover:bg-blue-secondary hover:text-white p-4"
               >
                 Data Analysis
                 <AiOutlineArrowRight className="text-lg" />
               </NavLink>
               <NavLink
                 to="WebDevelopment"
-                className="flex justify-between items-center hover:bg-black hover:text-white p-4"
+                className="flex justify-between items-center hover:bg-blue-secondary hover:text-white p-4"
               >
                 Web Development
                 <AiOutlineArrowRight className="text-lg" />
               </NavLink>
               <NavLink
                 to="DigitalMarketing"
-                className="flex justify-between items-center hover:bg-black hover:text-white p-4"
+                className="flex justify-between items-center hover:bg-blue-secondary hover:text-white p-4"
               >
                 Digital Marketing
                 <AiOutlineArrowRight className="text-lg" />
               </NavLink>
               <NavLink
                 to="BusinessIntelligence"
-                className="flex justify-between items-center hover:bg-black hover:text-white p-4"
+                className="flex justify-between items-center hover:bg-blue-secondary hover:text-white p-4"
               >
                 Business Intelligence
                 <AiOutlineArrowRight className="text-lg" />

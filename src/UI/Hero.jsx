@@ -36,13 +36,13 @@ const Hero = () => {
           <div className="relative w-full">
             <div className=" ps-10 lg:ps-20 2xl:ps-36    gap-7   md:gap-20">
               <div className="w-full  space-y-8">
-                <span className=" text-white p-2 px-4 text-xs md:text-base  uppercase bg-[#211f2e]">
+                <span className=" text-white p-2 px-2 text-[11px] md:text-base  uppercase bg-[#211f2e]">
                   NEVER STOP, NEVER GIVE UP, ALWAYS FIND SOLUTION.
                 </span>
                 <div className="   uppercase relative   pt- z-40 w-full  font-bold text-white">
                   <span
                     id="typewriter"
-                    className="text-blue-secondary fade text-5xl md:text-7xl 2xl:text-8xl"
+                    className="text-blue-secondary fade text-4xl md:text-7xl 2xl:text-8xl"
                   >
                     {text}
                   </span>

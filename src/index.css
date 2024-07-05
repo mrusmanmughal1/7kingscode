@@ -218,3 +218,7 @@ li .active {
   -moz-box-shadow: -3px 4px 25px 2px rgba(0, 0, 0, 0.7);
   box-shadow: -3px 4px 25px 2px rgba(0, 0, 0, 0.7);
 }
+
+.service .active {
+  color: #3c72fc;
+}

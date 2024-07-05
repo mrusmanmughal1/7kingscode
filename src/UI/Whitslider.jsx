@@ -29,6 +29,14 @@ const Whitslider = () => {
         },
       },
       {
+        breakpoint: 850,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
         breakpoint: 600,
         settings: {
           slidesToShow: 2,
@@ -54,7 +62,7 @@ const Whitslider = () => {
     },
     {
       title: " Application Management",
-      desc: " End-to-end services for optimizing, maintaining, and supporting your software applications..",
+      desc: " End-to-end services for optimizing, maintaining, and supporting your software.",
       icon: <TbDeviceMobileCog />,
       link: "/service/TalentAquisition",
     },
@@ -66,7 +74,7 @@ const Whitslider = () => {
     },
     {
       title: "OFF-SHORE & ON-SHORE TEAMS",
-      desc: " Seamlessly integrated global and local teams ensuring round-the-clock productivity and expertise.",
+      desc: " Seamlessly integrated global and local teams ensuring round-the-clock.",
       icon: <CiBank />,
       link: "/service/OnShoreOffShoreTeam",
     },
@@ -96,7 +104,7 @@ const Whitslider = () => {
             >
               <NavLink key={index} to={item.link}>
                 <div
-                  className=" bg-white rounded-md text-black duration-700   h-48 mx-4 border border-white hover:bg-blue-secondary
+                  className=" bg-white rounded-md text-black duration-700   h-52 mx-4 border border-white hover:bg-blue-secondary
               shadow-lg space-y-2   hover:text-white leading-6 px-8 py-8"
                 >
                   <div className="flex justify-between">

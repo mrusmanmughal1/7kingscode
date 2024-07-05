@@ -24,6 +24,16 @@ import SharePointDeveloper from "./UI/SharePointDeveloper";
 import BusinessAnalyst from "./UI/BusinessAnalyst";
 import Products from "./pages/Products";
 import ProductDetails from "./UI/ProductDetails";
+import NetworkManage from "./UI/NetworkManage";
+import ServerManage from "./UI/ServerManage";
+import CloudServices from "./UI/CloudServices";
+import DataManage from "./UI/DataManage";
+import VirtualManage from "./UI/VirtualManage";
+import Applicationhosting from "./UI/Applicationhosting";
+import SoftwareMaintenance from "./UI/SoftwareMaintenance";
+import CustomDevelop from "./UI/CustomDevelop";
+import ApplicationIntegrate from "./UI/ApplicationIntegrate";
+import PerformanceMonitor from "./UI/PerformanceMonitor";
 const App = () => {
   return (
     <div>
@@ -37,8 +47,24 @@ const App = () => {
               element={<OnShoreOffShoreTeam />}
             />
             <Route path="TalentAquisition" element={<TalentAquisition />} />
+            <Route path="NetworkManage" element={<NetworkManage />} />
+            <Route path="ServerManage" element={<ServerManage />} />
+            <Route path="CloudServices" element={<CloudServices />} />
+            <Route path="VirtualManage" element={<VirtualManage />} />
+            <Route
+              path="SoftwareMaintenance"
+              element={<SoftwareMaintenance />}
+            />
+            <Route path="DataManage" element={<DataManage />} />
+            <Route path="Applicationhosting" element={<Applicationhosting />} />
             <Route path="ManageConsult" element={<ManageConsult />} />
+            <Route path="CustomDevelop" element={<CustomDevelop />} />
+            <Route
+              path="ApplicationIntegrate"
+              element={<ApplicationIntegrate />}
+            />
             <Route path="DataAnalysis" element={<DataAnalysis />} />
+            <Route path="PerformanceMonitor" element={<PerformanceMonitor />} />
             <Route path="UXDesigner" element={<UXDesigner />} />
             <Route path="WebDevelopment" element={<WebDevelopment />} />
             <Route path="DigitalMarketing" element={<DigitalMarketing />} />

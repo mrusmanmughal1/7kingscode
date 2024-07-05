@@ -83,7 +83,7 @@ const ProductDetails = () => {
             >
               <NavLink key={index} to={item.link}>
                 <div
-                  className=" bg-white rounded-md text-black duration-700   h-64 lg:h-60 mx-6 border border-white hover:bg-blue-secondary
+                  className=" bg-white rounded-md text-black duration-700   h-72 lg:h-60 mx-6 border border-white hover:bg-blue-secondary
             shadow-lg space-y-2   hover:text-white leading-6 px-8 py-8"
                 >
                   <div className="flex justify-between">
