@@ -4,7 +4,7 @@ import React from "react";
 const SolveProblem = () => {
   return (
     <div>
-      <div className="flex justify-center items-center   lg:top-[-4rem]   w-full  ">
+      <div className="flex justify-center items-center      w-full  ">
         <div className="w-full bg-blue-600 mx-auto p-8 ">
           <div className="flex mx-auto   lg:w-[80%] flex-col gap-4 md:flex-row justify-between items-center">
             <div className="md:p-8">

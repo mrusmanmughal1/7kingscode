@@ -74,11 +74,11 @@ const BestSolution = () => {
     ],
   };
   return (
-    <div className="businessGrowth    ">
-      <div className=" pt-20  text-blue-secondary   pb-8 text-3xl w-[75%] mx-auto  capitalize font-semibold  ">
+    <div className="businessGrowth py-24    ">
+      <div className="   text-blue-secondary   pb-8 text-3xl w-[75%] mx-auto  capitalize font-semibold  ">
         Industries We Serve at 7KC
       </div>
-      <div className="  w-[80%]   pb-20  mx-auto">
+      <div className="  w-[80%]     mx-auto">
         <Slider {...settings}>
           {arr.map((item, index) => (
             <div

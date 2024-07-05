@@ -37,19 +37,6 @@ const HeaderMain = ({ mode }) => {
                   className="header-li hover:font-medium   dropdown inline-block relative "
                  
                 >
-<<<<<<< HEAD
-                  <a href="#" className="dropdown">
-                    Services{" "}
-                  </a>
-
-                  <div className="dropdown-menu absolute hidden bg-white  top-10  text-gray-700 pt-1">
-                    <div className="flex gap-8 p-10 w-full">
-                      {/* {services.map((val, i) => (
-                        <p key={i} className="font-medium  ">
-                          {val}
-                        </p>
-                      ))} */}
-=======
                   <div to={"/services"} className="dropdown">
                     <div className="">
                       <div className="dropdown inline-block relative">
@@ -79,7 +66,6 @@ const HeaderMain = ({ mode }) => {
                           </NavLink>
                         </ul>
                       </div>
->>>>>>> 36c0f7d30738991436ce5d3fd1b899fb456237f4
                     </div>
                   </div>
                 </li>

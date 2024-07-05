@@ -45,16 +45,9 @@ const TechnologyChallenges = () => {
           <div className=" mb-10">
             <span className="w-2 h-2 bg-white rounded-full "> </span>
             <p className="text-xl md:text-2xl font-semibold text-[#3C72FC]">
-<<<<<<< HEAD
-             OUR PRODUCTS
-            </p>
-          </div>
-          
-=======
               OUR PRODUCTS
             </p>
           </div>
->>>>>>> 36c0f7d30738991436ce5d3fd1b899fb456237f4
         </div>
         <div className=" grid grid-cols-2   md:flex flex-col gap-8 lg:gap-0 flex-wrap md:flex-row   justify-between md:justify-center lg:justify-between mt-4  w-11/12 md:w-3/4  lg:w-[80%] 2xl:w-[80%] mx-auto">
           {container.map((item, index) => (

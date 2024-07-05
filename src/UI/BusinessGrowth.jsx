@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import { CiBank } from "react-icons/ci";
 import { IoBusinessSharp } from "react-icons/io5";
-import { GiFlyingDagger } from "react-icons/gi";
 import { NavLink } from "react-router-dom";
 import { GrUserManager } from "react-icons/gr";
 import { RiBuilding2Line } from "react-icons/ri";
@@ -10,12 +9,8 @@ import { TbDeviceMobileCog } from "react-icons/tb";
 import { GrShieldSecurity } from "react-icons/gr";
 const BusinessGrowth = () => {
   const [hover, setHover] = useState(null);
-  const aa = [
+  const arr = [
     {
-<<<<<<< HEAD
-      title: "OFF-SHORE & ON-SHORE TEAMS  ",
-      desc: "7 Kings Code operates on an offshore-onshore model, with team members located globally and on-site with clients, working together seamlessly. ",
-=======
       title: "Infrastructure Management",
       desc: "Ensuring robust, efficient, and scalable IT infrastructure for seamless operations.",
       icon: <RiBuilding2Line />,
@@ -36,45 +31,27 @@ const BusinessGrowth = () => {
     {
       title: "OFF-SHORE & ON-SHORE TEAMS",
       desc: " Seamlessly integrated global and local teams ensuring round-the-clock productivity and expertise.",
->>>>>>> 36c0f7d30738991436ce5d3fd1b899fb456237f4
       icon: <CiBank />,
       link: "/service/OnShoreOffShoreTeam",
     },
     {
-<<<<<<< HEAD
-      title: "TALENT ACQUISITION & VISA SPONSORSHIP ",
-      desc: "7 Kings Code recruits top talent and sponsors visas, attracting skilled professionals nationwide to meet client needs. ",
-
-=======
       title: "TALENT ACQUISITION & VISA SPONSORSHIP",
       desc: " Streamlined recruitment and visa processes to attract top global talent.",
->>>>>>> 36c0f7d30738991436ce5d3fd1b899fb456237f4
       icon: <IoBusinessSharp />,
       link: "/service/TalentAquisition",
     },
     {
-<<<<<<< HEAD
-      title: "MANAGEMENT CONSULTING      ",
-      desc: "7 Kings Code supports clients throughout their recruitment journey, from sourcing to negotiation. Our extensive database ensures selection of proficient consultants, driving business success. ",
-
-      icon: <GiFlyingDagger />,
-=======
       title: "MANAGEMENT CONSULTING",
       desc: "Expert guidance to drive strategic growth and operational excellence. ",
       icon: <GrUserManager />,
       link: "/service/ManageConsult",
->>>>>>> 36c0f7d30738991436ce5d3fd1b899fb456237f4
     },
   ];
 
   return (
-    <div className="businessGrowth pb-16">
-<<<<<<< HEAD
-      <div className="flex lg:flex-row flex-col container gap-16 w-11/12 pt-16 md:pt-24 lg:w-[80%] mx-auto">
-=======
-      <div className="grid grid-cols-1 lg:grid-cols-3 lg:flex-row flex-col container gap-8 w-11/12 pt-16 md:pt-24 lg:w-[80%] mx-auto">
->>>>>>> 36c0f7d30738991436ce5d3fd1b899fb456237f4
-        {aa.map((item, index) => (
+    <div className="businessGrowth  py-24 ">
+      <div className="grid grid-cols-1 lg:grid-cols-3 lg:flex-row flex-col container gap-8 w-11/12  lg:w-[80%] mx-auto">
+        {arr.map((item, index) => (
           <div
             key={index}
             onMouseOver={() => setHover(index)}

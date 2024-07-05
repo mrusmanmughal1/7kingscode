@@ -45,8 +45,6 @@ const TechManagement = () => {
                   7 Kings Code delivers customized solutions to tackle your
                   unique business challenges, leveraging cutting-edge technology
                   and industry expertise to drive growth and efficiency.
-<<<<<<< HEAD
-=======
                 </p>
               </div>
             </div>
@@ -62,7 +60,6 @@ const TechManagement = () => {
                   Count on 7 Kings Code for seamless production support,
                   ensuring uninterrupted operations with proactive monitoring,
                   rapid issue resolution, and round-the-clock assistance
->>>>>>> 36c0f7d30738991436ce5d3fd1b899fb456237f4
                 </p>
               </div>
             </div>
@@ -71,22 +68,6 @@ const TechManagement = () => {
                 <AiOutlinePython className="text-3xl lg:text-4xl text-blue-secondary" />
               </div>
               <div className="space-y-1 w-full ">
-<<<<<<< HEAD
-                <div className="font-semibold text-lg capitalize">
-                  PRODUCTION SUPPORT
-                </div>
-                <p className="text-gray-400 text-sm">
-                  Count on 7 Kings Code for seamless production support,
-                  ensuring uninterrupted operations with proactive monitoring,
-                  rapid issue resolution, and round-the-clock assistance
-                </p>
-              </div>
-            </div>
-            <div className="flex gap-4 items-center">
-              <div className="">
-                <BsCapslock className="text-3xl lg:text-4xl text-blue-secondary" />
-              </div>
-              <div className="space-y-1 w-full ">
                 <div className="font-semibold text-lg uppercase">
                   Resource Management
                 </div>
@@ -98,19 +79,6 @@ const TechManagement = () => {
                 </p>
               </div>
             </div>
-=======
-                <div className="font-semibold text-lg uppercase">
-                  Resource Management
-                </div>
-                <p className="text-gray-400 text-sm">
-                  Optimize your resources with 7 Kings Code's tailored
-                  solutions, maximizing productivity and minimizing costs
-                  through strategic resource allocation and efficient management
-                  practices.
-                </p>
-              </div>
-            </div>
->>>>>>> 36c0f7d30738991436ce5d3fd1b899fb456237f4
           </div>
         </div>
       </div>

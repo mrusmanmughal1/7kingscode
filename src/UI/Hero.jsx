@@ -37,11 +37,7 @@ const Hero = () => {
             <div className=" ps-10 lg:ps-20 2xl:ps-36    gap-7   md:gap-20">
               <div className="w-full  space-y-8">
                 <span className=" text-white p-2 px-4 text-xs md:text-base  uppercase bg-[#211f2e]">
-<<<<<<< HEAD
-                NEVER STOP, NEVER GIVE UP, ALWAYS FIND SOLUTION.
-=======
                   NEVER STOP, NEVER GIVE UP, ALWAYS FIND SOLUTION.
->>>>>>> 36c0f7d30738991436ce5d3fd1b899fb456237f4
                 </span>
                 <div className="   uppercase relative   pt- z-40 w-full  font-bold text-white">
                   <span
@@ -57,11 +53,7 @@ const Hero = () => {
                     IT Presence
                   </p>
                 </div>
-<<<<<<< HEAD
-                <DMOre to='about-us' />
-=======
                 <DMOre to={"/about-us"} />
->>>>>>> 36c0f7d30738991436ce5d3fd1b899fb456237f4
               </div>
             </div>
           </div>
