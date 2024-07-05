@@ -35,7 +35,7 @@ const WeAreTecz = () => {
               <div className="text-3xl md:text-2xl font-semibold py-2">
                 Revolutionizing businesses with technology
               </div>
-              <div className="text-slate-400 pb-8">
+              <div className="text-slate-950 pb-8">
                 7 Kings Code is a leading IT consulting firm serving partners
                 and clients globally, including the USA, Canada, Europe, India,
                 Pakistan, and the Middle East. We source top-tier consultants

@@ -16,27 +16,27 @@ const BestSolution = () => {
   const arr = [
     {
       title: "Telecommunication",
-      desc: " Advanced solutions to enhance connectivity and communication across networks.",
+      desc: " Solutions to enhance connectivity and communication across networks...",
       icon: <FaHeadphonesAlt />,
     },
     {
       title: " Real Estate",
-      desc: "Comprehensive services for buying, selling, and managing properties efficiently..",
+      desc: "Comprehensive services for buying, selling, and managing properties efficiently... ",
       icon: <BsFillBuildingsFill />,
     },
     {
-      title: "Finance and Banking",
-      desc: " Innovative solutions to optimize financial operations and banking services. ",
+      title: "Finance & Banking",
+      desc: " Innovative solutions to optimize financial operations and banking services... ",
       icon: <FaBitcoin />,
     },
     {
       title: "Health Care",
-      desc: " Comprehensive services to enhance patient care and operational efficiency in healthcare settings.",
+      desc: " Comprehensive services to enhance patient care and operational efficiency...",
       icon: <MdHealthAndSafety />,
     },
     {
       title: "Education",
-      desc: "Tailored solutions to foster learning and development through innovative educational practices. ",
+      desc: "Tailored solutions to foster learning and development through innovative... ",
       icon: <GiBookCover />,
     },
   ];
@@ -88,11 +88,11 @@ const BestSolution = () => {
             >
               <NavLink key={index} to={item.link}>
                 <div
-                  className=" bg-white rounded-md text-black duration-700   h-48 mx-4 border border-white hover:bg-blue-secondary
-            shadow-lg space-y-2   hover:text-white leading-6 px-8 py-8"
+                  className=" bg-white rounded-md text-black duration-700   h-52 mx-4 border border-white hover:bg-blue-secondary
+            shadow-lg    hover:text-white leading-6 px-8 py-8"
                 >
                   <div className="flex justify-between">
-                    <p className="font-bold text-xl">{item.title}</p>
+                    <p className="font-bold text-lg lg:text-xl">{item.title}</p>
                     <p
                       className={`text-5xl text-blue-secondary relative    -top-4 best-icon  ${
                         hover == index && "text-white"
