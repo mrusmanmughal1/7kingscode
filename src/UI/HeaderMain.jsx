@@ -46,8 +46,7 @@ const HeaderMain = ({ mode }) => {
                 </li>
                 <li
                   className="header-li hover:font-medium   dropdown inline-block relative "
-                  // onMouseOver={() => sethover(true)}
-                  // onMouseLeave={() => sethover(false)}
+                 
                 >
                   <a href="#" className="dropdown">
                     Services{" "}
@@ -55,11 +54,11 @@ const HeaderMain = ({ mode }) => {
 
                   <div className="dropdown-menu absolute hidden bg-white  top-10  text-gray-700 pt-1">
                     <div className="flex gap-8 p-10 w-full">
-                      {services.map((val, i) => (
+                      {/* {services.map((val, i) => (
                         <p key={i} className="font-medium  ">
                           {val}
                         </p>
-                      ))}
+                      ))} */}
                     </div>
                   </div>
                 </li>

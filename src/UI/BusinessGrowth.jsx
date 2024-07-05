@@ -7,24 +7,26 @@ const BestSolution = () => {
   const [hover, setHover] = useState();
   const aa = [
     {
-      title: "A Best Business Solutions",
-      desc: " We offers a full-cycle development services that meet business ",
+      title: "OFF-SHORE & ON-SHORE TEAMS  ",
+      desc: "7 Kings Code operates on an offshore-onshore model, with team members located globally and on-site with clients, working together seamlessly. ",
       icon: <CiBank />,
     },
     {
-      title: "Business Growth Planning",
-      desc: " We offers a full-cycle development services that meet business",
+      title: "TALENT ACQUISITION & VISA SPONSORSHIP ",
+      desc: "7 Kings Code recruits top talent and sponsors visas, attracting skilled professionals nationwide to meet client needs. ",
+
       icon: <IoBusinessSharp />,
     },
     {
-      title: "Search Engine Optimization",
-      desc: " We offers a full-cycle development services that meet business ",
+      title: "MANAGEMENT CONSULTING      ",
+      desc: "7 Kings Code supports clients throughout their recruitment journey, from sourcing to negotiation. Our extensive database ensures selection of proficient consultants, driving business success. ",
+
       icon: <GiFlyingDagger />,
     },
   ];
   return (
     <div className="businessGrowth pb-16">
-      <div className="flex lg:flex-row flex-col container gap-16 w-11/12 pt-16 md:pt-24 lg:w-3/4 mx-auto">
+      <div className="flex lg:flex-row flex-col container gap-16 w-11/12 pt-16 md:pt-24 lg:w-[80%] mx-auto">
         {aa.map((item, index) => (
           <div
             key={index}

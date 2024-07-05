@@ -13,15 +13,15 @@ const About = () => {
     <div>
       <MainBanner
         text="About Us"
-        title="7 Kings Code  -IT Solutions & Technology"
+        title="WE PROVIDE ENTERPRISE-LEVEL SOLUTIONS."
       />
 
       <OurBenifits />
       
-      <BestSolution/>
-      {/* <BusinessGrowth /> */}
+      {/* <BestSolution/> */}
+      <BusinessGrowth />
       <Counter />
-      <TechManagement />
+      {/* <TechManagement /> */}
       <SolveProblem />
     </div>
   );

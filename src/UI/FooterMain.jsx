@@ -73,7 +73,7 @@ const FooterMain = () => {
             <div className="flex gap-14  flex-col">
               <div className="flex   justify-between">
                 <div className="flex flex-col md:flex-row w-full gap-2">
-                  <div className="w-24">
+                  <div className=" w-full">
                     <img src={Dubai} alt="" className=" " />
                   </div>
                   <div className="">
@@ -84,7 +84,7 @@ const FooterMain = () => {
                   </div>
                 </div>
                 <div className="flex  w-full flex-col md:flex-row  ">
-                  <div className="w-24">
+                  <div className=" w-full">
                     <img src={itly} alt="" />
                   </div>
                   <div className="">
@@ -97,7 +97,7 @@ const FooterMain = () => {
               </div>
               <div className="flex gap-3 justify-between">
                 <div className="flex w-full  flex-col md:flex-row gap-2">
-                  <div className="w-24">
+                  <div className=" w-full">
                     <img src={india} alt="" />
                   </div>
                   <div className="">
@@ -109,7 +109,7 @@ const FooterMain = () => {
                   </div>
                 </div>
                 <div className="flex w-full  flex-col md:flex-row gap-2">
-                  <div className="w-24">
+                  <div className=" w-full">
                     <img src={pakistan} alt="" />
                   </div>
                   <div className="">

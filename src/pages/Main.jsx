@@ -15,13 +15,13 @@ const Main = () => {
   return (
     <div>
       <Hero />
-      <BestSolution  />
+      {/* <BestSolution  /> */}
       <WeAreTecz />
       <Counter />
       <TechManagement />
       <TechnologyChallenges />
       <OurPartners />
-      <WhatElse />
+      {/* <WhatElse /> */}
       <Location />
     </div>
   );

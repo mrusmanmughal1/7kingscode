@@ -22,14 +22,14 @@ const TechManagement = () => {
             </ol>
           </div>
           <div className="flex flex-col gap-2 ">
-            <div className="text-2xl lg:text-4xl font-semibold py-1">
-              Let’s Build Your Success With 7 Kings Code Solution
+            <div className="text-2xl lg:text-4xl mb-4 font-semibold py-1">
+              Let’s Build Your Success Today
             </div>
-            <div className="text-blue-secondary  text-sm font-semibold pb-8">
+            {/* <div className="text-blue-secondary  text-sm font-semibold pb-8">
               At 7 Kings Code, we specialize in transforming businesses with
               comprehensive IT consulting and management services to ensure
               technology drives success.
-            </div>
+            </div> */}
           </div>
           <div className="space-y-4">
             <div className="flex gap-4 items-center border-b pb-4">
@@ -37,13 +37,13 @@ const TechManagement = () => {
                 <CiLock className="text-3xl lg:text-4xl text-blue-secondary" />
               </div>
               <div className="space-y-1 w-full ">
-                <p className="text-lg font-semibold">Data Protection</p>
+                <p className="text-lg font-semibold capitalize ">
+                  BUSINESS SOLUTION
+                </p>
                 <p className="text-gray-400 text-sm">
-                  We’ve designed a culture that prioritizes your data security.
-                  Our cybersecurity services, including risk assessments,
-                  vulnerability management, and incident response, ensure that
-                  your data is protected and your business is compliant with
-                  industry standards.
+                  7 Kings Code delivers customized solutions to tackle your
+                  unique business challenges, leveraging cutting-edge technology
+                  and industry expertise to drive growth and efficiency.
                 </p>
               </div>
             </div>
@@ -52,18 +52,31 @@ const TechManagement = () => {
                 <BsCapslock className="text-3xl lg:text-4xl text-blue-secondary" />
               </div>
               <div className="space-y-1 w-full ">
-                <div className="font-semibold text-lg">Optimize IT System</div>
+                <div className="font-semibold text-lg capitalize">
+                  PRODUCTION SUPPORT
+                </div>
                 <p className="text-gray-400 text-sm">
-                  Enhance your IT systems with our expert optimization services.
-                  From business process analysis and technology roadmap
-                  development to managed IT services and network management, we
-                  streamline your operations for maximum efficiency and
-                  productivity.
+                  Count on 7 Kings Code for seamless production support,
+                  ensuring uninterrupted operations with proactive monitoring,
+                  rapid issue resolution, and round-the-clock assistance
                 </p>
               </div>
             </div>
-            <div className="flex gap-6">
-              <DMOre />
+            <div className="flex gap-4 items-center">
+              <div className="">
+                <BsCapslock className="text-3xl lg:text-4xl text-blue-secondary" />
+              </div>
+              <div className="space-y-1 w-full ">
+                <div className="font-semibold text-lg uppercase">
+                  Resource Management
+                </div>
+                <p className="text-gray-400 text-sm">
+                  Optimize your resources with 7 Kings Code's tailored
+                  solutions, maximizing productivity and minimizing costs
+                  through strategic resource allocation and efficient management
+                  practices.
+                </p>
+              </div>
             </div>
           </div>
         </div>
