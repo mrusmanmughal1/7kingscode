@@ -12,7 +12,7 @@ const MobileNav = ({ mode }) => {
   return (
     <div className="relative">
       <div className="  w-11/12 mx-auto flex justify-between items-center ">
-        <NavLink to={"/"} href="#">
+        <NavLink to={"/"}  >
           <Logo />
         </NavLink>
         <div className="flex px-4  md:px-0 items-center gap-4">
@@ -35,13 +35,13 @@ const MobileNav = ({ mode }) => {
               }`}
             >
               <li className="header-li" onClick={() => settoggle(!toggle)}>
-                <NavLink to={"/"} href="#">
+                <NavLink to={"/"}  >
                   What We Do{" "}
                 </NavLink>
               </li>
               <hr />
               <li className="header-li" onClick={() => settoggle(!toggle)}>
-                <NavLink to={"/about-us"} href="#">
+                <NavLink to={"/about-us"}  >
                   Who We Are{" "}
                 </NavLink>
               </li>
@@ -62,10 +62,10 @@ const MobileNav = ({ mode }) => {
                     <div className=" bg-white overflow-hidden transition-all duration-500  max-h-0 peer-checked:max-h-40 ">
                       <div className="px-4 pb-2">
                         <li
-                          className="header-li py-2"
+                          className="header-li "
                           onClick={() => settoggle(!toggle)}
                         >
-                          <NavLink to={"/services"} href="#">
+                          <NavLink to={"/services"}  >
                             Services
                           </NavLink>
                         </li>
@@ -73,7 +73,7 @@ const MobileNav = ({ mode }) => {
                           className="header-li py-2"
                           onClick={() => settoggle(!toggle)}
                         >
-                          <NavLink to={"/products"} href="#">
+                          <NavLink to={"/products"}  >
                             Products
                           </NavLink>
                         </li>
@@ -84,7 +84,7 @@ const MobileNav = ({ mode }) => {
               </li>
 
               <li className="header-li" onClick={() => settoggle(!toggle)}>
-                <NavLink to={"/contact-us"} href="#">
+                <NavLink to={"/contact-us"}  >
                   Contact Us{" "}
                 </NavLink>
               </li>
@@ -94,7 +94,7 @@ const MobileNav = ({ mode }) => {
                   className="bg-blue-secondary text-white rounded-lg text-center px-8 py-3 "
                   onClick={() => settoggle(!toggle)}
                 >
-                  <NavLink to={"/Careers"} href="#">
+                  <NavLink to={"/Careers"}  >
                     Careers{" "}
                   </NavLink>
                 </button>

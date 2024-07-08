@@ -50,18 +50,20 @@ const FooterMain = () => {
 
         <div className="">
           <p className="pb-3 font-medium text-white">HEAD OFFICE</p>
-          <p className="flex gap-4">
-            <FaMapMarkerAlt className="text-blue-secondary" />
-            1401 N University Dr suite 503, Coral Springs, FL 33071, United
-            State
-          </p>
+          <div className="flex gap-4">
+            <FaMapMarkerAlt className="text-blue-secondary text-2xl" />
+            <p>  1401 N University Dr suite 503, Coral Springs, FL 33071, United
+            State</p>
+          
+          </div>
           <div className=" space-y-4 text-gray-400">
+            <div className="flex gap-4">
+              <FaSquarePhone className="text-blue-secondary text-2xl " />
+              <a href="tel:(+1) 954-272-8515" className="pt-1"> (+1) 954-272-8515 </a>
+            </div>
             <p className="flex gap-4">
-              <FaSquarePhone className="text-blue-secondary" /> (+1)
-              954-272-8515
-            </p>
-            <p className="flex gap-4">
-              <SiImessage className="text-blue-secondary" /> info@7kingscode.com
+              <SiImessage className="text-blue-secondary text-2xl" />
+              <a href="mailto:info@7kingscode.com">info@7kingscode.com</a>
             </p>
 
             <div className="flex gap-4 text-3xl md:text-2xl text-white">
