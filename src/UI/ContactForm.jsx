@@ -43,55 +43,28 @@ const TalkWithUs = () => {
                 <h3 className="text-xl  font-semibold mb-2">HEAD OFFICE</h3>
                 <h3 className="text-xl  font-semibold mb-2">USA Office</h3>
                 <div className="mb-4   ">
-<<<<<<< HEAD
                   <div className="flex">
                     <p className="flex items-stat px-3 text-2xl text-gray-700">
                       <PiMapPinLineFill className="text-blue-secondary" />
                     </p>
-                    <p className="text-xs">
-                      1401 N University Dr suite 503, Coral Springs, FL 33071,
-                      United State
+                    <p className=" ">
+                      9/3rt, Ground Floor, Sri Lakshmi Nilayam, SR Nagar,
+                      Hyd-500038.
                     </p>
                   </div>
                   <div className="flex space-y-2">
                     <p className="flex items-center px-3  text-2xl text-gray-700">
                       <FaSquarePhone className="text-blue-secondary" />
                     </p>
-                    <p className="text-xs">(+91)9581016898</p>
+                    <a href="tel:(+91)9581016898">(+91)9581016898</a>
                   </div>
                   <div className="flex space-y-2">
                     <p className="flex items-center px-3  text-2xl text-gray-700">
                       <AiOutlineMail className="text-blue-secondary" />
                     </p>
-                    <p className="text-xs">info@7kingscode.com</p>
+                    <p href="mailto:info@7kingscode.com">info@7kingscode.com</p>
                   </div>
                 </div>
-=======
-                <div className="flex">
-                  <p className="flex items-stat px-3 text-2xl text-gray-700">
-                    <PiMapPinLineFill className="text-blue-secondary" />
-                  </p>
-                  <p className=" ">
-                    9/3rt, Ground Floor, Sri Lakshmi Nilayam, SR Nagar,
-                    Hyd-500038.
-                  </p>
-                </div>
-                <div className="flex space-y-2">
-                  <p className="flex items-center px-3  text-2xl text-gray-700">
-                    <FaSquarePhone className="text-blue-secondary" />
-                  </p>
-                  <a  href="tel:(+91)9581016898">(+91)9581016898</a>
-                </div>
-                <div className="flex space-y-2">
-                  <p className="flex items-center px-3  text-2xl text-gray-700">
-                    <AiOutlineMail className="text-blue-secondary" />
-                  </p>
-                  <p href="mailto:info@7kingscode.com">info@7kingscode.com</p>
-                </div>
-              </div>
-                
-                 
->>>>>>> 69ae99d218648834d6208cf7beed2b8e2300b6b4
               </div>
             </div>
             <div className="  flex   gap-2  lg:text-xs flex-col lg:flex-row">
