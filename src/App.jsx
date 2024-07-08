@@ -16,9 +16,7 @@ import Filters from "./UI/Filters";
 import QualityAnalyst from "./UI/QualityAnalyst";
 import TalentAquisition from "./UI/TalentAquisition";
 import ManageConsult from "./UI/ManageConsult";
-import DataAnalysis from "./UI/DataAnalysis";
 import DigitalMarketing from "./UI/DigitalMarketing";
-import BusinessIntelligence from "./UI/BusinessIntelligence";
 import ApplyForm from "./UI/ApplyForm";
 import SharePointDeveloper from "./UI/SharePointDeveloper";
 import BusinessAnalyst from "./UI/BusinessAnalyst";
@@ -34,6 +32,26 @@ import SoftwareMaintenance from "./UI/SoftwareMaintenance";
 import CustomDevelop from "./UI/CustomDevelop";
 import ApplicationIntegrate from "./UI/ApplicationIntegrate";
 import PerformanceMonitor from "./UI/PerformanceMonitor";
+import CyberSecurityManage from "./UI/CyberSecurityManage";
+import RiskManagement from "./UI/RiskManagement";
+import SecurityMonitoring from "./UI/SecurityMonitoring";
+import AccessManagement from "./UI/AccessManagement";
+import DataEncryption from "./UI/DataEncryption";
+import DeskServices from "./UI/DeskServices";
+import DesktopManagement from "./UI/DesktopManagement";
+import RemoteSupport from "./UI/RemoteSupport";
+import UserEducation from "./UI/UserEducation";
+import TroubleShooting from "./UI/TroubleShooting";
+import DisasterRecovery from "./UI/DisasterRecovery";
+import StorageSolutions from "./UI/StorageSolutions";
+import DataSecurity from "./UI/DataSecurity";
+import DataAnalytics from "./UI/DataAnalytics";
+import DataLifecycle from "./UI/DataLifecycle";
+import StrategyPlanning from "./UI/StrategyPlanning";
+import TechnologyDevelopment from "./UI/TechnologyDevelopment";
+import VendorManagemnet from "./UI/VendorManagemnet";
+import PolicyGovernance from "./UI/PolicyGovernance";
+import CostOptimization from "./UI/CostOptimization";
 const App = () => {
   return (
     <div>
@@ -51,6 +69,27 @@ const App = () => {
             <Route path="ServerManage" element={<ServerManage />} />
             <Route path="CloudServices" element={<CloudServices />} />
             <Route path="VirtualManage" element={<VirtualManage />} />
+            {/* <Route path="SecurityMonitoring" element={<SecurityMonitoring />} /> */}
+            {/* <Route path="AccessManagement" element={<AccessManagement />} /> */}
+            {/* <Route path="DataEncryption" element={<DataEncryption />} /> */}
+            {/* <Route path="DeskServices" element={<DeskServices />} /> */}
+            {/* <Route path="DesktopManagement" element={<DesktopManagement />} /> */}
+            {/* <Route path="RemoteSupport" element={<RemoteSupport />} /> */}
+            {/* <Route path="UserEducation" element={<UserEducation />} /> */}
+            {/* <Route path="TroubleShooting" element={<TroubleShooting />} /> */}
+            {/* <Route path="DisasterRecovery" element={<DisasterRecovery />} /> */}
+            {/* <Route path="StorageSolutions" element={<StorageSolutions />} /> */}
+            {/* <Route path="DataSecurity" element={<DataSecurity />} /> */}
+            {/* <Route path="DataAnalytics" element={<DataAnalytics />} /> */}
+            {/* <Route path="DataLifecycle" element={<DataLifecycle />} /> */}
+            {/* <Route path="VendorManagemnet" element={<VendorManagemnet />} /> */}
+            {/* <Route path="PolicyGovernance" element={<PolicyGovernance />} /> */}
+            {/* <Route path="CostOptimization" element={<CostOptimization />} /> */}
+            {/* <Route
+              path="TechnologyDevelopment"
+              element={<TechnologyDevelopment />}
+            /> */}
+            {/* <Route path="StrategyPlanning" element={<StrategyPlanning />} /> */}
             <Route
               path="SoftwareMaintenance"
               element={<SoftwareMaintenance />}
@@ -63,15 +102,16 @@ const App = () => {
               path="ApplicationIntegrate"
               element={<ApplicationIntegrate />}
             />
-            <Route path="DataAnalysis" element={<DataAnalysis />} />
+
             <Route path="PerformanceMonitor" element={<PerformanceMonitor />} />
             <Route path="UXDesigner" element={<UXDesigner />} />
             <Route path="WebDevelopment" element={<WebDevelopment />} />
             <Route path="DigitalMarketing" element={<DigitalMarketing />} />
-            <Route
-              path="BusinessIntelligence"
-              element={<BusinessIntelligence />}
-            />
+            {/* <Route path="RiskManagement" element={<RiskManagement />} /> */}
+            {/* <Route
+              path="CyberSecurityManage"
+              element={<CyberSecurityManage />}
+            /> */}
           </Route>
 
           <Route path="/" element={<Main />} />

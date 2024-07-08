@@ -31,7 +31,13 @@ const ServerManage = () => {
                 <div className="text-2xl font-semibold">
                   <p> Server Management</p>
                 </div>
-                <p></p>
+                <p>
+                  User experience is at the heart of digital success. Our UI/UX
+                  designing services focus on creating intuitive and engaging
+                  interfaces that enhance user satisfaction and drive
+                  engagement. We blend creativity with functionality to deliver
+                  designs that are both beautiful and effective.
+                </p>
               </div>
             </div>
           </div>

@@ -7,12 +7,12 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 import { FiPhone } from "react-icons/fi";
 import { IoLocation, IoMail } from "react-icons/io5";
 
-const BusinessIntelligence = () => {
+const RemoteSupport = () => {
   return (
     <>
-      <div className="flex  gap-44 mx-auto  ">
-        <div className="    mx-auto ">
-          <div className="flex lg:flex-row gap-24">
+      <div className="flex gap-44 mx-auto  ">
+        <div className="  mx-auto ">
+          <div className="flex  gap-24">
             {/* left  */}
 
             {/* right  */}
@@ -32,15 +32,15 @@ const BusinessIntelligence = () => {
 
               <div className="text-justify space-y-4">
                 <div className="text-2xl font-semibold">
-                  <p>Business Intelligence</p>
+                  <p> Remote Support</p>
                 </div>
                 <p>
-                  Transform your data into strategic assets with our business
-                  intelligence services. We provide comprehensive BI solutions
-                  that help you gather, analyze, and visualize data to make
-                  informed decisions. Our tools and techniques enable you to
-                  gain deeper insights into your business performance and market
-                  trends, driving growth and innovation.
+                  {" "}
+                  User experience is at the heart of digital success. Our UI/UX
+                  designing services focus on creating intuitive and engaging
+                  interfaces that enhance user satisfaction and drive
+                  engagement. We blend creativity with functionality to deliver
+                  designs that are both beautiful and effective.
                 </p>
               </div>
             </div>
@@ -51,4 +51,4 @@ const BusinessIntelligence = () => {
   );
 };
 
-export default BusinessIntelligence;
+export default RemoteSupport;

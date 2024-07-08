@@ -7,12 +7,15 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 import { FiPhone } from "react-icons/fi";
 import { IoLocation, IoMail } from "react-icons/io5";
 
-const DataManage = () => {
+const DesktopManagement = () => {
   return (
     <>
-      <div className="flex-row mx-auto  ">
-        <div className="    mx-auto ">
-          <div className="flex lg:flex-row gap-24">
+      <div className="flex gap-44 mx-auto  ">
+        <div className="  mx-auto ">
+          <div className="flex  gap-24">
+            {/* left  */}
+
+            {/* right  */}
             <div className="w-full  flex flex-col gap-20 space-y-4 pb-16">
               <div className="w-full ">
                 <img
@@ -29,9 +32,10 @@ const DataManage = () => {
 
               <div className="text-justify space-y-4">
                 <div className="text-2xl font-semibold">
-                  <p> Data Center Management</p>
+                  <p>Desktop & Mobile Management</p>
                 </div>
                 <p>
+                  {" "}
                   User experience is at the heart of digital success. Our UI/UX
                   designing services focus on creating intuitive and engaging
                   interfaces that enhance user satisfaction and drive
@@ -47,4 +51,4 @@ const DataManage = () => {
   );
 };
 
-export default DataManage;
+export default DesktopManagement;

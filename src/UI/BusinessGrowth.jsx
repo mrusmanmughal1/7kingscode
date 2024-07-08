@@ -14,19 +14,19 @@ const BusinessGrowth = () => {
       title: "Infrastructure Management",
       desc: "Ensuring robust, efficient, and scalable IT infrastructure for seamless operations.",
       icon: <RiBuilding2Line />,
-      link: "/service/OnShoreOffShoreTeam",
+      link: "/service/NetworkManage",
     },
     {
       title: " Application Management",
       desc: " End-to-end services for optimizing, maintaining, and supporting your software applications..",
       icon: <TbDeviceMobileCog />,
-      link: "/service/TalentAquisition",
+      link: "/service/NetworkManage",
     },
     {
       title: "Security Services",
       desc: "Comprehensive protection solutions to safeguard your assets and data. ",
       icon: <GrShieldSecurity />,
-      link: "/service/ManageConsult",
+      link: "/service/CyberSecurityManage",
     },
     {
       title: "OFF-SHORE & ON-SHORE TEAMS",

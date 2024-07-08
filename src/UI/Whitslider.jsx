@@ -58,19 +58,19 @@ const Whitslider = () => {
       title: "Infrastructure Management",
       desc: "Ensuring robust, efficient, and scalable IT infrastructure for seamless operations.",
       icon: <RiBuilding2Line />,
-      link: "/service/OnShoreOffShoreTeam",
+      link: "/service/NetworkManage",
     },
     {
       title: " Application Management",
       desc: " End-to-end services for optimizing, maintaining, and supporting your software.",
       icon: <TbDeviceMobileCog />,
-      link: "/service/TalentAquisition",
+      link: "/service/SoftwareMaintenance",
     },
     {
       title: "Security Services",
       desc: "Comprehensive protection solutions to safeguard your assets and data. ",
       icon: <GrShieldSecurity />,
-      link: "/service/ManageConsult",
+      link: "/service/CyberSecurityManage",
     },
     {
       title: "OFF-SHORE & ON-SHORE TEAMS",
@@ -108,7 +108,7 @@ const Whitslider = () => {
               shadow-lg space-y-2   hover:text-white leading-6 px-8 py-8"
                 >
                   <div className="flex justify-between">
-                    <p className="font-bold">{item.title}</p>
+                    <p className="font-bold uppercase">{item.title}</p>
                     <p
                       className={`text-5xl text-blue-secondary relative    -top-4 best-icon  ${
                         hover == index && "text-white"

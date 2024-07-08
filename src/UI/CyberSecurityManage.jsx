@@ -7,7 +7,7 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 import { FiPhone } from "react-icons/fi";
 import { IoLocation, IoMail } from "react-icons/io5";
 
-const DataManage = () => {
+const CyberSecurityManage = () => {
   return (
     <>
       <div className="flex-row mx-auto  ">
@@ -29,9 +29,10 @@ const DataManage = () => {
 
               <div className="text-justify space-y-4">
                 <div className="text-2xl font-semibold">
-                  <p> Data Center Management</p>
+                  <p> Cyber Security Management</p>
                 </div>
                 <p>
+                  {" "}
                   User experience is at the heart of digital success. Our UI/UX
                   designing services focus on creating intuitive and engaging
                   interfaces that enhance user satisfaction and drive
@@ -47,4 +48,4 @@ const DataManage = () => {
   );
 };
 
-export default DataManage;
+export default CyberSecurityManage;
