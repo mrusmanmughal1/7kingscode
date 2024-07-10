@@ -56,7 +56,7 @@ const TalkWithUs = () => {
                     <p className="flex items-center px-3  text-2xl text-gray-700">
                       <FaSquarePhone className="text-blue-secondary" />
                     </p>
-                    <a href="tel:(+91)9581016898">(+91)9581016898</a>
+                    <a href="tel:+1954-272-8515 ">+1 (954)-272-8515 </a>
                   </div>
                   <div className="flex space-y-2">
                     <p className="flex items-center px-3  text-2xl text-gray-700">
@@ -80,7 +80,7 @@ const TalkWithUs = () => {
                   <p className="flex items-center px-3  text-2xl text-gray-700">
                     <FaSquarePhone className="text-blue-secondary" />
                   </p>
-                  <p>(+91)9581016898</p>
+                  <p>(+971)567866556</p>
                 </div>
                 <div className="flex space-y-2">
                   <p className="flex items-center px-3  text-2xl text-gray-700">
@@ -151,7 +151,7 @@ const TalkWithUs = () => {
                   <p className="flex items-center px-3  text-2xl text-gray-700">
                     <FaSquarePhone className="text-blue-secondary" />
                   </p>
-                  <p>(+91)9581016898</p>
+                  <p>(+91)-9581016898</p>
                 </div>
                 <div className="flex space-y-2">
                   <p className="flex items-center px-3  text-2xl text-gray-700">
