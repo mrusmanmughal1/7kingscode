@@ -69,14 +69,14 @@ const App = () => {
             <Route path="ServerManage" element={<ServerManage />} />
             <Route path="CloudServices" element={<CloudServices />} />
             <Route path="VirtualManage" element={<VirtualManage />} />
-            {/* <Route path="SecurityMonitoring" element={<SecurityMonitoring />} /> */}
-            {/* <Route path="AccessManagement" element={<AccessManagement />} /> */}
-            {/* <Route path="DataEncryption" element={<DataEncryption />} /> */}
-            {/* <Route path="DeskServices" element={<DeskServices />} /> */}
-            {/* <Route path="DesktopManagement" element={<DesktopManagement />} /> */}
-            {/* <Route path="RemoteSupport" element={<RemoteSupport />} /> */}
-            {/* <Route path="UserEducation" element={<UserEducation />} /> */}
-            {/* <Route path="TroubleShooting" element={<TroubleShooting />} /> */}
+            <Route path="SecurityMonitoring" element={<SecurityMonitoring />} />
+            <Route path="AccessManagement" element={<AccessManagement />} />
+            <Route path="DataEncryption" element={<DataEncryption />} />
+            <Route path="DeskServices" element={<DeskServices />} />
+            <Route path="DesktopManagement" element={<DesktopManagement />} />
+            <Route path="RemoteSupport" element={<RemoteSupport />} />
+            <Route path="UserEducation" element={<UserEducation />} />
+            <Route path="TroubleShooting" element={<TroubleShooting />} />
             {/* <Route path="DisasterRecovery" element={<DisasterRecovery />} /> */}
             {/* <Route path="StorageSolutions" element={<StorageSolutions />} /> */}
             {/* <Route path="DataSecurity" element={<DataSecurity />} /> */}
@@ -107,11 +107,11 @@ const App = () => {
             <Route path="UXDesigner" element={<UXDesigner />} />
             <Route path="WebDevelopment" element={<WebDevelopment />} />
             <Route path="DigitalMarketing" element={<DigitalMarketing />} />
-            {/* <Route path="RiskManagement" element={<RiskManagement />} /> */}
-            {/* <Route
+            <Route path="RiskManagement" element={<RiskManagement />} />
+            <Route
               path="CyberSecurityManage"
               element={<CyberSecurityManage />}
-            /> */}
+            />
           </Route>
 
           <Route path="/" element={<Main />} />
