@@ -77,19 +77,19 @@ const App = () => {
             <Route path="RemoteSupport" element={<RemoteSupport />} />
             <Route path="UserEducation" element={<UserEducation />} />
             <Route path="TroubleShooting" element={<TroubleShooting />} />
-            {/* <Route path="DisasterRecovery" element={<DisasterRecovery />} /> */}
-            {/* <Route path="StorageSolutions" element={<StorageSolutions />} /> */}
-            {/* <Route path="DataSecurity" element={<DataSecurity />} /> */}
-            {/* <Route path="DataAnalytics" element={<DataAnalytics />} /> */}
-            {/* <Route path="DataLifecycle" element={<DataLifecycle />} /> */}
-            {/* <Route path="VendorManagemnet" element={<VendorManagemnet />} /> */}
-            {/* <Route path="PolicyGovernance" element={<PolicyGovernance />} /> */}
-            {/* <Route path="CostOptimization" element={<CostOptimization />} /> */}
-            {/* <Route
+            <Route path="DisasterRecovery" element={<DisasterRecovery />} />
+            <Route path="StorageSolutions" element={<StorageSolutions />} />
+            <Route path="DataSecurity" element={<DataSecurity />} />
+            <Route path="DataAnalytics" element={<DataAnalytics />} />
+            <Route path="DataLifecycle" element={<DataLifecycle />} />
+            <Route path="VendorManagemnet" element={<VendorManagemnet />} />
+            <Route path="PolicyGovernance" element={<PolicyGovernance />} />
+            <Route path="CostOptimization" element={<CostOptimization />} />
+            <Route
               path="TechnologyDevelopment"
               element={<TechnologyDevelopment />}
-            /> */}
-            {/* <Route path="StrategyPlanning" element={<StrategyPlanning />} /> */}
+            />
+            <Route path="StrategyPlanning" element={<StrategyPlanning />} />
             <Route
               path="SoftwareMaintenance"
               element={<SoftwareMaintenance />}

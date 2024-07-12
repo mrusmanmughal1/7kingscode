@@ -36,7 +36,7 @@ const FooterMain = () => {
               </NavLink>
 
               <NavLink to={"/services"}>
-                <p> Services </p>
+                <p> What We Offer </p>
               </NavLink>
 
               <NavLink to={"/contact-us"}>
@@ -52,14 +52,19 @@ const FooterMain = () => {
           <p className="pb-3 font-medium text-white">HEAD OFFICE</p>
           <div className="flex gap-4">
             <FaMapMarkerAlt className="text-blue-secondary text-2xl" />
-            <p>  1401 N University Dr suite 503, Coral Springs, FL 33071, United
-            State</p>
-          
+            <p>
+              {" "}
+              1401 N University Dr suite 503, Coral Springs, FL 33071, United
+              State
+            </p>
           </div>
           <div className=" space-y-4 text-gray-400">
             <div className="flex gap-4">
               <FaSquarePhone className="text-blue-secondary text-2xl " />
-              <a href="tel:(+1) 954-272-8515" className="pt-1"> (+1) 954-272-8515 </a>
+              <a href="tel:(+1) 954-272-8515" className="pt-1">
+                {" "}
+                (+1) 954-272-8515{" "}
+              </a>
             </div>
             <p className="flex gap-4">
               <SiImessage className="text-blue-secondary text-2xl" />

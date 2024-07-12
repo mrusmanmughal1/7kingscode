@@ -5,6 +5,7 @@ const Products = () => {
   return (
     <div>
       <MainBanner
+        text="Products"
         title="WE PROVIDE ENTERPRISE-LEVEL SOLUTIONS"
       />
       <ProductDetails />

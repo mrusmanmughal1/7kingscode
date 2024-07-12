@@ -368,7 +368,7 @@ const ServicesLayout = () => {
               </NavLink>
             </div>
             {/* right  */}
-            <div className="bg-blue-secondary text-white p-8 w-full  space-y-10">
+            <div className="bg-blue-secondary text-white p-4 w-full  space-y-8">
               <div className="font-semibold text-xl">
                 <p>Have Any Problem? Please Contact</p>
               </div>
@@ -378,7 +378,7 @@ const ServicesLayout = () => {
                 </div>
                 <div className="flex flex-col">
                   <p className="text-gray-300">Call Us</p>
-                  <p>(+1) 954-272-8515</p>
+                  <p className="text-sm">(+1) 954-272-8515</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">
@@ -387,7 +387,7 @@ const ServicesLayout = () => {
                 </div>
                 <div className="flex flex-col">
                   <p className="text-gray-300">Write to us</p>
-                  <p>info@7kingscode.com</p>
+                  <p className="text-sm">info@7kingscode.com</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">
@@ -396,7 +396,7 @@ const ServicesLayout = () => {
                 </div>
                 <div className="flex flex-col">
                   <p className="text-gray-300">Our Address</p>
-                  <p>
+                  <p className="text-sm">
                     1401 N University Dr suite 503, Coral Springs, FL 33071,
                     United State
                   </p>
