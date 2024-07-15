@@ -4,7 +4,8 @@ import MainBanner from "./MainBanner";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { FiPhone } from "react-icons/fi";
 import { IoLocation, IoMail } from "react-icons/io5";
-import { NavLink, Navigate, Outlet } from "react-router-dom";
+import { HashLink as NavLink } from "react-router-hash-link";
+import { Outlet } from "react-router-dom";
 
 const ServicesLayout = () => {
   return (
@@ -36,38 +37,38 @@ const ServicesLayout = () => {
                   <AiOutlineArrowRight className="text-black" />
                 </div>
                 <div className="   overflow-hidden transition-all duration-500  max-h-0 peer-checked:max-h-44 ">
-                  <div className="text-sm  px-4 ps-8 text-gray-700">
+                  <section className="text-sm  px-4 ps-8 text-gray-700">
                     <NavLink
-                      to="NetworkManage"
+                      to="NetworkManage#network-management"
                       className="flex justify-between items-center      "
                     >
                       • Network Management
                     </NavLink>
                     <NavLink
-                      to="ServerManage"
+                      to="ServerManage#server-management"
                       className="flex py-2  justify-between items-center      "
                     >
                       • Server Management
                     </NavLink>
                     <NavLink
-                      to="CloudServices"
+                      to="CloudServices#cloud-services"
                       className="flex py-2 justify-between items-center      "
                     >
                       • Cloud Services
                     </NavLink>
                     <NavLink
-                      to="DataManage"
+                      to="DataManage#data-management"
                       className="flex py-2 justify-between items-center      "
                     >
                       • Data Center Management
                     </NavLink>
                     <NavLink
-                      to="VirtualManage"
+                      to="VirtualManage#virtual-management"
                       className="flex py-2 justify-between items-center      "
                     >
                       • Virtualization Management
                     </NavLink>
-                  </div>
+                  </section>
                 </div>
               </div>
               {/* yahan tak  */}
@@ -85,33 +86,33 @@ const ServicesLayout = () => {
                   <AiOutlineArrowRight className="text-black" />
                 </div>
                 <div className="   overflow-hidden transition-all duration-500  max-h-0 peer-checked:max-h-44 ">
-                  <div className="text-sm  px-4 ps-8 text-gray-700">
+                  <div className="text-sm px-4 ps-8 text-gray-700">
                     <NavLink
-                      to="SoftwareMaintenance"
-                      className="flex justify-between items-center      "
+                      to="SoftwareMaintenance#software-maintenance"
+                      className="flex justify-between items-center    "
                     >
                       • Software Support and Maintenance
                     </NavLink>
                     <NavLink
-                      to="Applicationhosting"
+                      to="Applicationhosting#hosting"
                       className="flex py-2  justify-between items-center      "
                     >
                       • Application Hosting
                     </NavLink>
                     <NavLink
-                      to="CustomDevelop"
+                      to="CustomDevelop#custom-develop"
                       className="flex py-2 justify-between items-center      "
                     >
                       • Custom Development
                     </NavLink>
                     <NavLink
-                      to="ApplicationIntegrate"
+                      to="ApplicationIntegrate#application-integrate"
                       className="flex py-2 justify-between items-center      "
                     >
                       • Application Integration
                     </NavLink>
                     <NavLink
-                      to="PerformanceMonitor"
+                      to="PerformanceMonitor#performance-monitor"
                       className="flex py-2 justify-between items-center      "
                     >
                       • Performance Monitoring
@@ -138,31 +139,31 @@ const ServicesLayout = () => {
                 <div className="   overflow-hidden transition-all duration-500  max-h-0 peer-checked:max-h-44 ">
                   <div className="text-sm  px-4 ps-8 text-gray-700">
                     <NavLink
-                      to="CyberSecurityManage"
+                      to="CyberSecurityManage#cybersecurity"
                       className="flex justify-between items-center      "
                     >
                       • Cybersecurity Management
                     </NavLink>
                     <NavLink
-                      to="RiskManagement"
+                      to="RiskManagement#risk-management"
                       className="flex py-2  justify-between items-center      "
                     >
                       • Compliance/Risk Management
                     </NavLink>
                     <NavLink
-                      to="SecurityMonitoring"
+                      to="SecurityMonitoring#security-monitor"
                       className="flex py-2 justify-between items-center      "
                     >
                       • Security Monitoring/Incident Response
                     </NavLink>
                     <NavLink
-                      to="AccessManagement"
+                      to="AccessManagement#access-manage"
                       className="flex py-2 justify-between items-center      "
                     >
                       • Identity/Access Management
                     </NavLink>
                     <NavLink
-                      to="DataEncryption"
+                      to="DataEncryption#data-encryption"
                       className="flex py-2 justify-between items-center      "
                     >
                       • Data Encryption and Protection
@@ -189,31 +190,31 @@ const ServicesLayout = () => {
                 <div className="   overflow-hidden transition-all duration-500  max-h-0 peer-checked:max-h-44 ">
                   <div className="text-sm  px-4 ps-8 text-gray-700">
                     <NavLink
-                      to="DeskServices"
+                      to="DeskServices#help-desk"
                       className="flex justify-between items-center      "
                     >
                       • Help Desk Services
                     </NavLink>
                     <NavLink
-                      to="DesktopManagement"
+                      to="DesktopManagement#desktop-manage"
                       className="flex py-2  justify-between items-center      "
                     >
                       • Desktop/Mobile Management
                     </NavLink>
                     <NavLink
-                      to="RemoteSupport"
+                      to="RemoteSupport#remote"
                       className="flex py-2 justify-between items-center      "
                     >
                       • Remote Support
                     </NavLink>
                     <NavLink
-                      to="UserEducation"
+                      to="UserEducation#training"
                       className="flex py-2 justify-between items-center      "
                     >
                       • User Training and Education
                     </NavLink>
                     <NavLink
-                      to="TroubleShooting"
+                      to="TroubleShooting#Troubleshooting"
                       className="flex py-2 justify-between items-center      "
                     >
                       • Software/Hardware Troubleshooting
@@ -239,31 +240,31 @@ const ServicesLayout = () => {
                 <div className="   overflow-hidden transition-all duration-500  max-h-0 peer-checked:max-h-44 ">
                   <div className="text-sm  px-4 ps-8 text-gray-700">
                     <NavLink
-                      to="DisasterRecovery"
+                      to="DisasterRecovery#Recovery"
                       className="flex justify-between items-center      "
                     >
                       • Backup and Disaster Recovery
                     </NavLink>
                     <NavLink
-                      to="StorageSolutions"
+                      to="StorageSolutions#solutions"
                       className="flex py-2  justify-between items-center      "
                     >
                       • Data Storage Solutions
                     </NavLink>
                     <NavLink
-                      to="DataSecurity"
+                      to="DataSecurity#data-security"
                       className="flex py-2 justify-between items-center      "
                     >
                       • Data Security
                     </NavLink>
                     <NavLink
-                      to="DataAnalytics"
+                      to="DataAnalytics#data-analytics"
                       className="flex py-2 justify-between items-center      "
                     >
                       • Data Analytics/Business Intelligence
                     </NavLink>
                     <NavLink
-                      to="DataLifecycle"
+                      to="DataLifecycle#lifecycle"
                       className="flex py-2 justify-between items-center      "
                     >
                       • Data Lifecycle Management
@@ -289,31 +290,31 @@ const ServicesLayout = () => {
                 <div className="   overflow-hidden transition-all duration-500  max-h-0 peer-checked:max-h-44 ">
                   <div className="text-sm  px-4 ps-8 text-gray-700">
                     <NavLink
-                      to="StrategyPlanning"
+                      to="StrategyPlanning#planning"
                       className="flex justify-between items-center      "
                     >
                       • IT Strategy and Planning
                     </NavLink>
                     <NavLink
-                      to="TechnologyDevelopment"
+                      to="TechnologyDevelopment#technology-develop"
                       className="flex py-2  justify-between items-center      "
                     >
                       • Technology Roadmap Development
                     </NavLink>
                     <NavLink
-                      to="VendorManagemnet"
+                      to="VendorManagemnet#vendor"
                       className="flex py-2 justify-between items-center      "
                     >
                       • Vendor Management
                     </NavLink>
                     <NavLink
-                      to="PolicyGovernance"
+                      to="PolicyGovernance#it-policy"
                       className="flex py-2 justify-between items-center      "
                     >
                       • IT Policy and Governance
                     </NavLink>
                     <NavLink
-                      to="CostOptimization"
+                      to="CostOptimization#optimization"
                       className="flex py-2 justify-between items-center      "
                     >
                       • Cost Optimization

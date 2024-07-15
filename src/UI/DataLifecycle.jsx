@@ -31,16 +31,55 @@ const DataLifecycle = () => {
               </div>
 
               <div className="text-justify space-y-4">
-                <div className="text-2xl font-semibold">
-                  <p> Data Lifecycle Management</p>
+                <div className="text-2xl font-semibold text-blue-secondary">
+                  <p id="lifecycle"> Data Lifecycle Management</p>
                 </div>
                 <p>
-                  User experience is at the heart of digital success. Our UI/UX
-                  designing services focus on creating intuitive and engaging
-                  interfaces that enhance user satisfaction and drive
-                  engagement. We blend creativity with functionality to deliver
-                  designs that are both beautiful and effective.
+                  Optimize data management throughout its lifecycle with
+                  comprehensive data lifecycle management solutions from 7Kings
+                  Code. We offer strategic planning, governance, and execution
+                  to ensure data integrity, accessibility, and compliance from
+                  creation to archival.
                 </p>
+                <p className="text-xl font-semibold">
+                  Why Choose 7Kings Code for Data Lifecycle Management?
+                </p>
+                <p>
+                  1. Holistic Data Management Approach Our data lifecycle
+                  management solutions encompass data governance, storage,
+                  usage, and disposition. We develop strategies that align with
+                  your business objectives and regulatory requirements, ensuring
+                  efficient data handling throughout its lifecycle.
+                </p>
+                <p>
+                  2. Compliance and Regulatory Adherence We help you navigate
+                  regulatory complexities and achieve compliance with data
+                  protection laws and industry standards. Our solutions include
+                  data classification, retention policies, and audit trails to
+                  support regulatory audits and data privacy requirements.
+                </p>
+                <p>
+                  3. Efficiency and Cost Optimization We optimize data storage
+                  and management practices to reduce costs and improve
+                  operational efficiency. Our lifecycle management strategies
+                  include data deduplication, archival strategies, and
+                  optimization of storage resources.
+                </p>
+                <p>
+                  4. Risk Mitigation and Security We mitigate risks associated
+                  with data management through proactive security measures and
+                  risk assessments. Our lifecycle management services include
+                  data encryption, access controls, and continuous monitoring to
+                  protect data integrity and confidentiality.
+                </p>
+                <p className="font-semibold">
+                  Our Data Lifecycle Management Services Include
+                </p>
+                <p>• Data Governance and Policy Development</p>
+                <p>• Data Classification and Retention Management</p>
+                <p>• Archiving and Retrieval Solutions</p>
+                <p>• Compliance Monitoring and Reporting</p>
+                <p>• Data Disposal and Destruction</p>
               </div>
             </div>
           </div>

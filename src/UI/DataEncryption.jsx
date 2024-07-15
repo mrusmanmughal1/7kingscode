@@ -31,17 +31,55 @@ const DataEncryption = () => {
               </div>
 
               <div className="text-justify space-y-4">
-                <div className="text-2xl font-semibold">
-                  <p> Data Encryption and Protection</p>
+                <div className="text-2xl font-semibold text-blue-secondary">
+                  <p id="data-encryption"> Data Encryption and Protection</p>
                 </div>
                 <p>
                   {" "}
-                  User experience is at the heart of digital success. Our UI/UX
-                  designing services focus on creating intuitive and engaging
-                  interfaces that enhance user satisfaction and drive
-                  engagement. We blend creativity with functionality to deliver
-                  designs that are both beautiful and effective.
+                  Safeguard your sensitive data with advanced data encryption
+                  and protection solutions from 7Kings Code. We offer
+                  comprehensive data security services designed to encrypt,
+                  secure, and manage data across your organization, ensuring
+                  confidentiality and compliance with regulatory requirements.
                 </p>
+                <p className="text-xl font-semibold">
+                  Why Choose 7Kings Code for Data Encryption and Protection?
+                </p>
+                <p>
+                  1. Expert Data Security Our team specializes in data security
+                  and encryption technologies. We implement robust encryption
+                  methods and security controls to protect your data from
+                  unauthorized access and breaches.
+                </p>
+                <p>
+                  2. Comprehensive Data Protection We provide end-to-end data
+                  protection solutions, including encryption at rest and in
+                  transit, data masking, tokenization, and secure data storage.
+                  Our solutions ensure that your sensitive information remains
+                  secure across its lifecycle.
+                </p>
+                <p>
+                  3. Regulatory Compliance We help you achieve compliance with
+                  data protection regulations such as GDPR, CCPA, and HIPAA. Our
+                  data encryption solutions include audit trails and access
+                  controls to support regulatory requirements and data privacy
+                  laws.
+                </p>
+                <p>
+                  4. Risk Mitigation By encrypting sensitive data, you reduce
+                  the risk of data breaches and unauthorized access. Our
+                  encryption solutions enhance data integrity and
+                  confidentiality, safeguarding your organization's reputation
+                  and trust.
+                </p>
+                <p className="font-semibold">
+                  Our Data Encryption and Protection Services Include:
+                </p>
+                <p>• Data Encryption at Rest and in Transit</p>
+                <p>• Secure Data Storage Solutions</p>
+                <p>• Tokenization and Data Masking</p>
+                <p>• Key Management Services</p>
+                <p>• Compliance Audits and Reporting</p>
               </div>
             </div>
           </div>

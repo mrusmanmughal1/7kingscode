@@ -31,17 +31,54 @@ const StorageSolutions = () => {
               </div>
 
               <div className="text-justify space-y-4">
-                <div className="text-2xl font-semibold">
-                  <p> Data Storage Solutions</p>
+                <div className="text-2xl font-semibold text-blue-secondary">
+                  <p id="solutions"> Data Storage Solutions</p>
                 </div>
                 <p>
                   {" "}
-                  User experience is at the heart of digital success. Our UI/UX
-                  designing services focus on creating intuitive and engaging
-                  interfaces that enhance user satisfaction and drive
-                  engagement. We blend creativity with functionality to deliver
-                  designs that are both beautiful and effective.
+                  Optimize data management and storage with scalable data
+                  storage solutions from 7Kings Code. We offer secure,
+                  efficient, and cost-effective storage options designed to
+                  accommodate your growing data needs while ensuring
+                  accessibility and reliability.
                 </p>
+                <p className="font-semibold text-xl">
+                  Why Choose 7Kings Code for Data Storage Solutions?
+                </p>
+                <p>
+                  1. Scalable Storage Infrastructure Our data storage solutions
+                  scale seamlessly to support increasing data volumes and
+                  diverse storage requirements. Whether you need on-premises,
+                  cloud-based, or hybrid storage solutions, we tailor our
+                  offerings to meet your specific needs.
+                </p>
+                <p>
+                  2. Performance and Reliability We prioritize performance and
+                  reliability in data storage. Our solutions include high-speed
+                  access, redundancy options, and data replication to ensure
+                  data availability and minimize downtime.
+                </p>
+                <p>
+                  3. Data Security We implement robust security measures to
+                  protect stored data from unauthorized access and breaches. Our
+                  solutions include encryption, access controls, and compliance
+                  with data protection regulations to safeguard your sensitive
+                  information.
+                </p>
+                <p>
+                  4. Cost Efficiency We optimize storage resources to reduce
+                  costs while maintaining high availability and performance. Our
+                  solutions align storage capacities with actual data usage and
+                  growth projections, ensuring cost-effective scalability.
+                </p>
+                <p className="font-semibold">
+                  Our Data Storage Solutions Include:
+                </p>
+                <p>• Cloud Storage Solutions</p>
+                <p>• On-Premises Storage Infrastructure</p>
+                <p>• Hybrid Cloud Storage</p>
+                <p>• Data Replication and Redundancy</p>
+                <p>• Storage Optimization and Management</p>
               </div>
             </div>
           </div>
