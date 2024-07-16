@@ -26,51 +26,46 @@ export const AllServices = () => {
   const Services = [
     {
       title: "Onshore and Offshore Team",
-      desc: "Donec suscipit ante ipsum. Donec convallis quality torto",
+      desc: "At 7 Kings Code, we offer robust onshore and offshore team solutions designed to...",
       icon: <BiWorld />,
       link: "/service/OnShoreOffShoreTeam",
     },
     {
-      title: "Talent Acquisition and Visa Sponsorship",
-      desc: "Donec suscipit ante ipsum. Donec convallis quality torto",
+      title: "Talent Acquisition/Visa Sponsorship",
+      desc: "Finding the right talent can be challenging. Our talent talent acquisition services are ...",
       icon: <BiWorld />,
       link: "/service/TalentAquisition",
     },
     {
       title: " Management Consulting",
-      desc: "Donec suscipit ante ipsum. Donec convallis quality torto",
+      desc: "Navigate complex business challenges with confidence. Our management consultants ...",
       icon: <BiWorld />,
       link: "/service/ManageConsult",
     },
-    {
-      title: "Data Analysis",
-      desc: "Donec suscipit ante ipsum. Donec convallis quality torto",
-      icon: <BiWorld />,
-      link: "/service/DataAnalysis",
-    },
+
     {
       title: "Website Development",
-      desc: "Donec suscipit ante ipsum. Donec convallis quality torto",
+      desc: "Your website is your digital storefront. Our website development services ensure that you ...",
       icon: <BiWorld />,
       link: "/service/WebDevelopment",
     },
     {
       title: "UI/UX Designing",
-      desc: "Donec suscipit ante ipsum. Donec convallis quality torto",
+      desc: "User experience is at the heart of digital success. Our UI/UX designing services focus ...",
       icon: <BiWorld />,
       link: "/service/UXDesigner",
     },
     {
       title: "Digital Marketing",
-      desc: "Donec suscipit ante ipsum. Donec convallis quality torto",
+      desc: "In today’s digital age, a strong online presence is crucial. Our digital marketing services are ...",
       icon: <BiWorld />,
       link: "/service/DigitalMarketing",
     },
     {
-      title: "Business Intelligence",
-      desc: "Donec suscipit ante ipsum. Donec convallis quality torto",
+      title: "Security Services",
+      desc: "Protect your organization from cyber threats with robust cybersecurity management solutions ...",
       icon: <BiWorld />,
-      link: "/service/BusinessIntelligence",
+      link: "/service/CyberSecurityManage#cybersecurity",
     },
   ];
   const settings = {
@@ -125,7 +120,9 @@ export const AllServices = () => {
                   <p>{item.title} </p>
                 </div>
                 <div>
-                  <p className="text-gray-700 text-xs">{item.desc}</p>
+                  <p className="text-gray-200 text-center text-xs">
+                    {item.desc}
+                  </p>
                 </div>
               </div>
             </NavLink>

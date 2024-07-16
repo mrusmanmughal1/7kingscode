@@ -98,15 +98,6 @@ const NetworkManage = () => {
                   maintenance and support to keep your network running smoothly,
                   addressing any issues promptly and effectively.
                 </p>
-                <p className="font-semibold">Why Network Management Matters</p>
-                <p>
-                  Efficient network management is crucial for maintaining the
-                  health and performance of your IT infrastructure. With 7Kings
-                  Code, you can focus on your core business activities while we
-                  handle the complexities of network management. Our solutions
-                  are designed to reduce downtime, enhance security, and improve
-                  overall network performance.
-                </p>
               </div>
             </div>
           </div>
