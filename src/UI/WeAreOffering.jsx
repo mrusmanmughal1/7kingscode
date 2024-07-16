@@ -120,7 +120,7 @@ export const AllServices = () => {
                   <p>{item.title} </p>
                 </div>
                 <div>
-                  <p className="text-gray-200 text-center text-xs">
+                  <p className="text-gray-400 text-center text-xs">
                     {item.desc}
                   </p>
                 </div>
