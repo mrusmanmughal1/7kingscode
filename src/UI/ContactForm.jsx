@@ -48,8 +48,8 @@ const TalkWithUs = () => {
                       <PiMapPinLineFill className="text-blue-secondary" />
                     </p>
                     <p className=" ">
-                      9/3rt, Ground Floor, Sri Lakshmi Nilayam, SR Nagar,
-                      Hyd-500038.
+                      1401 N University Dr suite 503, Coral Springs, FL 33071,
+                      United State
                     </p>
                   </div>
                   <div className="flex space-y-2">
@@ -127,7 +127,7 @@ const TalkWithUs = () => {
                   <p className="flex items-center px-3  text-2xl text-gray-700">
                     <FaSquarePhone className="text-blue-secondary" />
                   </p>
-                  <p>(+91)9581016898</p>
+                  <p>(+92)42-37255662</p>
                 </div>
                 <div className="flex space-y-2">
                   <p className="flex items-center px-3  text-2xl text-gray-700">

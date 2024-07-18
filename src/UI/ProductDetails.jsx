@@ -5,6 +5,11 @@ import { RiBuilding2Line } from "react-icons/ri";
 import { TbDeviceMobileCog } from "react-icons/tb";
 import { GrShieldSecurity } from "react-icons/gr";
 import Slider from "react-slick";
+import icard from "../assets/logos/icard.png";
+import pitahut from "../assets/logos/pitahut.png";
+import desimart from "../assets/logos/desimart.png";
+import jobsshopper from "../assets/logos/jobsshopper.png";
+import wholesale from "../assets/logos/ezwholesale.png";
 const ProductDetails = () => {
   const [hover, setHover] = useState();
 
@@ -12,27 +17,45 @@ const ProductDetails = () => {
     {
       title: "I-Card",
       desc: " A mobile application that scans card structures and divides them into text and image blocks, automatically populating contact fields within the app.",
-      icon: <RiBuilding2Line />,
+      icon: (
+        <img src={icard} alt="web icon" className="inline-block w-14 h-14" />
+      ),
     },
     {
       title: "WholeSale EZ",
       desc: "Comprehensive services for buying, selling, and managing wholesale properties efficiently, ensuring seamless transactions and operations.",
-      icon: <TbDeviceMobileCog />,
+      icon: (
+        <img
+          src={wholesale}
+          alt="web icon"
+          className="inline-block w-14 h-14"
+        />
+      ),
     },
     {
       title: "Jobs Shopper",
       desc: " The top platform for finding and posting job applications, offering a seamless and efficient experience for job seekers and employers.",
-      icon: <GrShieldSecurity />,
+      icon: (
+        <img
+          src={jobsshopper}
+          alt="web icon"
+          className="inline-block w-14 h-14"
+        />
+      ),
     },
     {
       title: "Desi Mart",
       desc: "  Helping people worldwide bag their carts with bulk grocery pickup or delivery. Fast, convenient service delivered right to your doorstep.",
-      icon: <GrShieldSecurity />,
+      icon: (
+        <img src={desimart} alt="web icon" className="inline-block w-14 h-14" />
+      ),
     },
     {
-      title: "EMT",
-      desc: "Effortlessly track your time entries and access your pay stubs with just a click, ensuring accurate and efficient payroll management. ",
-      icon: <GrShieldSecurity />,
+      title: "Pita Hut",
+      desc: "Experience with fresh, authentic flavors at Pita Hut. Enjoy a variety of delicious pitas, wraps and bowls made to order with the finest ingredients.",
+      icon: (
+        <img src={pitahut} alt="web icon" className="inline-block w-14 h-14" />
+      ),
     },
   ];
   const settings = {

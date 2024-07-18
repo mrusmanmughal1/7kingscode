@@ -1,6 +1,13 @@
 import { BiWorld } from "react-icons/bi";
 import { NavLink } from "react-router-dom";
 import Slider from "react-slick";
+import web from "../assets/Icons/web.png";
+import Digital from "../assets/Icons/Digital.png";
+import uiux from "../assets/Icons/UiUx.png";
+import manage from "../assets/Icons/Management.png";
+import onshore from "../assets/Icons/Onshore.png";
+import talent from "../assets/Icons/Talent.png";
+import security from "../assets/Icons/Analysis.png";
 
 const WeAreOffering = () => {
   return (
@@ -25,46 +32,58 @@ export default WeAreOffering;
 export const AllServices = () => {
   const Services = [
     {
-      title: "Onshore and Offshore Team",
+      title: "Onshore and Offshore",
       desc: "At 7 Kings Code, we offer robust onshore and offshore team solutions designed to...",
-      icon: <BiWorld />,
+      icon: (
+        <img src={onshore} alt="web icon" className="inline-block w-14 h-14" />
+      ),
       link: "/service/OnShoreOffShoreTeam",
     },
     {
-      title: "Talent Acquisition/Visa Sponsorship",
+      title: "Talent Acquisition",
       desc: "Finding the right talent can be challenging. Our talent talent acquisition services are ...",
-      icon: <BiWorld />,
+      icon: (
+        <img src={talent} alt="web icon" className="inline-block w-14 h-14" />
+      ),
       link: "/service/TalentAquisition",
     },
     {
       title: " Management Consulting",
       desc: "Navigate complex business challenges with confidence. Our management consultants ...",
-      icon: <BiWorld />,
+      icon: (
+        <img src={manage} alt="web icon" className="inline-block w-14 h-14" />
+      ),
       link: "/service/ManageConsult",
     },
 
     {
       title: "Website Development",
-      desc: "Your website is your digital storefront. Our website development services ensure that you ...",
-      icon: <BiWorld />,
+      desc: "Your website is your digital storefront. Our website development services ensure ...",
+      icon: <img src={web} alt="web icon" className="inline-block w-14 h-14" />,
       link: "/service/WebDevelopment",
     },
     {
       title: "UI/UX Designing",
       desc: "User experience is at the heart of digital success. Our UI/UX designing services focus ...",
-      icon: <BiWorld />,
+      icon: (
+        <img src={uiux} alt="web icon" className="inline-block w-14 h-14" />
+      ),
       link: "/service/UXDesigner",
     },
     {
       title: "Digital Marketing",
       desc: "In today’s digital age, a strong online presence is crucial. Our digital marketing services are ...",
-      icon: <BiWorld />,
+      icon: (
+        <img src={Digital} alt="web icon" className="inline-block w-14 h-14" />
+      ),
       link: "/service/DigitalMarketing",
     },
     {
       title: "Security Services",
-      desc: "Protect your organization from cyber threats with robust cybersecurity management solutions ...",
-      icon: <BiWorld />,
+      desc: "Protect your organization from cyber threats with robust cybersecurity management ...",
+      icon: (
+        <img src={security} alt="web icon" className="inline-block w-14 h-14" />
+      ),
       link: "/service/CyberSecurityManage#cybersecurity",
     },
   ];

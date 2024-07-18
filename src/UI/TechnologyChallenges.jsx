@@ -7,32 +7,53 @@ import { MdWifiTethering } from "react-icons/md";
 import { AiFillFund } from "react-icons/ai";
 import { AiFillCodepenSquare } from "react-icons/ai";
 import { MdOutlineConnectedTv } from "react-icons/md";
+import icard from "../assets/logos/icard.png";
+import pitahut from "../assets/logos/pitahut.png";
+import desimart from "../assets/logos/desimart.png";
+import jobsshopper from "../assets/logos/jobsshopper.png";
+import wholesale from "../assets/logos/ezwholesale.png";
+
 const TechnologyChallenges = () => {
   const [hover, setHover] = useState();
   const container = [
     {
       title: "I-Card",
-      icon: <AiOutlineGlobal />,
+      icon: (
+        <img src={icard} alt="web icon" className="inline-block w-14 h-14" />
+      ),
     },
     {
       title: "WholeSale EZ",
-      icon: <AiOutlineApple />,
+      icon: (
+        <img
+          src={wholesale}
+          alt="web icon"
+          className="inline-block w-14 h-14"
+        />
+      ),
     },
     {
       title: "Jobs Shopper",
-      icon: <MdWifiTethering />,
+      icon: (
+        <img
+          src={jobsshopper}
+          alt="web icon"
+          className="inline-block w-14 h-14"
+        />
+      ),
     },
     {
       title: "Desi Mart",
-      icon: <AiFillFund />,
+      icon: (
+        <img src={desimart} alt="web icon" className="inline-block w-14 h-14" />
+      ),
     },
-    {
-      title: "EMT",
-      icon: <AiFillCodepenSquare />,
-    },
+
     {
       title: "Pita Hut",
-      icon: <MdOutlineConnectedTv />,
+      icon: (
+        <img src={pitahut} alt="web icon" className="inline-block w-14 h-14" />
+      ),
     },
   ];
   return (
@@ -61,7 +82,7 @@ const TechnologyChallenges = () => {
                 <div
                   className={`${
                     hover == index && "text-white bg-blue-500"
-                  } text-4xl relative top-[-2rem] text-blue-secondary transition-all duration-700 bg-gray-900 p-5 rounded-full `}
+                  } text-4xl relative top-[-3rem] text-blue-secondary transition-all duration-700 bg-slate-800 p-5 rounded-full `}
                 >
                   {item.icon}
                 </div>

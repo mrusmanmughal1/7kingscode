@@ -43,7 +43,7 @@ const ServicesLayout = () => {
                     <NavLink
                       to="NetworkManage#network-management"
                       onClick={() => handleServiceClick("NetworkManagement")}
-                      className={`flex justify-between items-center ${
+                      className={`flex py-2 justify-between items-center ${
                         activeService === "NetworkManagement"
                           ? "text-blue-500"
                           : "text-gray-700"
@@ -478,15 +478,15 @@ const ServicesLayout = () => {
                 to="OnShoreOffShoreTeam"
                 className="flex justify-between  capitalize items-center  hover:bg-blue-secondary hover:text-white p-4 "
               >
-                Off Shore & On Shore Teams
+                Off Shore/On Shore
                 <AiOutlineArrowRight className="text-lg" />
               </NavLink>
               <NavLink
                 to="TalentAquisition"
                 className="flex justify-between  items-center hover:bg-blue-secondary hover:text-white p-4"
               >
-                Talent Acquisition and Visa Sponsorship
-                <AiOutlineArrowRight className="text-2xl" />
+                Talent Acquisition
+                <AiOutlineArrowRight className="text-lg" />
               </NavLink>
               <NavLink
                 to="ManageConsult"
