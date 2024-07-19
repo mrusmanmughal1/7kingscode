@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import MainBanner from "./MainBanner";
-import UI from "../assets/images/UI.webp";
+import cost from "../assets/Services/optimization.webp";
 import a1 from "../assets/images/ai.png";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { FiPhone } from "react-icons/fi";
@@ -16,17 +16,12 @@ const CostOptimization = () => {
             {/* left  */}
 
             {/* right  */}
-            <div className="w-full  flex flex-col gap-20 space-y-4 pb-16">
+            <div className="w-full  flex flex-col gap-10 space-y-4 pb-16">
               <div className="w-full ">
                 <img
-                  className="hidden sm:block lg:block "
-                  src={UI}
+                  className="hidden w-full sm:block lg:block "
+                  src={cost}
                   alt="UI Design"
-                />
-                <img
-                  className="block w-full sm:hidden lg:hidden"
-                  src={a1}
-                  alt="AI Design"
                 />
               </div>
 

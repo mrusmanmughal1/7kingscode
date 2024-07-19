@@ -310,7 +310,15 @@ const ServicesLayout = () => {
                     >
                       • User Training and Education
                     </NavLink>
-                    <NavLink to="TroubleShooting#Troubleshooting">
+                    <NavLink
+                      to="TroubleShooting#Troubleshooting"
+                      onClick={() => handleServiceClick("TroubleShooting")}
+                      className={`flex py-2 justify-between items-center ${
+                        activeService === "TroubleShooting"
+                          ? "text-blue-500"
+                          : "text-gray-700"
+                      }`}
+                    >
                       • Software/Hardware Troubleshooting
                     </NavLink>
                   </div>

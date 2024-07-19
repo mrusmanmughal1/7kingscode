@@ -18,7 +18,7 @@ const ProductDetails = () => {
       title: "I-Card",
       desc: " A mobile application that scans card structures and divides them into text and image blocks, automatically populating contact fields within the app.",
       icon: (
-        <img src={icard} alt="web icon" className="inline-block w-14 h-14" />
+        <img src={icard} alt="web icon" className="inline-block w-28 h-20" />
       ),
     },
     {
@@ -28,7 +28,7 @@ const ProductDetails = () => {
         <img
           src={wholesale}
           alt="web icon"
-          className="inline-block w-14 h-14"
+          className="inline-block w-28 h-20"
         />
       ),
     },
@@ -39,7 +39,7 @@ const ProductDetails = () => {
         <img
           src={jobsshopper}
           alt="web icon"
-          className="inline-block w-14 h-14"
+          className="inline-block w-28 h-20"
         />
       ),
     },
@@ -47,14 +47,14 @@ const ProductDetails = () => {
       title: "Desi Mart",
       desc: "  Helping people worldwide bag their carts with bulk grocery pickup or delivery. Fast, convenient service delivered right to your doorstep.",
       icon: (
-        <img src={desimart} alt="web icon" className="inline-block w-14 h-14" />
+        <img src={desimart} alt="web icon" className="inline-block w-28 h-20" />
       ),
     },
     {
       title: "Pita Hut",
       desc: "Experience with fresh, authentic flavors at Pita Hut. Enjoy a variety of delicious pitas, wraps and bowls made to order with the finest ingredients.",
       icon: (
-        <img src={pitahut} alt="web icon" className="inline-block w-14 h-14" />
+        <img src={pitahut} alt="web icon" className="inline-block w-28 h-20" />
       ),
     },
   ];
