@@ -16,3 +16,11 @@ export const ApplyFormSchema = Yup.object({
   description: Yup.string().required("Please Enter Your Message !"),
   // file: .required("Please Add Resume !"),
 });
+
+export const LoginSchema = Yup.object({
+  username_or_email: Yup.string()
+    .min(4)
+    .max(25)
+    .required("Enter Your User Name or E-mail !"),
+  password: Yup.string().required("Please Enter Your Password !"),
+});

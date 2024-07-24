@@ -19,11 +19,11 @@ const ServicesLayout = () => {
         text="About Us"
         title="WE PROVIDE ENTERPRISE-LEVEL SOLUTIONS"
       />
-      <div className="flex-col  service flex  w-[100%] lg:flex-row lg:w-[80%]  mx-auto  gap-24 py-32">
-        <div className="w-[90%] lg:w-[30%] mx-auto  ">
+      <div className="flex-col  service flex  w-[100%]  lg:flex-row lg:w-[80%]  mx-auto lg:gap-20  2xl:gap-28 py-32">
+        <div className="w-[90%] lg:w-[40%] mx-auto  ">
           <div className="flex flex-col lg:flex-col gap-20">
             {/* left  */}
-            <div className="bg-[#F6F7F9] shadow-md  p-4  w-full mx-auto">
+            <div className="bg-[#F6F7F9] shadow-md   p-4  w-full mx-auto">
               <div className="font-semibold text-xl pl-4">Services</div>
               {/* // yahan se  */}
               <div className="relative w-full overflow-hidden mt-8">
@@ -38,7 +38,7 @@ const ServicesLayout = () => {
                 <div className="absolute top-5 right-3 text-white transition-transform duration-500 rotate-0 peer-checked:rotate-90">
                   <AiOutlineArrowRight className="text-black" />
                 </div>
-                <div className="overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-44">
+                <div className="overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-56">
                   <section className="text-sm px-4 ps-8 text-gray-700">
                     <NavLink
                       to="NetworkManage#network-management"
@@ -82,7 +82,7 @@ const ServicesLayout = () => {
                           : "text-gray-700"
                       }`}
                     >
-                      • Data Center Management
+                      • Data Management
                     </NavLink>
                     <NavLink
                       to="VirtualManage#virtual-management"
@@ -93,7 +93,7 @@ const ServicesLayout = () => {
                           : "text-gray-700"
                       }`}
                     >
-                      • Virtualization Management
+                      • Virtualization
                     </NavLink>
                   </section>
                 </div>
@@ -123,7 +123,7 @@ const ServicesLayout = () => {
                           : "text-gray-700"
                       }`}
                     >
-                      • Software Support and Maintenance
+                      • Software Support
                     </NavLink>
                     <NavLink
                       to="Applicationhosting#hosting"
@@ -171,7 +171,7 @@ const ServicesLayout = () => {
                           : "text-gray-700"
                       }`}
                     >
-                      • Performance Monitoring
+                      • Performance Monitor
                     </NavLink>
                   </div>
                 </div>
@@ -201,7 +201,7 @@ const ServicesLayout = () => {
                           : "text-gray-700"
                       }`}
                     >
-                      • Cybersecurity Management
+                      • Cyber Security
                     </NavLink>
                     <NavLink
                       to="RiskManagement#risk-management"
@@ -212,7 +212,7 @@ const ServicesLayout = () => {
                           : "text-gray-700"
                       }`}
                     >
-                      • Compliance/Risk Management
+                      • Risk Management
                     </NavLink>
                     <NavLink
                       to="SecurityMonitoring#security-monitor"
@@ -223,7 +223,7 @@ const ServicesLayout = () => {
                           : "text-gray-700"
                       }`}
                     >
-                      • Security Monitoring/Incident Response
+                      • Security Monitoring
                     </NavLink>
                     <NavLink
                       to="AccessManagement#access-manage"
@@ -234,7 +234,7 @@ const ServicesLayout = () => {
                           : "text-gray-700"
                       }`}
                     >
-                      • Identity/Access Management
+                      • Access Management
                     </NavLink>
                     <NavLink
                       to="DataEncryption#data-encryption"
@@ -245,7 +245,7 @@ const ServicesLayout = () => {
                           : "text-gray-700"
                       }`}
                     >
-                      • Data Encryption and Protection
+                      • Data Encryption
                     </NavLink>
                   </div>
                 </div>
@@ -286,7 +286,7 @@ const ServicesLayout = () => {
                           : "text-gray-700"
                       }`}
                     >
-                      • Desktop/Mobile Management
+                      • Desktop Management
                     </NavLink>
                     <NavLink
                       to="RemoteSupport#remote"
@@ -308,7 +308,7 @@ const ServicesLayout = () => {
                           : "text-gray-700"
                       }`}
                     >
-                      • User Training and Education
+                      • Training and Education
                     </NavLink>
                     <NavLink
                       to="TroubleShooting#Troubleshooting"
@@ -319,7 +319,7 @@ const ServicesLayout = () => {
                           : "text-gray-700"
                       }`}
                     >
-                      • Software/Hardware Troubleshooting
+                      • Troubleshooting
                     </NavLink>
                   </div>
                 </div>
@@ -349,7 +349,7 @@ const ServicesLayout = () => {
                           : "text-gray-700"
                       }`}
                     >
-                      • Backup and Disaster Recovery
+                      • Backup and Recovery
                     </NavLink>
                     <NavLink
                       to="StorageSolutions#solutions"
@@ -382,7 +382,7 @@ const ServicesLayout = () => {
                           : "text-gray-700"
                       }`}
                     >
-                      • Data Analytics/Business Intelligence
+                      • Data Analytics
                     </NavLink>
                     <NavLink
                       to="DataLifecycle#lifecycle"
@@ -393,7 +393,7 @@ const ServicesLayout = () => {
                           : "text-gray-700"
                       }`}
                     >
-                      • Data Lifecycle Management
+                      • Data Lifecycle
                     </NavLink>
                   </div>
                 </div>
@@ -423,7 +423,7 @@ const ServicesLayout = () => {
                           : ""
                       }`}
                     >
-                      • IT Strategy and Planning
+                      • Strategy and Planning
                     </NavLink>
                     <NavLink
                       to="TechnologyDevelopment#technology-develop"
@@ -458,7 +458,7 @@ const ServicesLayout = () => {
                           : ""
                       }`}
                     >
-                      • IT Policy and Governance
+                      • Policy and Governance
                     </NavLink>
                     <NavLink
                       to="CostOptimization#optimization"

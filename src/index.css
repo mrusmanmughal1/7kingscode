@@ -17,7 +17,7 @@ body {
   line-height: 1.5;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
@@ -224,4 +224,10 @@ li .active {
 
 .service .active {
   color: #3c72fc;
+}
+.canva {
+  box-sizing: border-box;
+  display: block;
+  height: 300px !important;
+  width: 300px !important;
 }

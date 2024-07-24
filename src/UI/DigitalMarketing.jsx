@@ -24,7 +24,7 @@ const DigitalMarketing = () => {
                   alt="UI Design"
                 />
               </div>
-
+              https://bitbucket.org/front-end-7kc/ecom-ahmad/src/main/
               <div className="text-justify space-y-4">
                 <div className="text-2xl font-semibold text-blue-secondary">
                   <p>Digital Marketing</p>

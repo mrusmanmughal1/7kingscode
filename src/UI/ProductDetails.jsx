@@ -18,7 +18,7 @@ const ProductDetails = () => {
       title: "I-Card",
       desc: " A mobile application that scans card structures and divides them into text and image blocks, automatically populating contact fields within the app.",
       icon: (
-        <img src={icard} alt="web icon" className="inline-block w-28 h-20" />
+        <img src={icard} alt="web icon" className="inline-block w-20 h-14" />
       ),
     },
     {
@@ -54,7 +54,7 @@ const ProductDetails = () => {
       title: "Pita Hut",
       desc: "Experience with fresh, authentic flavors at Pita Hut. Enjoy a variety of delicious pitas, wraps and bowls made to order with the finest ingredients.",
       icon: (
-        <img src={pitahut} alt="web icon" className="inline-block w-28 h-20" />
+        <img src={pitahut} alt="web icon" className="inline-block w-20 h-14" />
       ),
     },
   ];
