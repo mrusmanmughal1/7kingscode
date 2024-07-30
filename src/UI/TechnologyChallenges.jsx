@@ -12,6 +12,7 @@ import pitahut from "../assets/logos/pitahut.png";
 import desimart from "../assets/logos/desimart.png";
 import jobsshopper from "../assets/logos/jobsshopper.png";
 import wholesale from "../assets/logos/ezwholesale.png";
+import { NavLink } from "react-router-dom";
 
 const TechnologyChallenges = () => {
   const [hover, setHover] = useState();
@@ -19,8 +20,9 @@ const TechnologyChallenges = () => {
     {
       title: "I-Card",
       icon: (
-        <img src={icard} alt="web icon" className="inline-block w-14 h-14" />
+        <img src={icard} alt="web icon" className="inline-block w-28 h-28" />
       ),
+      link: "/Products",
     },
     {
       title: "WholeSale EZ",
@@ -28,9 +30,10 @@ const TechnologyChallenges = () => {
         <img
           src={wholesale}
           alt="web icon"
-          className="inline-block w-14 h-14"
+          className="inline-block w-28 h-28"
         />
       ),
+      link: "/Products",
     },
     {
       title: "Jobs Shopper",
@@ -38,26 +41,23 @@ const TechnologyChallenges = () => {
         <img
           src={jobsshopper}
           alt="web icon"
-          className="inline-block w-14 h-14"
+          className="inline-block w-28 h-28"
         />
       ),
+      link: "/Products",
     },
     {
       title: "Desi Mart",
       icon: (
-        <img src={desimart} alt="web icon" className="inline-block w-14 h-14" />
+        <img src={desimart} alt="web icon" className="inline-block w-28 h-28" />
       ),
+      link: "/Products",
     },
 
-    {
-      title: "Pita Hut",
-      icon: (
-        <img src={pitahut} alt="web icon" className="inline-block w-14 h-14" />
-      ),
-    },
+ 
   ];
   return (
-    <div className="relative whatweSolve py-32">
+    <div className="relative bg-gray-900 py-32">
       <div
         className="  inset-0     flex flex-col items-center
       justify-center text-white"
@@ -76,18 +76,20 @@ const TechnologyChallenges = () => {
               key={index}
               onMouseOver={() => setHover(index)}
               onMouseLeave={() => setHover(null)}
-              className="  px-10 items-center hover:text-black justify-center border border-gray-500 hover:bg-white"
+              className="  px-10 items-center justify-center border border-gray-500"
             >
+              <NavLink key={index} to={item.link}>
               <div className="text-center flex flex-col justify-center items-center">
                 <div
                   className={`${
-                    hover == index && "text-white bg-blue-500"
-                  } text-4xl relative top-[-3rem] text-blue-secondary transition-all duration-700 bg-slate-800 p-5 rounded-full `}
+                    hover == index && "text-white "
+                  } text-4xl relative  transition-all duration-700 p-5 `}
                 >
                   {item.icon}
                 </div>
                 <div className="text-lg font-medium pb-8">{item.title}</div>
               </div>
+              </NavLink>
             </div>
           ))}
         </div>

@@ -16,8 +16,8 @@ const SharePointDeveloper = () => {
             </p>
           </div>
           <div className="flex flex-col gap-2 pt-4">
-            <p>Coral Springs, FL</p>
-            <p>Onsite - IT - Development / SharePoint Developer </p>
+            <p>Coral Springs, FL</p> 
+            <p>Onsite - IT - Development/ SharePoint Developer </p>
             <p>Title: Share Point Developer</p>
           </div>
           <div className="w-[90%] lg:w-[70%] flex flex-col pt-12">

@@ -62,7 +62,7 @@ const BusinessGrowth = () => {
                 }`}
           >
             <NavLink key={index} to={item.link}>
-              <div className="flex justify-between items-center uppercase font-bold text-lg">
+              <div className="flex justify-between items-center uppercase font-bold text-base">
                 <p>{item.title}</p>
                 <p
                   className={`text-5xl text-blue-secondary relative widget -top-4 best-icon ${
