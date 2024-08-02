@@ -4,6 +4,7 @@ import { CiEdit, CiPhone } from "react-icons/ci";
 import { SlUser } from "react-icons/sl";
 import { ApplyFormSchema } from "../helpers/FormSchema";
 import apply from "../assets/images/applyjob.jpg";
+import { base_url } from "../helpers/Config";
 
 const ApplyForm = () => {
   const credentials = {
@@ -37,14 +38,11 @@ const ApplyForm = () => {
 
   const sendData = async (data) => {
     try {
-      const res = await fetch(
-        "https://339b-103-217-179-73.ngrok-free.app/submit/",
-        {
-          method: "POST",
-          body: data,
-          // Do not set Content-Type header; the browser will set it automatically
-        }
-      );
+      const res = await fetch(`${base_url}/jobs/apply/submit/`, {
+        method: "POST",
+        body: data,
+        // Do not set Content-Type header; the browser will set it automatically
+      });
 
       if (res.status !== "success") {
         // Handle non-200 responses

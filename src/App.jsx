@@ -73,13 +73,13 @@ const App = () => {
       <AuthProvider>
         <BrowserRouter>
           <Routes>
-          <Route path="/admin" element={<AdminLayout />}>
+            <Route path="/admin" element={<AdminLayout />}>
               <Route index element={<Dashboard />} />
               <Route path="jobs-posted" element={<JobsPosted />} />
               <Route path="new-jobs" element={<PostNewJob />} />
               <Route path="settings" element={<Settings />} />
               <Route path="ViewApplications" element={<ViewApplications />} />
-              <Route path="jobs-view" element={<JobsDetail />} />
+              <Route path="jobs-view/:id" element={<JobsDetail />} />
 
               {/* Add more nested routes here */}
             </Route>
@@ -277,7 +277,6 @@ const App = () => {
                 element={<CyberSecurityManage />}
               />{" "}
             </Route>{" "}
-          
           </Routes>
           <Toaster
             position="top-center"

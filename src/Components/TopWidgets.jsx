@@ -3,11 +3,11 @@ import { BiSolidBriefcase } from "react-icons/bi";
 import { ImBriefcase } from "react-icons/im";
 import { Link } from "react-router-dom";
 
-const AdminTopWidgets = () => {
+const AdminTopWidgets = ({ alljobs, activejobs, Inactivejobs }) => {
   const Raw = [
     {
       title: " Jobs Posted",
-      number: 90,
+      number: alljobs?.data?.count,
       icons: <BsBriefcaseFill />,
       Link: "jobs-posted",
     },

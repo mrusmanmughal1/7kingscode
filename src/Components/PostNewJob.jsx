@@ -1,14 +1,27 @@
 import { useState } from "react";
 import { LuPlus } from "react-icons/lu";
-import { AiOutlineClose } from "react-icons/ai"; // Import the close icon
-import Select from "react-select";
+import { AiOutlineClose } from "react-icons/ai";
 
 const PostNewJob = () => {
+  const [formdata, setFormData] = useState({
+    title: "",
+    job_decrp: "",
+    address: "",
+    skills: "",
+    job_type: "Full Time",
+    is_active: true,
+    remote_work: true,
+  });
+
   const [inputList, setInputList] = useState("");
   const [items, setItems] = useState([]);
 
-  const itemEvent = (event) => {
-    setInputList(event.target.value);
+  const handleChange = (e) => {
+    const { name, value, type, checked } = e.target;
+    setFormData({
+      ...formdata,
+      [name]: type === "checkbox" ? checked : value,
+    });
   };
 
   const handleKeyPress = (event) => {
@@ -23,12 +36,34 @@ const PostNewJob = () => {
     setItems((oldItems) => oldItems.filter((_, i) => i !== index));
   };
 
-  const jobTypeOptions = [
-    { value: "Full Time", label: "Full Time" },
-    { value: "Part Time", label: "Part Time" },
-    { value: "Contract", label: "Contract" },
-    { value: "Internship", label: "Internship" },
-  ];
+  const fetchApi = async () => {
+    const token = localStorage.getItem("data");
+    try {
+      const response = await fetch("http://31.220.22.196:8010/jobs/post/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Token ${token}`,
+        },
+        body: JSON.stringify(formdata),
+      });
+
+      if (!response.ok) {
+        throw new Error("Job Not Posted.");
+      }
+
+      const result = await response.json();
+
+      setFormData(result);
+    } catch (error) {
+      console.error("Error:", error.message);
+    }
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    await fetchApi();
+  };
 
   return (
     <div className="flex flex-col gap-6 bg-slate-100">
@@ -46,7 +81,7 @@ const PostNewJob = () => {
       <div className="mb-16">
         <form
           className="flex flex-col w-full gap-4 pl-10"
-          onSubmit={(e) => e.preventDefault()}
+          onSubmit={handleSubmit}
         >
           <div>
             <label className="flex items-center gap-2 font-medium">
@@ -55,8 +90,10 @@ const PostNewJob = () => {
             <input
               className="border w-[40%] font-medium p-2 rounded-md border-black"
               type="text"
-              name="jobTitle"
+              name="title"
               placeholder="e.g Python Developer"
+              onChange={handleChange}
+              value={formdata.title}
             />
           </div>
           <div>
@@ -66,9 +103,10 @@ const PostNewJob = () => {
             <input
               className="ps-2 border border-black p-2 w-[70%] lg:w-[80%] rounded-lg"
               type="text"
-              placeholder="Add Skills"
-              value={inputList}
-              onChange={itemEvent}
+              placeholder="Add skills"
+              name="skills"
+              value={formdata.skills}
+              onChange={handleChange}
               onKeyDown={handleKeyPress}
             />
           </div>
@@ -76,8 +114,7 @@ const PostNewJob = () => {
             {items.map((value, index) => (
               <li
                 key={index}
-                className="flex border pl-2 border-black
-               items-center gap-3 rounded-md"
+                className="flex border pl-2 border-black items-center gap-3 rounded-md"
               >
                 {value}
                 <AiOutlineClose
@@ -94,23 +131,33 @@ const PostNewJob = () => {
               <input
                 className="border p-2 rounded-md border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 type="text"
-                name="jobLocation"
+                name="address"
                 placeholder="Job Location"
+                onChange={handleChange}
+                value={formdata.address}
               />
             </div>
             <div className="flex flex-col">
               <label className="font-medium mb-2">Job Type</label>
-              <Select
-                options={jobTypeOptions}
+              <select
+                value={formdata.job_type}
+                onChange={handleChange}
+                name="job_type"
                 className="w-60"
-                placeholder="Select Job Type"
-              />
+              >
+                <option value="Full Time">Full Time</option>
+                <option value="Part Time">Part Time</option>
+                <option value="Contract">Contract</option>
+                <option value="Internship">Internship</option>
+              </select>
             </div>
             <div className="flex items-center">
               <input
                 type="checkbox"
-                name="isActive"
+                name="is_active"
                 className="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500 focus:ring-2"
+                checked={formdata.is_active}
+                onChange={handleChange}
               />
               <label className="ml-2 font-medium">Active Job Post</label>
             </div>
@@ -119,15 +166,19 @@ const PostNewJob = () => {
             <label className="flex font-medium">Job Description</label>
             <textarea
               className="border w-[90%] mx-auto p-2 rounded-md font-medium border-black"
-              name="jobDescription"
+              name="job_decrp"
               rows="5"
               placeholder="Description"
+              value={formdata.job_decrp}
+              onChange={handleChange}
             ></textarea>
           </div>
+          <div>
+            <button className="w-32 mt-4 rounded-lg text-center px-8 py-3 bg-[#2F3573] text-white">
+              Create
+            </button>
+          </div>
         </form>
-        <div className=" w-32 ml-10 mt-4 rounded-lg text-center px-8 py-3 bg-[#2F3573] text-white">
-          <button>Create</button>
-        </div>
       </div>
     </div>
   );

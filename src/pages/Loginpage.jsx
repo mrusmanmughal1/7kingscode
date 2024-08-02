@@ -1,31 +1,70 @@
-import { useFormik } from "formik";
-import { LoginSchema } from "../helpers/FormSchema";
-import { NavLink } from "react-router-dom";
-import { FaEyeSlash, FaEye } from "react-icons/fa";
 import { useState } from "react";
+import { FaEyeSlash, FaEye } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 import loginbanner from "../assets/logos/Loginbanner.png";
-
-const credentials = {
-  username_or_email: "",
-  password: "",
-};
+import AdminHeader from "./../Feature/Admin/AdminHeader";
 
 const LoginForm = ({ paddingMain, width, fontSize }) => {
-  const [showPassword, setshowPassword] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
+  const [data, setData] = useState({
+    email: "",
+    password: "",
+  });
+  //email: admin@7kctech.com
+  //password: admin123
+  const [error, setError] = useState(null);
+  const [fielderror, setFieldError] = useState({
+    email: false,
+    password: false,
+  });
+  const navigate = useNavigate();
 
-  const { values, errors, touched, handleChange, handleSubmit, handleBlur } =
-    useFormik({
-      initialValues: credentials,
-      onSubmit: (values, actions) => {
-        // Add your login logic here
-        console.log(values);
-        actions.resetForm();
-      },
-      validationSchema: LoginSchema,
-    });
+  const inputEvent = (e) => {
+    // const { name, value } = event.target;
+    setData((prevData) => ({ ...prevData, [e.target.name]: e.target.value }));
+    setFieldError((prevError) => ({ ...prevError, [e.target.name]: false }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await fetch("http://31.220.22.196:8010/jobs/login/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (!response.ok) {
+        throw new Error(
+          "Login failed. Please check your username and password."
+        );
+      }
+
+      const result = await response.json();
+      console.log("Login successful:", result);
+      localStorage.setItem("data", result.data.token);
+      // Handle successful login, e.g., storing tokens, redirecting
+      setData({
+        email: "",
+        password: "",
+      });
+      navigate("/admin");
+    } catch (error) {
+      // Handle error, e.g., displaying error messages
+      // console.error("Error during login:", error.message);
+      setError(error.message);
+      setFieldError({
+        email: true,
+        password: true,
+      });
+    }
+  };
 
   return (
     <>
+      <AdminHeader />
       <div className="relative">
         <img
           className="w-full h-[150px]"
@@ -36,70 +75,55 @@ const LoginForm = ({ paddingMain, width, fontSize }) => {
           LOGIN
         </p>
       </div>
-      <div className={`bg-white h-screen p-10 md:p-14`}>
+      <div className={`bg-gray-100 h-screen p-8 md:p-14`}>
         <div
           className={`md:mx-auto md:w-1/2 lg:w-1/2 xl:w-1/2 text-center flex flex-col justify-center gap-6`}
         >
+          {error && <p className="text-red-600 text-center">{error}</p>}
           <div className="w-[95%] lg:w-[70%] mx-auto shadow-2xl rounded-lg">
             <form onSubmit={handleSubmit}>
               <div className="mt-16 flex flex-col gap-6">
                 <div>
                   <label className="flex font-semibold px-8">Email</label>
                   <input
-                    className="border p-3 w-[90%] font-bold rounded-md"
+                    className={`border p-3 w-[90%] font-bold rounded-md ${
+                      fielderror.email ? "border-red-800" : ""
+                    }`}
                     placeholder="User Name or Email Address"
-                    name="username_or_email"
-                    id="username_or_email"
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                    value={values.username_or_email}
+                    name="email"
+                    id="email"
+                    onChange={inputEvent}
+                    value={data.email}
                   />
-                  {errors.username_or_email && touched.username_or_email && (
-                    <p className="text-start px-1 text-sm font-semibold text-red-600">
-                      {errors.username_or_email}
-                    </p>
-                  )}
                 </div>
                 <div>
                   <div className="relative">
                     <div className="absolute right-10 top-10 cursor-pointer">
                       {showPassword ? (
-                        <FaEyeSlash onClick={() => setshowPassword(false)} />
+                        <FaEyeSlash onClick={() => setShowPassword(false)} />
                       ) : (
-                        <FaEye onClick={() => setshowPassword(true)} />
+                        <FaEye onClick={() => setShowPassword(true)} />
                       )}
                     </div>
                     <label className="flex font-semibold px-8">Password</label>
                     <input
                       type={showPassword ? "text" : "password"}
-                      className="border p-3 w-[90%] rounded-md font-bold"
+                      className={`border p-3 w-[90%] font-bold rounded-md ${
+                        fielderror.email ? "border-red-800" : ""
+                      }`}
                       placeholder="Password"
                       name="password"
                       id="password"
-                      onChange={handleChange}
-                      onBlur={handleBlur}
-                      value={values.password}
+                      onChange={inputEvent}
+                      value={data.password}
                     />
                   </div>
-                  {errors.password && touched.password && (
-                    <p className="text-start px-1 text-sm font-semibold text-red-600">
-                      {errors.password}
-                    </p>
-                  )}
                 </div>
               </div>
               <div className="flex justify-between text-sm px-6 py-4">
                 <div className="flex items-center font-semibold gap-2">
                   <input type="checkbox" name="remember" id="remember" />
                   <label htmlFor="remember">Remember Me</label>
-                </div>
-                <div className="font-semibold">
-                  <NavLink
-                    to="/forget-password"
-                    className="hover:text-btn-primary"
-                  >
-                    Forget Password?
-                  </NavLink>
                 </div>
               </div>
               <div className="w-[90%] mx-auto mb-16">
