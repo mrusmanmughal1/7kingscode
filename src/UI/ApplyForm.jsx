@@ -5,15 +5,19 @@ import { SlUser } from "react-icons/sl";
 import { ApplyFormSchema } from "../helpers/FormSchema";
 import apply from "../assets/images/applyjob.jpg";
 import { base_url } from "../helpers/Config";
+import { useParams } from "react-router-dom";
 
 const ApplyForm = () => {
+  const { id } = useParams();
   const credentials = {
-    name: "",
-    email: "",
-    phone_number: "",
+    job_id: id.toString(),
+    applicant_name: "",
+    applicant_email: "",
+    applicant_phone: "",
     description: "",
-    file: "",
+    applicant_resume: null,
   };
+
   const {
     values,
     errors,
@@ -26,6 +30,7 @@ const ApplyForm = () => {
     initialValues: credentials,
     onSubmit: (values, action) => {
       const formData = new FormData();
+      formData.append("job_id", id);
       Object.keys(values).forEach((key) => {
         formData.append(key, values[key]);
       });
@@ -38,20 +43,17 @@ const ApplyForm = () => {
 
   const sendData = async (data) => {
     try {
-      const res = await fetch(`${base_url}/jobs/apply/submit/`, {
+      const res = await fetch(`${base_url}/jobs/apply/submit`, {
         method: "POST",
         body: data,
-        // Do not set Content-Type header; the browser will set it automatically
       });
 
       if (res.status !== "success") {
-        // Handle non-200 responses
         const errorData = await res.json();
         console.error("Error:", errorData);
       } else {
         const responseData = await res.json();
         console.log("Success:", responseData);
-        // setFilePath(responseData.filePath);
       }
     } catch (err) {
       console.error(err);
@@ -78,20 +80,20 @@ const ApplyForm = () => {
                 <input
                   type="text"
                   id="name"
-                  name="name"
+                  name="applicant_name"
                   className="outline-none  w-full bg-slate-100 bottom-0"
                   placeholder="Your Name"
                   aria-required="true"
                   onChange={handleChange}
                   onBlur={handleBlur}
-                  value={values.name}
+                  value={values.applicant_name}
                 />
               </div>
 
               <div className="">
-                {errors.name && touched.name && (
+                {errors.applicant_name && touched.applicant_name && (
                   <p className="text-start  text-xs font-semibold text-red-600">
-                    {errors.name}
+                    {errors.applicant_name}
                   </p>
                 )}
               </div>
@@ -99,7 +101,7 @@ const ApplyForm = () => {
             <div className="">
               <div
                 className={`${
-                  errors.email && " border-2 border-red-600"
+                  errors.applicant_email && " border-2 border-red-600"
                 } border p-4 flex  items-center gap-2 `}
               >
                 <p>
@@ -108,20 +110,20 @@ const ApplyForm = () => {
                 <input
                   type="email"
                   id="email"
-                  name="email"
+                  name="applicant_email"
                   className="outline-none  w-full  bg-slate-100 bottom-0"
                   placeholder="Email Address"
                   aria-required="true"
                   onChange={handleChange}
                   onBlur={handleBlur}
-                  value={values.email}
+                  value={values.applicant_email}
                 />
               </div>
 
               <div className="">
-                {errors.email && touched.email && (
+                {errors.applicant_email && touched.applicant_email && (
                   <p className="text-start  text-xs font-semibold text-red-600">
-                    {errors.email}
+                    {errors.applicant_email}
                   </p>
                 )}
               </div>
@@ -129,7 +131,7 @@ const ApplyForm = () => {
             <div className="">
               <div
                 className={`${
-                  errors.phone_number && " border-2 border-red-600"
+                  errors.applicant_phone && " border-2 border-red-600"
                 } border p-4 flex  items-center gap-2 `}
               >
                 <p>
@@ -138,18 +140,18 @@ const ApplyForm = () => {
                 <input
                   type="number"
                   id="phone_number"
-                  name="phone_number"
+                  name="applicant_phone"
                   className="outline-none w-full  bg-slate-100  bottom-0"
                   placeholder="Phone Number"
                   aria-required="true"
                   onChange={handleChange}
                   onBlur={handleBlur}
-                  value={values.phone_number}
+                  value={values.applicant_phone}
                 />
               </div>
-              {errors.phone_number && touched.phone_number && (
+              {errors.applicant_phone && touched.applicant_phone && (
                 <p className="text-start px-1  text-xs font-semibold text-red-600">
-                  {errors.phone_number}
+                  {errors.applicant_phone}
                 </p>
               )}
             </div>
@@ -182,24 +184,25 @@ const ApplyForm = () => {
             <div className="">
               <div
                 className={`${
-                  errors.file && " border-2 border-red-600"
+                  errors.applicant_resume && " border-2 border-red-600"
                 }   p-4 flex     gap-2 `}
               >
                 <input
                   className="outline-none  w-full  bg-slate-100 flex-1 resize-none"
                   type="file"
-                  name="file"
-                  placeholder="Description"
-                  aria-required="true"
+                  name="applicant_resume"
                   onBlur={handleBlur}
                   onChange={(event) => {
-                    setFieldValue("file", event.currentTarget.files[0]);
+                    setFieldValue(
+                      "applicant_resume",
+                      event.currentTarget.files[0]
+                    );
                   }}
                 ></input>
               </div>
-              {errors.file && touched.file && (
+              {errors.applicant_resume && touched.applicant_resume && (
                 <p className="text-start px-2  text-xs font-semibold text-red-600">
-                  {errors.file}
+                  {errors.applicant_resume}
                 </p>
               )}
             </div>

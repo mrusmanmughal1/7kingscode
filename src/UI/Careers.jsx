@@ -3,33 +3,16 @@ import MainBanner from "./MainBanner";
 import Filters from "./Filters";
 import { NavLink } from "react-router-dom";
 import { LuMoveRight } from "react-icons/lu";
+import useGETALLJOBS from "../Services/useGETALLJOBS";
 
 const Careers = () => {
-  const joblisting = [
-    {
-      title: "Quality Analyst Automation Test Engineer",
-      Location: "Coral Springs, FL",
-      Requirement: "Onsite -IT- Development/ Quality Analyst",
-      link: "/QualityAnalyst",
-    },
-    {
-      title: "SharePoint Developer",
-      Location: "Coral Springs, FL",
-      Requirement: "Onsite -IT- Development/ SharePoint Developer",
-      link: "/SharePointDeveloper",
-    },
-    {
-      title: "Business Analyst",
-      Location: "Coral Springs, FL",
-      Requirement: "Onsite -IT- Development/ Business Analyst",
-      link: "/BusinessAnalyst",
-    },
-  ];
+  const { joblisting, error } = useGETALLJOBS();
+
   return (
     <div className="">
       <div>
         <MainBanner
-          text="Contact"
+          text="Careers"
           title="WE PROVIDE ENTERPRISE-LEVEL SOLUTIONS"
         />
         <div className="lg:w-[60%] w-[90%] mx-auto pb-32">
@@ -42,12 +25,12 @@ const Careers = () => {
               matching proven technology professionals with the right jobs
               across a range of specialties and experience levels. Explore
               contract, contract-to-hire, and direct hire job opportunities with
-              great benifits.{" "}
+              great benifits.
             </p>
           </div>
           <div className="flex flex-col gap-4">
             <Filters />
-            {joblisting.map((v, i) => (
+            {joblisting?.map((v, i) => (
               <div
                 key={i}
                 className="text-blue-secondary border-b border-black pt-8"
@@ -57,12 +40,12 @@ const Careers = () => {
                   <div className="text-xs flex gap-20 lg:gap-28 text-black items-center w-full justify-between pb-2">
                     <div className="">
                       <p className="flex gap-2 items-center w-full justify-between">
-                        <BiWorld className="text-xl" /> {v.Location}
+                        <BiWorld className="text-xl" /> {v.address}
                       </p>
                     </div>
-                    <p>{v.Requirement}</p>
+                    <p> Job Type : {v.job_type}</p>
 
-                    <NavLink to={v.link}>
+                    <NavLink to={`/careers/jobs-detail/${v.id}`}>
                       <button className="text-2xl text-blue-secondary">
                         <LuMoveRight />
                       </button>

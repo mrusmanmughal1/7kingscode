@@ -11,15 +11,19 @@ import { Doughnut } from "react-chartjs-2";
 // Register the components
 ChartJS.register(Title, Tooltip, Legend, ArcElement, DoughnutController);
 
-const AdminDoughnut = () => {
+const AdminDoughnut = ({ allJobs, activeJobs, inactiveJobs }) => {
   const SourceData = [
     {
-      label: "Candidates",
-      value: 85,
+      label: "Jobs-Posted",
+      value: allJobs,
     },
     {
-      label: "Jobs Posted",
-      value: 100,
+      label: "InActive-Jobs",
+      value: inactiveJobs,
+    },
+    {
+      label: "Active-Jobs",
+      value: activeJobs,
     },
   ];
 
@@ -43,8 +47,16 @@ const AdminDoughnut = () => {
             {
               label: "Count",
               data: SourceData.map((data) => data.value),
-              backgroundColor: ["rgba(61, 164, 255)", "rgba(47, 53, 115)"],
-              borderColor: ["rgba(61, 164, 255)", "rgba(47, 53, 115)"],
+              backgroundColor: [
+                "rgba(47, 53, 115)",
+                "rgba(255, 0, 0)",
+                "rgba(0,128,0)",
+              ],
+              borderColor: [
+                "rgba(47, 53, 115)",
+                "rgba(255, 0, 0)",
+                "rgba(0,128,0)",
+              ],
             },
           ],
         }}

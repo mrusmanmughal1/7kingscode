@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 import { useParams, useNavigate } from "react-router-dom";
 
 const JobsDetail = () => {
@@ -64,18 +65,20 @@ const JobsDetail = () => {
       <div className="w-[90%]  lg:w-[90%] mx-auto pt-12 pb-24">
         <div>
           <p className="text-xl border-b border-black text-blue-secondary font-semibold pb-2">
-            {jobdata?.data?.title}
+            Title: {jobdata?.data?.title}
           </p>
         </div>
         <div className="flex justify-between">
           <div className="flex flex-col gap-2 pt-4">
             <p>{jobdata?.data?.address}</p>
             <p>{jobdata.data?.job_type}</p>
-            <p>Title: {jobdata.data?.title}</p>
+            <p>Skills: {jobdata.data?.skills}</p>
           </div>
           <div className="flex gap-8 flex-col pt-4 px-12">
             <div className="bg-blue-secondary px-12 py-2 rounded-md text-white">
-              <button>Update Job</button>
+              <NavLink to={`/admin/Edit/${jobdata?.data?.id}`}>
+                Update Job
+              </NavLink>
             </div>
             <div className="bg-blue-secondary px-12 py-2 rounded-md text-white">
               <button onClick={handleDelete}>Delete Job</button>

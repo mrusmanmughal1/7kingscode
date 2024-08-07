@@ -4,23 +4,25 @@ import { useNavigate } from "react-router-dom";
 import loginbanner from "../assets/logos/Loginbanner.png";
 import AdminHeader from "./../Feature/Admin/AdminHeader";
 
+//email: admin@7kctech.com
+//password: admin123
+
 const LoginForm = ({ paddingMain, width, fontSize }) => {
   const [showPassword, setShowPassword] = useState(false);
   const [data, setData] = useState({
     email: "",
     password: "",
   });
-  //email: admin@7kctech.com
-  //password: admin123
   const [error, setError] = useState(null);
   const [fielderror, setFieldError] = useState({
     email: false,
     password: false,
   });
+  // New state for success message
+  const [successMessage, setSuccessMessage] = useState("");
   const navigate = useNavigate();
 
   const inputEvent = (e) => {
-    // const { name, value } = event.target;
     setData((prevData) => ({ ...prevData, [e.target.name]: e.target.value }));
     setFieldError((prevError) => ({ ...prevError, [e.target.name]: false }));
   };
@@ -37,23 +39,20 @@ const LoginForm = ({ paddingMain, width, fontSize }) => {
       });
 
       if (!response.ok) {
-        throw new Error(
-          "Login failed. Please check your username and password."
-        );
+        throw new Error("Login failed!");
       }
 
       const result = await response.json();
-      console.log("Login successful:", result);
       localStorage.setItem("data", result.data.token);
-      // Handle successful login, e.g., storing tokens, redirecting
       setData({
         email: "",
         password: "",
       });
-      navigate("/admin");
+      setSuccessMessage("Login successfully!");
+      setTimeout(() => {
+        navigate("/admin");
+      }, 1000);
     } catch (error) {
-      // Handle error, e.g., displaying error messages
-      // console.error("Error during login:", error.message);
       setError(error.message);
       setFieldError({
         email: true,
@@ -64,6 +63,16 @@ const LoginForm = ({ paddingMain, width, fontSize }) => {
 
   return (
     <>
+      {error && (
+        <p className=" w-48 flex justify-center items-center mx-auto text-white p-3 rounded-md mb-4 bg-red-600">
+          {error}
+        </p>
+      )}
+      {successMessage && (
+        <div className="bg-green-500 w-48 flex justify-center items-center mx-auto text-white p-3 rounded-md mb-4">
+          {successMessage}
+        </div>
+      )}
       <AdminHeader />
       <div className="relative">
         <img
@@ -75,14 +84,12 @@ const LoginForm = ({ paddingMain, width, fontSize }) => {
           LOGIN
         </p>
       </div>
-      <div className={`bg-gray-100 h-screen p-8 md:p-14`}>
-        <div
-          className={`md:mx-auto md:w-1/2 lg:w-1/2 xl:w-1/2 text-center flex flex-col justify-center gap-6`}
-        >
-          {error && <p className="text-red-600 text-center">{error}</p>}
+
+      <div className="bg-gray-100 h-screen p-8 md:p-14">
+        <div className="md:mx-auto md:w-1/2 lg:w-1/2 xl:w-1/2 text-center flex flex-col justify-center gap-6">
           <div className="w-[95%] lg:w-[70%] mx-auto shadow-2xl rounded-lg">
             <form onSubmit={handleSubmit}>
-              <div className="mt-16 flex flex-col gap-6">
+              <div className=" flex flex-col gap-6">
                 <div>
                   <label className="flex font-semibold px-8">Email</label>
                   <input
@@ -109,7 +116,7 @@ const LoginForm = ({ paddingMain, width, fontSize }) => {
                     <input
                       type={showPassword ? "text" : "password"}
                       className={`border p-3 w-[90%] font-bold rounded-md ${
-                        fielderror.email ? "border-red-800" : ""
+                        fielderror.password ? "border-red-800" : ""
                       }`}
                       placeholder="Password"
                       name="password"

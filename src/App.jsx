@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
 import Main from "./pages/Main";
 // import Login from "./pages/Loginpage";
 import Contact from "./pages/Contact";
@@ -66,6 +66,8 @@ import PostNewJob from "./Components/PostNewJob";
 import Settings from "./Components/Settings";
 import ViewApplications from "./UI/ViewApplications";
 import JobsDetail from "./UI/JobsDetail";
+import EditJob from "./Components/EditJob";
+import JobDetailss from "./UI/JobDetailss";
 
 const App = () => {
   return (
@@ -73,12 +75,26 @@ const App = () => {
       <AuthProvider>
         <BrowserRouter>
           <Routes>
+            <Route
+              path="/careers"
+              element={
+                <div>
+                  <Outlet />
+                </div>
+              }
+            >
+              <Route index element={<Careers />} />
+
+              <Route path="jobs-detail/:id" element={<JobDetailss />} />
+            </Route>
             <Route path="/admin" element={<AdminLayout />}>
               <Route index element={<Dashboard />} />
               <Route path="jobs-posted" element={<JobsPosted />} />
               <Route path="new-jobs" element={<PostNewJob />} />
               <Route path="settings" element={<Settings />} />
               <Route path="ViewApplications" element={<ViewApplications />} />
+              <Route path="Edit/:id" element={<EditJob />} />
+
               <Route path="jobs-view/:id" element={<JobsDetail />} />
 
               {/* Add more nested routes here */}
@@ -141,27 +157,11 @@ const App = () => {
                 </ClientLayout>
               }
             />{" "}
-            <Route
-              path="/careers"
-              element={
-                <ClientLayout>
-                  <Careers />
-                </ClientLayout>
-              }
-            />{" "}
-            <Route
+            {/* <Route
               path="/filters"
               element={
                 <ClientLayout>
                   <Filters />
-                </ClientLayout>
-              }
-            />{" "}
-            <Route
-              path="/QualityAnalyst"
-              element={
-                <ClientLayout>
-                  <QualityAnalyst />
                 </ClientLayout>
               }
             />{" "}
@@ -172,20 +172,12 @@ const App = () => {
                   <ApplyForm />
                 </ClientLayout>
               }
-            />{" "}
+            />{" "} */}
             <Route
               path="/ProductDetails"
               element={
                 <ClientLayout>
                   <ProductDetails />
-                </ClientLayout>
-              }
-            />{" "}
-            <Route
-              path="/SharePointDeveloper"
-              element={
-                <ClientLayout>
-                  <SharePointDeveloper />
                 </ClientLayout>
               }
             />{" "}
