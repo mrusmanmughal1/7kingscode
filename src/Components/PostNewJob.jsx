@@ -15,6 +15,7 @@ const PostNewJob = () => {
 
   const [inputList, setInputList] = useState("");
   const [items, setItems] = useState([]);
+  const [showPopup, setShowPopup] = useState();
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -63,6 +64,22 @@ const PostNewJob = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     await fetchApi();
+
+    // Reset form fields and clear items
+    setFormData({
+      title: "",
+      job_decrp: "",
+      address: "",
+      skills: "",
+      job_type: "Full Time",
+      is_active: true,
+      remote_work: true,
+    });
+    setItems([]);
+    setShowPopup(true);
+    setTimeout(() => {
+      setShowPopup(false); // Hide the pop-up after 3 seconds
+    }, 2000);
   };
 
   return (
@@ -178,6 +195,11 @@ const PostNewJob = () => {
               Create
             </button>
           </div>
+          {showPopup && (
+            <div className="bg-green-500 w-64 flex mx-auto text-white p-2 rounded-md text-center mb-4">
+              Job Created Successfully!
+            </div>
+          )}
         </form>
       </div>
     </div>

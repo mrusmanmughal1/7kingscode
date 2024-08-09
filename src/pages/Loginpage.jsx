@@ -3,6 +3,7 @@ import { FaEyeSlash, FaEye } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import loginbanner from "../assets/logos/Loginbanner.png";
 import AdminHeader from "./../Feature/Admin/AdminHeader";
+import toast from "react-hot-toast";
 
 //email: admin@7kctech.com
 //password: admin123
@@ -37,9 +38,12 @@ const LoginForm = ({ paddingMain, width, fontSize }) => {
         },
         body: JSON.stringify(data),
       });
+      if (response.ok) {
+        toast.success("Lgi");
+      }
 
       if (!response.ok) {
-        throw new Error("Login failed!");
+        toast.error("Lgi");
       }
 
       const result = await response.json();
@@ -63,16 +67,6 @@ const LoginForm = ({ paddingMain, width, fontSize }) => {
 
   return (
     <>
-      {error && (
-        <p className=" w-48 flex justify-center items-center mx-auto text-white p-3 rounded-md mb-4 bg-red-600">
-          {error}
-        </p>
-      )}
-      {successMessage && (
-        <div className="bg-green-500 w-48 flex justify-center items-center mx-auto text-white p-3 rounded-md mb-4">
-          {successMessage}
-        </div>
-      )}
       <AdminHeader />
       <div className="relative">
         <img

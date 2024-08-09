@@ -10,6 +10,7 @@ const EditJob = () => {
   const { id } = useParams();
   const [inputList, setInputList] = useState("");
   const [items, setItems] = useState([]);
+  const [showPopup, setShowPopup] = useState();
   const {
     title,
     job_decrp,
@@ -120,6 +121,12 @@ const EditJob = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     await updateData();
+
+    setItems([]);
+    setShowPopup(true);
+    setTimeout(() => {
+      setShowPopup(false); // Hide the pop-up after 3 seconds
+    }, 2000);
   };
 
   return (
@@ -234,6 +241,11 @@ const EditJob = () => {
             <button className="w-32 mt-4 rounded-lg text-center px-8 py-3 bg-[#2F3573] text-white">
               Update
             </button>
+            {showPopup && (
+              <div className="bg-green-500 w-64 flex mx-auto text-white p-2 rounded-md text-center mb-4">
+                Job Updated Successfully!
+              </div>
+            )}
           </div>
         </form>
       </div>

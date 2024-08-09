@@ -55,7 +55,7 @@ const JobsDetail = () => {
         throw new Error(`Failed to delete job. Status: ${response.status}`);
       }
 
-      navigate("/jobs");
+      navigate("/admin/jobs-posted");
     } catch (error) {
       console.error("Error deleting job:", error.message);
     }
@@ -70,9 +70,15 @@ const JobsDetail = () => {
         </div>
         <div className="flex justify-between">
           <div className="flex flex-col gap-2 pt-4">
-            <p>{jobdata?.data?.address}</p>
-            <p>{jobdata.data?.job_type}</p>
-            <p>Skills: {jobdata.data?.skills}</p>
+            <p className="flex gap-2 font-medium">
+              Skills:<span>{jobdata?.data?.skills}</span>
+            </p>
+            <p className="flex gap-2 font-medium ">
+              Location:<span>{jobdata?.data?.address}</span>
+            </p>
+            <p className="flex gap-2 font-medium">
+              Job Type:<span>{jobdata?.data?.job_type}</span>
+            </p>
           </div>
           <div className="flex gap-8 flex-col pt-4 px-12">
             <div className="bg-blue-secondary px-12 py-2 rounded-md text-white">
@@ -86,7 +92,9 @@ const JobsDetail = () => {
           </div>
         </div>
         <div className="w-[90%] lg:w-[70%] flex flex-col pt-12">
-          <p className="text-2xl border-b border-black">Job Description:</p>
+          <p className="text-2xl text-blue-secondary font-semibold border-b border-black">
+            Job Description:
+          </p>
           <p className="pt-6">{jobdata.data?.job_decrp}</p>
         </div>
       </div>

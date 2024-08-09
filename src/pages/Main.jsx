@@ -22,8 +22,8 @@ const Main = () => {
       <TechnologyChallenges />
       {/* <OurPartners /> */}
       <BestSolution />
-      <SolveProblem/>
-  
+      <SolveProblem />
+
       <Location />
     </div>
   );

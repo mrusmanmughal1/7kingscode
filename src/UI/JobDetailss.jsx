@@ -40,13 +40,21 @@ const JobDetailss = () => {
           </div>
           <div className="">
             <div className="flex flex-col gap-4 pt-4">
-              <p>Skills:{jobData?.data?.skills}</p>
-              <p>Location:{jobData?.data?.address}</p>
-              <p>Job Type:{jobData?.data?.job_type}</p>
+              <p className="flex gap-2 font-medium">
+                Skills:<span>{jobData?.data?.skills}</span>
+              </p>
+              <p className="flex gap-2 font-medium ">
+                Location:<span>{jobData?.data?.address}</span>
+              </p>
+              <p className="flex gap-2 font-medium">
+                Job Type:<span>{jobData?.data?.job_type}</span>
+              </p>
             </div>
           </div>
           <div className="w-[90%] lg:w-[70%] flex flex-col pt-12">
-            <p className="text-2xl border-b border-black">Job Requirement:</p>
+            <p className="text-2xl text-blue-secondary font-semibold border-b border-black">
+              Job Requirement:
+            </p>
             <p className="pt-6">{jobData?.data?.job_decrp}</p>
           </div>
         </div>

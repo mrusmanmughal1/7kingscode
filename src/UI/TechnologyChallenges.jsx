@@ -53,11 +53,9 @@ const TechnologyChallenges = () => {
       ),
       link: "/Products",
     },
-
- 
   ];
   return (
-    <div className="relative bg-gray-900 py-32">
+    <div className="relative bg-gray-900 py-32 whatweSolve">
       <div
         className="  inset-0     flex flex-col items-center
       justify-center text-white"
@@ -79,16 +77,16 @@ const TechnologyChallenges = () => {
               className="  px-10 items-center justify-center border border-gray-500"
             >
               <NavLink key={index} to={item.link}>
-              <div className="text-center flex flex-col justify-center items-center">
-                <div
-                  className={`${
-                    hover == index && "text-white "
-                  } text-4xl relative  transition-all duration-700 p-5 `}
-                >
-                  {item.icon}
+                <div className="text-center flex flex-col justify-center items-center">
+                  <div
+                    className={`${
+                      hover == index && "text-white "
+                    } text-4xl relative  transition-all duration-700 p-5 `}
+                  >
+                    {item.icon}
+                  </div>
+                  <div className="text-lg font-medium pb-8">{item.title}</div>
                 </div>
-                <div className="text-lg font-medium pb-8">{item.title}</div>
-              </div>
               </NavLink>
             </div>
           ))}
